@@ -50,7 +50,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * LbRadioTagsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-28T21:48:15.256271+02:00[Europe/Berlin]", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-28T21:54:13.371331+02:00[Europe/Berlin]", comments = "Generator version: 7.7.0")
 public class LbRadioTagsInner {
   public static final String SERIALIZED_NAME_PERCENT = "percent";
   @SerializedName(SERIALIZED_NAME_PERCENT)
