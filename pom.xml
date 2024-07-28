@@ -1,18 +1,18 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.hihn</groupId>
     <artifactId>listenbrainz-client</artifactId>
     <packaging>jar</packaging>
     <name>listenbrainz-client</name>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <url>https://github.com/rain0r/listenbrainz-client</url>
     <description>Java bindings for the listenbrainz.org webservice API</description>
     <scm>
         <connection>scm:git:git@github.com:rain0r/listenbrainz-client.git</connection>
         <developerConnection>scm:git:git@github.com:rain0r/listenbrainz-client.git</developerConnection>
         <url>https://git.hihn.org/rain0r/listenbrainz-client</url>
-      <tag>HEAD</tag>
-  </scm>
+    </scm>
 
     <licenses>
         <license>
@@ -26,8 +26,8 @@
         <developer>
             <name>rain0r</name>
             <email>hihn.rainer@gmail.com</email>
-            <organization />
-            <organizationUrl />
+            <organization></organization>
+            <organizationUrl></organizationUrl>
         </developer>
     </developers>
 
@@ -216,8 +216,8 @@
                       <include>.gitignore</include>
                     </includes>
                     <!-- define the steps to apply to those files -->
-                    <trimTrailingWhitespace />
-                    <endWithNewline />
+                    <trimTrailingWhitespace/>
+                    <endWithNewline/>
                     <indent>
                       <spaces>true</spaces> <!-- or <tabs>true</tabs> -->
                       <spacesPerTab>4</spacesPerTab> <!-- optional, default is 4 -->
@@ -235,8 +235,8 @@
                     <reflowLongStrings>true</reflowLongStrings>
                   </googleJavaFormat>
 
-                  <removeUnusedImports />
-                  <importOrder />
+                  <removeUnusedImports/>
+                  <importOrder/>
 
                 </java>
               </configuration>
@@ -266,6 +266,66 @@
                 </plugins>
             </build>
         </profile>
+    <profile>
+      <id>release</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-source-plugin</artifactId>
+            <version>3.3.0</version>
+            <executions>
+              <execution>
+                <id>attach-sources</id>
+                <goals>
+                  <goal>jar-no-fork</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <version>3.1.0</version>
+            <executions>
+              <execution>
+                <id>sign-artifacts</id>
+                <phase>verify</phase>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+                <configuration>
+                  <gpgArguments>
+                    <arg>--pinentry-mode</arg>
+                    <arg>loopback</arg>
+                  </gpgArguments>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <version>3.6.3</version>
+            <configuration>
+              <source>${maven.compiler.source}</source>
+              <doclint>none</doclint>
+            </configuration>
+          </plugin>
+          <plugin>
+            <groupId>org.sonatype.plugins</groupId>
+            <artifactId>nexus-staging-maven-plugin</artifactId>
+            <version>1.6.13</version>
+            <extensions>true</extensions>
+            <configuration>
+              <serverId>ossrh</serverId>
+              <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+              <autoReleaseAfterClose>true</autoReleaseAfterClose>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>        
     </profiles>
 
     <dependencies>
