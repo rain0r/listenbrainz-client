@@ -50,7 +50,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * MoveItemRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-28T21:54:13.371331+02:00[Europe/Berlin]", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.7.0")
 public class MoveItemRequest {
   public static final String SERIALIZED_NAME_MBID = "mbid";
   @SerializedName(SERIALIZED_NAME_MBID)

@@ -10,7 +10,6 @@ This is generated code from the OpenAPI specification at [rain0r/listenbrainz-op
 
 ListenBrainz Swagger - OpenAPI 3.0
 - API version: v-2024-07-17.0
-  - Build date: 2024-07-28T21:54:13.371331+02:00[Europe/Berlin]
   - Generator version: 7.7.0
 
 OpenAPI client defintion.

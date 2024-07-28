@@ -52,7 +52,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * ReleaseGroupMetadata
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-28T21:54:13.371331+02:00[Europe/Berlin]", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.7.0")
 public class ReleaseGroupMetadata {
   public static final String SERIALIZED_NAME_RELEASE_GROUP = "release_group";
   @SerializedName(SERIALIZED_NAME_RELEASE_GROUP)

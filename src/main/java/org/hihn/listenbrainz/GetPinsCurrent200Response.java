@@ -50,7 +50,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * GetPinsCurrent200Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-28T21:54:13.371331+02:00[Europe/Berlin]", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.7.0")
 public class GetPinsCurrent200Response {
   public static final String SERIALIZED_NAME_PINNED_RECORDING = "pinned_recording";
   @SerializedName(SERIALIZED_NAME_PINNED_RECORDING)
