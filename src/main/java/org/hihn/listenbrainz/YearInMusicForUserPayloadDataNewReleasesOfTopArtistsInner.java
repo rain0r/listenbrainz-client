@@ -53,7 +53,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * YearInMusicForUserPayloadDataNewReleasesOfTopArtistsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-28T20:56:43.728532+02:00[Europe/Berlin]", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-28T21:00:27.345003+02:00[Europe/Berlin]", comments = "Generator version: 7.7.0")
 public class YearInMusicForUserPayloadDataNewReleasesOfTopArtistsInner {
   public static final String SERIALIZED_NAME_ARTIST_CREDIT_MBIDS = "artist_credit_mbids";
   @SerializedName(SERIALIZED_NAME_ARTIST_CREDIT_MBIDS)
