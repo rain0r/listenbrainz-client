@@ -834,7 +834,7 @@ public class LbRecommendationsApi {
         Object localVarPostBody = submitFeedbackRequest;
 
         // create path and map variables
-        String localVarPath = "/1/recommendations/feedback/submit";
+        String localVarPath = "/1/recommendation/feedback/submit";
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();

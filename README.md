@@ -10,7 +10,7 @@ This is generated code from the OpenAPI specification at [rain0r/listenbrainz-op
 
 ListenBrainz Swagger - OpenAPI 3.0
 - API version: v-2024-07-17.0
-  - Build date: 2024-07-28T21:00:27.345003+02:00[Europe/Berlin]
+  - Build date: 2024-07-28T21:48:15.256271+02:00[Europe/Berlin]
   - Generator version: 7.7.0
 
 OpenAPI client defintion.
@@ -175,7 +175,7 @@ Class | Method | HTTP request | Description
 *LbRecommendationsApi* | [**feedbackGivenBy**](docs/LbRecommendationsApi.md#feedbackGivenBy) | **GET** /1/recommendations/feedback/user/{user_name} | Get feedback given by user &#39;user_name&#39;.
 *LbRecommendationsApi* | [**recordingRecommendations**](docs/LbRecommendationsApi.md#recordingRecommendations) | **GET** /1/cf/recommendation/user/{user_name}/recording | Get recommendations sorted on rating and ratings for user &#39;user_name&#39;.
 *LbRecommendationsApi* | [**recordingsFeedbackGivenBy**](docs/LbRecommendationsApi.md#recordingsFeedbackGivenBy) | **GET** /1/recommendations/feedback/user/{user_name}/recordings | Get feedback given by user &#39;user_name&#39; for the list of recordings supplied.
-*LbRecommendationsApi* | [**submitFeedback**](docs/LbRecommendationsApi.md#submitFeedback) | **POST** /1/recommendations/feedback/submit | Submit recommendation feedback. A user token (found on https://listenbrainz.org/settings/ ) must be provided in the Authorization header! Each request should contain only one feedback in the payload.
+*LbRecommendationsApi* | [**submitFeedback**](docs/LbRecommendationsApi.md#submitFeedback) | **POST** /1/recommendation/feedback/submit | Submit recommendation feedback. A user token (found on https://listenbrainz.org/settings/ ) must be provided in the Authorization header! Each request should contain only one feedback in the payload.
 *LbRecordingsApi* | [**getFeedback**](docs/LbRecordingsApi.md#getFeedback) | **GET** /1/feedback/user/{user_name}/get-feedback | Get feedback given by user &#39;user_name&#39;. The format for the JSON returned is defined in our Feedback JSON Documentation.  If the optional argument score is not given, this endpoint will return all the feedback submitted by the user. Otherwise filters the feedback to be returned by score.
 *LbRecordingsApi* | [**getFeedbackForRecordings**](docs/LbRecordingsApi.md#getFeedbackForRecordings) | **GET** /1/feedback/user/{user_name}/get-feedback-for-recordings | Get feedback given by user user_name for the list of recordings supplied.
 *LbRecordingsApi* | [**getFeedbackMbid**](docs/LbRecordingsApi.md#getFeedbackMbid) | **GET** /1/feedback/recording/{recording_mbid}/get-feedback-mbid | Get feedback for recording with given recording_mbid.

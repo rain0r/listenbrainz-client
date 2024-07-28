@@ -8,7 +8,7 @@ All URIs are relative to *https://api.listenbrainz.org*
 | [**feedbackGivenBy**](LbRecommendationsApi.md#feedbackGivenBy) | **GET** /1/recommendations/feedback/user/{user_name} | Get feedback given by user &#39;user_name&#39;. |
 | [**recordingRecommendations**](LbRecommendationsApi.md#recordingRecommendations) | **GET** /1/cf/recommendation/user/{user_name}/recording | Get recommendations sorted on rating and ratings for user &#39;user_name&#39;. |
 | [**recordingsFeedbackGivenBy**](LbRecommendationsApi.md#recordingsFeedbackGivenBy) | **GET** /1/recommendations/feedback/user/{user_name}/recordings | Get feedback given by user &#39;user_name&#39; for the list of recordings supplied. |
-| [**submitFeedback**](LbRecommendationsApi.md#submitFeedback) | **POST** /1/recommendations/feedback/submit | Submit recommendation feedback. A user token (found on https://listenbrainz.org/settings/ ) must be provided in the Authorization header! Each request should contain only one feedback in the payload. |
+| [**submitFeedback**](LbRecommendationsApi.md#submitFeedback) | **POST** /1/recommendation/feedback/submit | Submit recommendation feedback. A user token (found on https://listenbrainz.org/settings/ ) must be provided in the Authorization header! Each request should contain only one feedback in the payload. |
 
 
 <a id="deleteFeedback"></a>

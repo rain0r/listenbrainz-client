@@ -52,7 +52,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * RecordingsFeedbackGivenBy
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-28T21:00:27.345003+02:00[Europe/Berlin]", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-28T21:48:15.256271+02:00[Europe/Berlin]", comments = "Generator version: 7.7.0")
 public class RecordingsFeedbackGivenBy {
   public static final String SERIALIZED_NAME_FEEDBACK = "feedback";
   @SerializedName(SERIALIZED_NAME_FEEDBACK)

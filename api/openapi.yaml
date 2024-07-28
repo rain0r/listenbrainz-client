@@ -2954,7 +2954,7 @@ paths:
       - lbRecommendations
       x-accepts:
       - application/json
-  /1/recommendations/feedback/submit:
+  /1/recommendation/feedback/submit:
     post:
       operationId: submitFeedback
       requestBody:
