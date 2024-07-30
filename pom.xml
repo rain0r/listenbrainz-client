@@ -4,14 +4,14 @@
     <artifactId>listenbrainz-client</artifactId>
     <packaging>jar</packaging>
     <name>listenbrainz-client</name>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <url>https://github.com/rain0r/listenbrainz-client</url>
     <description>Java bindings for the listenbrainz.org webservice API</description>
     <scm>
         <connection>scm:git:git@github.com:rain0r/listenbrainz-client.git</connection>
         <developerConnection>scm:git:git@github.com:rain0r/listenbrainz-client.git</developerConnection>
         <url>https://git.hihn.org/rain0r/listenbrainz-client</url>
-      <tag>listenbrainz-client-1.0.0</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <licenses>
