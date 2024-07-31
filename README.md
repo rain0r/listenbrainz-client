@@ -48,7 +48,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>org.hihn</groupId>
   <artifactId>listenbrainz-client</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -64,7 +64,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "org.hihn:listenbrainz-client:1.0.0-SNAPSHOT"
+     implementation "org.hihn:listenbrainz-client:1.0.0"
   }
 ```
 
@@ -78,7 +78,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/listenbrainz-client-1.0.0-SNAPSHOT.jar`
+* `target/listenbrainz-client-1.0.0.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
