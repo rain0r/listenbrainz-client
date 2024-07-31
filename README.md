@@ -7,6 +7,10 @@ This is generated code from the OpenAPI specification at [rain0r/listenbrainz-op
 
 ---
 
+[JavaDoc](https://rain0r.github.io/listenbrainz-client/index.html)
+
+---
+
 
 ListenBrainz Swagger - OpenAPI 3.0
 - API version: v-2024-07-17.0
