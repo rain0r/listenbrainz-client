@@ -50,7 +50,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * PlaylistTrackInnerExtension
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class PlaylistTrackInnerExtension {
   public static final String SERIALIZED_NAME_HTTPS_COLON_MUSICBRAINZ_ORG_DOC_JSPF_HASH_TRACK = "https://musicbrainz.org/doc/jspf#track";
   @SerializedName(SERIALIZED_NAME_HTTPS_COLON_MUSICBRAINZ_ORG_DOC_JSPF_HASH_TRACK)

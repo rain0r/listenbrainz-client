@@ -50,7 +50,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * LbRadioRecordingsForArtistValueInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class LbRadioRecordingsForArtistValueInner {
   public static final String SERIALIZED_NAME_RECORDING_MBID = "recording_mbid";
   @SerializedName(SERIALIZED_NAME_RECORDING_MBID)

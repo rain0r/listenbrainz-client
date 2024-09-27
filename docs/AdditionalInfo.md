@@ -38,6 +38,7 @@
 |**albumartist** | **String** |  |  [optional] |
 |**comment** | **String** |  |  [optional] |
 |**date** | **String** |  |  [optional] |
+|**genre** | **String** |  |  [optional] |
 
 
 

@@ -52,7 +52,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * ArtistMetadata
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class ArtistMetadata {
   public static final String SERIALIZED_NAME_AREA = "area";
   @SerializedName(SERIALIZED_NAME_AREA)

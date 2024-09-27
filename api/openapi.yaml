@@ -3513,6 +3513,7 @@ components:
                 spotify_album_artist_ids:
                 - spotify_album_artist_ids
                 - spotify_album_artist_ids
+                genre: genre
                 media_player_version: media_player_version
                 origin_url: origin_url
                 submission_client: submission_client
@@ -3581,6 +3582,7 @@ components:
                 spotify_album_artist_ids:
                 - spotify_album_artist_ids
                 - spotify_album_artist_ids
+                genre: genre
                 media_player_version: media_player_version
                 origin_url: origin_url
                 submission_client: submission_client
@@ -3670,6 +3672,7 @@ components:
                 spotify_album_artist_ids:
                 - spotify_album_artist_ids
                 - spotify_album_artist_ids
+                genre: genre
                 media_player_version: media_player_version
                 origin_url: origin_url
                 submission_client: submission_client
@@ -3735,6 +3738,7 @@ components:
                 spotify_album_artist_ids:
                 - spotify_album_artist_ids
                 - spotify_album_artist_ids
+                genre: genre
                 media_player_version: media_player_version
                 origin_url: origin_url
                 submission_client: submission_client
@@ -5034,6 +5038,7 @@ components:
               spotify_album_artist_ids:
               - spotify_album_artist_ids
               - spotify_album_artist_ids
+              genre: genre
               media_player_version: media_player_version
               origin_url: origin_url
               submission_client: submission_client
@@ -5103,6 +5108,7 @@ components:
               spotify_album_artist_ids:
               - spotify_album_artist_ids
               - spotify_album_artist_ids
+              genre: genre
               media_player_version: media_player_version
               origin_url: origin_url
               submission_client: submission_client
@@ -5183,6 +5189,7 @@ components:
           spotify_album_artist_ids:
           - spotify_album_artist_ids
           - spotify_album_artist_ids
+          genre: genre
           media_player_version: media_player_version
           origin_url: origin_url
           submission_client: submission_client
@@ -5272,6 +5279,7 @@ components:
               spotify_album_artist_ids:
               - spotify_album_artist_ids
               - spotify_album_artist_ids
+              genre: genre
               media_player_version: media_player_version
               origin_url: origin_url
               submission_client: submission_client
@@ -5342,6 +5350,7 @@ components:
               spotify_album_artist_ids:
               - spotify_album_artist_ids
               - spotify_album_artist_ids
+              genre: genre
               media_player_version: media_player_version
               origin_url: origin_url
               submission_client: submission_client
@@ -5670,6 +5679,7 @@ components:
                   spotify_album_artist_ids:
                   - spotify_album_artist_ids
                   - spotify_album_artist_ids
+                  genre: genre
                   media_player_version: media_player_version
                   origin_url: origin_url
                   submission_client: submission_client
@@ -5750,6 +5760,7 @@ components:
                   spotify_album_artist_ids:
                   - spotify_album_artist_ids
                   - spotify_album_artist_ids
+                  genre: genre
                   media_player_version: media_player_version
                   origin_url: origin_url
                   submission_client: submission_client
@@ -5840,6 +5851,7 @@ components:
                   spotify_album_artist_ids:
                   - spotify_album_artist_ids
                   - spotify_album_artist_ids
+                  genre: genre
                   media_player_version: media_player_version
                   origin_url: origin_url
                   submission_client: submission_client
@@ -5920,6 +5932,7 @@ components:
                   spotify_album_artist_ids:
                   - spotify_album_artist_ids
                   - spotify_album_artist_ids
+                  genre: genre
                   media_player_version: media_player_version
                   origin_url: origin_url
                   submission_client: submission_client
@@ -6399,6 +6412,7 @@ components:
             spotify_album_artist_ids:
             - spotify_album_artist_ids
             - spotify_album_artist_ids
+            genre: genre
             media_player_version: media_player_version
             origin_url: origin_url
             submission_client: submission_client
@@ -6478,6 +6492,7 @@ components:
         spotify_album_artist_ids:
         - spotify_album_artist_ids
         - spotify_album_artist_ids
+        genre: genre
         media_player_version: media_player_version
         origin_url: origin_url
         submission_client: submission_client
@@ -6588,6 +6603,8 @@ components:
         comment:
           type: string
         date:
+          type: string
+        genre:
           type: string
       type: object
     mbidMapping:
@@ -6766,6 +6783,7 @@ components:
             spotify_album_artist_ids:
             - spotify_album_artist_ids
             - spotify_album_artist_ids
+            genre: genre
             media_player_version: media_player_version
             origin_url: origin_url
             submission_client: submission_client
@@ -6996,6 +7014,7 @@ components:
             spotify_album_artist_ids:
             - spotify_album_artist_ids
             - spotify_album_artist_ids
+            genre: genre
             media_player_version: media_player_version
             origin_url: origin_url
             submission_client: submission_client
@@ -7087,6 +7106,7 @@ components:
               spotify_album_artist_ids:
               - spotify_album_artist_ids
               - spotify_album_artist_ids
+              genre: genre
               media_player_version: media_player_version
               origin_url: origin_url
               submission_client: submission_client
@@ -7163,6 +7183,7 @@ components:
             spotify_album_artist_ids:
             - spotify_album_artist_ids
             - spotify_album_artist_ids
+            genre: genre
             media_player_version: media_player_version
             origin_url: origin_url
             submission_client: submission_client
@@ -7254,6 +7275,7 @@ components:
               spotify_album_artist_ids:
               - spotify_album_artist_ids
               - spotify_album_artist_ids
+              genre: genre
               media_player_version: media_player_version
               origin_url: origin_url
               submission_client: submission_client
@@ -7535,6 +7557,7 @@ components:
             spotify_album_artist_ids:
             - spotify_album_artist_ids
             - spotify_album_artist_ids
+            genre: genre
             media_player_version: media_player_version
             origin_url: origin_url
             submission_client: submission_client
@@ -7618,6 +7641,7 @@ components:
               spotify_album_artist_ids:
               - spotify_album_artist_ids
               - spotify_album_artist_ids
+              genre: genre
               media_player_version: media_player_version
               origin_url: origin_url
               submission_client: submission_client
@@ -7686,6 +7710,7 @@ components:
               spotify_album_artist_ids:
               - spotify_album_artist_ids
               - spotify_album_artist_ids
+              genre: genre
               media_player_version: media_player_version
               origin_url: origin_url
               submission_client: submission_client
@@ -7780,6 +7805,7 @@ components:
             spotify_album_artist_ids:
             - spotify_album_artist_ids
             - spotify_album_artist_ids
+            genre: genre
             media_player_version: media_player_version
             origin_url: origin_url
             submission_client: submission_client
@@ -7854,6 +7880,7 @@ components:
               spotify_album_artist_ids:
               - spotify_album_artist_ids
               - spotify_album_artist_ids
+              genre: genre
               media_player_version: media_player_version
               origin_url: origin_url
               submission_client: submission_client
@@ -7919,6 +7946,7 @@ components:
               spotify_album_artist_ids:
               - spotify_album_artist_ids
               - spotify_album_artist_ids
+              genre: genre
               media_player_version: media_player_version
               origin_url: origin_url
               submission_client: submission_client
@@ -10161,6 +10189,7 @@ components:
             spotify_album_artist_ids:
             - spotify_album_artist_ids
             - spotify_album_artist_ids
+            genre: genre
             media_player_version: media_player_version
             origin_url: origin_url
             submission_client: submission_client
@@ -11063,6 +11092,7 @@ components:
               spotify_album_artist_ids:
               - spotify_album_artist_ids
               - spotify_album_artist_ids
+              genre: genre
               media_player_version: media_player_version
               origin_url: origin_url
               submission_client: submission_client
@@ -11164,6 +11194,7 @@ components:
                 spotify_album_artist_ids:
                 - spotify_album_artist_ids
                 - spotify_album_artist_ids
+                genre: genre
                 media_player_version: media_player_version
                 origin_url: origin_url
                 submission_client: submission_client
@@ -11244,6 +11275,7 @@ components:
                 spotify_album_artist_ids:
                 - spotify_album_artist_ids
                 - spotify_album_artist_ids
+                genre: genre
                 media_player_version: media_player_version
                 origin_url: origin_url
                 submission_client: submission_client
@@ -11336,6 +11368,7 @@ components:
               spotify_album_artist_ids:
               - spotify_album_artist_ids
               - spotify_album_artist_ids
+              genre: genre
               media_player_version: media_player_version
               origin_url: origin_url
               submission_client: submission_client
@@ -11437,6 +11470,7 @@ components:
                 spotify_album_artist_ids:
                 - spotify_album_artist_ids
                 - spotify_album_artist_ids
+                genre: genre
                 media_player_version: media_player_version
                 origin_url: origin_url
                 submission_client: submission_client
@@ -11517,6 +11551,7 @@ components:
                 spotify_album_artist_ids:
                 - spotify_album_artist_ids
                 - spotify_album_artist_ids
+                genre: genre
                 media_player_version: media_player_version
                 origin_url: origin_url
                 submission_client: submission_client

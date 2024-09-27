@@ -14,7 +14,7 @@ This is generated code from the OpenAPI specification at [rain0r/listenbrainz-op
 
 ListenBrainz Swagger - OpenAPI 3.0
 - API version: v-2024-07-17.0
-  - Generator version: 7.7.0
+  - Generator version: 7.8.0
 
 OpenAPI client defintion.
 

@@ -61,7 +61,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * YearInMusicForUserPayloadData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class YearInMusicForUserPayloadData {
   public static final String SERIALIZED_NAME_ARTIST_MAP = "artist_map";
   @SerializedName(SERIALIZED_NAME_ARTIST_MAP)

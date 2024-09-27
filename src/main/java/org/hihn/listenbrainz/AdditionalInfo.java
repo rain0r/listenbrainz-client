@@ -52,7 +52,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * AdditionalInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
 public class AdditionalInfo {
   public static final String SERIALIZED_NAME_MEDIA_PLAYER = "media_player";
   @SerializedName(SERIALIZED_NAME_MEDIA_PLAYER)
@@ -177,6 +177,10 @@ public class AdditionalInfo {
   public static final String SERIALIZED_NAME_DATE = "date";
   @SerializedName(SERIALIZED_NAME_DATE)
   private String date;
+
+  public static final String SERIALIZED_NAME_GENRE = "genre";
+  @SerializedName(SERIALIZED_NAME_GENRE)
+  private String genre;
 
   public AdditionalInfo() {
   }
@@ -818,6 +822,25 @@ public class AdditionalInfo {
   }
 
 
+  public AdditionalInfo genre(String genre) {
+    this.genre = genre;
+    return this;
+  }
+
+  /**
+   * Get genre
+   * @return genre
+   */
+  @javax.annotation.Nullable
+  public String getGenre() {
+    return genre;
+  }
+
+  public void setGenre(String genre) {
+    this.genre = genre;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -858,12 +881,13 @@ public class AdditionalInfo {
         Objects.equals(this.youtubeId, additionalInfo.youtubeId) &&
         Objects.equals(this.albumartist, additionalInfo.albumartist) &&
         Objects.equals(this.comment, additionalInfo.comment) &&
-        Objects.equals(this.date, additionalInfo.date);
+        Objects.equals(this.date, additionalInfo.date) &&
+        Objects.equals(this.genre, additionalInfo.genre);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(mediaPlayer, mediaPlayerVersion, submissionClient, submissionClientVersion, musicService, musicServiceName, originUrl, releaseMbid, artistMbids, recordingMbid, recordingMsid, tags, duration, durationMs, tracknumber, releaseGroupMbid, trackMbid, workMbids, isrc, spotifyId, discnumber, listeningFrom, releaseArtistName, releaseArtistNames, spotifyAlbumArtistIds, spotifyAlbumId, spotifyArtistIds, youtubeId, albumartist, comment, date);
+    return Objects.hash(mediaPlayer, mediaPlayerVersion, submissionClient, submissionClientVersion, musicService, musicServiceName, originUrl, releaseMbid, artistMbids, recordingMbid, recordingMsid, tags, duration, durationMs, tracknumber, releaseGroupMbid, trackMbid, workMbids, isrc, spotifyId, discnumber, listeningFrom, releaseArtistName, releaseArtistNames, spotifyAlbumArtistIds, spotifyAlbumId, spotifyArtistIds, youtubeId, albumartist, comment, date, genre);
   }
 
   @Override
@@ -901,6 +925,7 @@ public class AdditionalInfo {
     sb.append("    albumartist: ").append(toIndentedString(albumartist)).append("\n");
     sb.append("    comment: ").append(toIndentedString(comment)).append("\n");
     sb.append("    date: ").append(toIndentedString(date)).append("\n");
+    sb.append("    genre: ").append(toIndentedString(genre)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -954,6 +979,7 @@ public class AdditionalInfo {
     openapiFields.add("albumartist");
     openapiFields.add("comment");
     openapiFields.add("date");
+    openapiFields.add("genre");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -1066,6 +1092,9 @@ public class AdditionalInfo {
       }
       if ((jsonObj.get("date") != null && !jsonObj.get("date").isJsonNull()) && !jsonObj.get("date").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `date` to be a primitive type in the JSON string but got `%s`", jsonObj.get("date").toString()));
+      }
+      if ((jsonObj.get("genre") != null && !jsonObj.get("genre").isJsonNull()) && !jsonObj.get("genre").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `genre` to be a primitive type in the JSON string but got `%s`", jsonObj.get("genre").toString()));
       }
   }
 
