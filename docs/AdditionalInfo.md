@@ -39,6 +39,8 @@
 |**comment** | **String** |  |  [optional] |
 |**date** | **String** |  |  [optional] |
 |**genre** | **String** |  |  [optional] |
+|**artistNames** | **List&lt;String&gt;** |  |  [optional] |
+|**trackNumber** | **String** |  |  [optional] |
 
 
 

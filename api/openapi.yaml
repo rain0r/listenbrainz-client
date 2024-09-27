@@ -3500,6 +3500,9 @@ components:
               release_name: release_name
               additional_info:
                 date: date
+                artist_names:
+                - artist_names
+                - artist_names
                 recording_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                 release_artist_name: release_artist_name
                 artist_mbids:
@@ -3517,6 +3520,7 @@ components:
                 media_player_version: media_player_version
                 origin_url: origin_url
                 submission_client: submission_client
+                trackNumber: trackNumber
                 spotify_id: spotify_id
                 spotify_album_id: spotify_album_id
                 submission_client_version: submission_client_version
@@ -3569,6 +3573,9 @@ components:
               release_name: release_name
               additional_info:
                 date: date
+                artist_names:
+                - artist_names
+                - artist_names
                 recording_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                 release_artist_name: release_artist_name
                 artist_mbids:
@@ -3586,6 +3593,7 @@ components:
                 media_player_version: media_player_version
                 origin_url: origin_url
                 submission_client: submission_client
+                trackNumber: trackNumber
                 spotify_id: spotify_id
                 spotify_album_id: spotify_album_id
                 submission_client_version: submission_client_version
@@ -3659,6 +3667,9 @@ components:
               release_name: release_name
               additional_info:
                 date: date
+                artist_names:
+                - artist_names
+                - artist_names
                 recording_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                 release_artist_name: release_artist_name
                 artist_mbids:
@@ -3676,6 +3687,7 @@ components:
                 media_player_version: media_player_version
                 origin_url: origin_url
                 submission_client: submission_client
+                trackNumber: trackNumber
                 spotify_id: spotify_id
                 spotify_album_id: spotify_album_id
                 submission_client_version: submission_client_version
@@ -3725,6 +3737,9 @@ components:
               release_name: release_name
               additional_info:
                 date: date
+                artist_names:
+                - artist_names
+                - artist_names
                 recording_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                 release_artist_name: release_artist_name
                 artist_mbids:
@@ -3742,6 +3757,7 @@ components:
                 media_player_version: media_player_version
                 origin_url: origin_url
                 submission_client: submission_client
+                trackNumber: trackNumber
                 spotify_id: spotify_id
                 spotify_album_id: spotify_album_id
                 submission_client_version: submission_client_version
@@ -5025,6 +5041,9 @@ components:
             release_name: release_name
             additional_info:
               date: date
+              artist_names:
+              - artist_names
+              - artist_names
               recording_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               release_artist_name: release_artist_name
               artist_mbids:
@@ -5042,6 +5061,7 @@ components:
               media_player_version: media_player_version
               origin_url: origin_url
               submission_client: submission_client
+              trackNumber: trackNumber
               spotify_id: spotify_id
               spotify_album_id: spotify_album_id
               submission_client_version: submission_client_version
@@ -5095,6 +5115,9 @@ components:
             release_name: release_name
             additional_info:
               date: date
+              artist_names:
+              - artist_names
+              - artist_names
               recording_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               release_artist_name: release_artist_name
               artist_mbids:
@@ -5112,6 +5135,7 @@ components:
               media_player_version: media_player_version
               origin_url: origin_url
               submission_client: submission_client
+              trackNumber: trackNumber
               spotify_id: spotify_id
               spotify_album_id: spotify_album_id
               submission_client_version: submission_client_version
@@ -5176,6 +5200,9 @@ components:
         release_name: release_name
         additional_info:
           date: date
+          artist_names:
+          - artist_names
+          - artist_names
           recording_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
           release_artist_name: release_artist_name
           artist_mbids:
@@ -5193,6 +5220,7 @@ components:
           media_player_version: media_player_version
           origin_url: origin_url
           submission_client: submission_client
+          trackNumber: trackNumber
           spotify_id: spotify_id
           spotify_album_id: spotify_album_id
           submission_client_version: submission_client_version
@@ -5266,6 +5294,9 @@ components:
             release_name: release_name
             additional_info:
               date: date
+              artist_names:
+              - artist_names
+              - artist_names
               recording_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               release_artist_name: release_artist_name
               artist_mbids:
@@ -5283,6 +5314,7 @@ components:
               media_player_version: media_player_version
               origin_url: origin_url
               submission_client: submission_client
+              trackNumber: trackNumber
               spotify_id: spotify_id
               spotify_album_id: spotify_album_id
               submission_client_version: submission_client_version
@@ -5337,6 +5369,9 @@ components:
             release_name: release_name
             additional_info:
               date: date
+              artist_names:
+              - artist_names
+              - artist_names
               recording_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               release_artist_name: release_artist_name
               artist_mbids:
@@ -5354,6 +5389,7 @@ components:
               media_player_version: media_player_version
               origin_url: origin_url
               submission_client: submission_client
+              trackNumber: trackNumber
               spotify_id: spotify_id
               spotify_album_id: spotify_album_id
               submission_client_version: submission_client_version
@@ -5666,6 +5702,9 @@ components:
                 release_name: release_name
                 additional_info:
                   date: date
+                  artist_names:
+                  - artist_names
+                  - artist_names
                   recording_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                   release_artist_name: release_artist_name
                   artist_mbids:
@@ -5683,6 +5722,7 @@ components:
                   media_player_version: media_player_version
                   origin_url: origin_url
                   submission_client: submission_client
+                  trackNumber: trackNumber
                   spotify_id: spotify_id
                   spotify_album_id: spotify_album_id
                   submission_client_version: submission_client_version
@@ -5747,6 +5787,9 @@ components:
                 release_name: release_name
                 additional_info:
                   date: date
+                  artist_names:
+                  - artist_names
+                  - artist_names
                   recording_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                   release_artist_name: release_artist_name
                   artist_mbids:
@@ -5764,6 +5807,7 @@ components:
                   media_player_version: media_player_version
                   origin_url: origin_url
                   submission_client: submission_client
+                  trackNumber: trackNumber
                   spotify_id: spotify_id
                   spotify_album_id: spotify_album_id
                   submission_client_version: submission_client_version
@@ -5838,6 +5882,9 @@ components:
                 release_name: release_name
                 additional_info:
                   date: date
+                  artist_names:
+                  - artist_names
+                  - artist_names
                   recording_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                   release_artist_name: release_artist_name
                   artist_mbids:
@@ -5855,6 +5902,7 @@ components:
                   media_player_version: media_player_version
                   origin_url: origin_url
                   submission_client: submission_client
+                  trackNumber: trackNumber
                   spotify_id: spotify_id
                   spotify_album_id: spotify_album_id
                   submission_client_version: submission_client_version
@@ -5919,6 +5967,9 @@ components:
                 release_name: release_name
                 additional_info:
                   date: date
+                  artist_names:
+                  - artist_names
+                  - artist_names
                   recording_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                   release_artist_name: release_artist_name
                   artist_mbids:
@@ -5936,6 +5987,7 @@ components:
                   media_player_version: media_player_version
                   origin_url: origin_url
                   submission_client: submission_client
+                  trackNumber: trackNumber
                   spotify_id: spotify_id
                   spotify_album_id: spotify_album_id
                   submission_client_version: submission_client_version
@@ -6399,6 +6451,9 @@ components:
           release_name: release_name
           additional_info:
             date: date
+            artist_names:
+            - artist_names
+            - artist_names
             recording_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
             release_artist_name: release_artist_name
             artist_mbids:
@@ -6416,6 +6471,7 @@ components:
             media_player_version: media_player_version
             origin_url: origin_url
             submission_client: submission_client
+            trackNumber: trackNumber
             spotify_id: spotify_id
             spotify_album_id: spotify_album_id
             submission_client_version: submission_client_version
@@ -6479,6 +6535,9 @@ components:
     additionalInfo:
       example:
         date: date
+        artist_names:
+        - artist_names
+        - artist_names
         recording_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
         release_artist_name: release_artist_name
         artist_mbids:
@@ -6496,6 +6555,7 @@ components:
         media_player_version: media_player_version
         origin_url: origin_url
         submission_client: submission_client
+        trackNumber: trackNumber
         spotify_id: spotify_id
         spotify_album_id: spotify_album_id
         submission_client_version: submission_client_version
@@ -6605,6 +6665,12 @@ components:
         date:
           type: string
         genre:
+          type: string
+        artist_names:
+          items:
+            type: string
+          type: array
+        trackNumber:
           type: string
       type: object
     mbidMapping:
@@ -6770,6 +6836,9 @@ components:
           release_name: release_name
           additional_info:
             date: date
+            artist_names:
+            - artist_names
+            - artist_names
             recording_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
             release_artist_name: release_artist_name
             artist_mbids:
@@ -6787,6 +6856,7 @@ components:
             media_player_version: media_player_version
             origin_url: origin_url
             submission_client: submission_client
+            trackNumber: trackNumber
             spotify_id: spotify_id
             spotify_album_id: spotify_album_id
             submission_client_version: submission_client_version
@@ -7001,6 +7071,9 @@ components:
           release_name: release_name
           additional_info:
             date: date
+            artist_names:
+            - artist_names
+            - artist_names
             recording_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
             release_artist_name: release_artist_name
             artist_mbids:
@@ -7018,6 +7091,7 @@ components:
             media_player_version: media_player_version
             origin_url: origin_url
             submission_client: submission_client
+            trackNumber: trackNumber
             spotify_id: spotify_id
             spotify_album_id: spotify_album_id
             submission_client_version: submission_client_version
@@ -7093,6 +7167,9 @@ components:
             release_name: release_name
             additional_info:
               date: date
+              artist_names:
+              - artist_names
+              - artist_names
               recording_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               release_artist_name: release_artist_name
               artist_mbids:
@@ -7110,6 +7187,7 @@ components:
               media_player_version: media_player_version
               origin_url: origin_url
               submission_client: submission_client
+              trackNumber: trackNumber
               spotify_id: spotify_id
               spotify_album_id: spotify_album_id
               submission_client_version: submission_client_version
@@ -7170,6 +7248,9 @@ components:
           release_name: release_name
           additional_info:
             date: date
+            artist_names:
+            - artist_names
+            - artist_names
             recording_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
             release_artist_name: release_artist_name
             artist_mbids:
@@ -7187,6 +7268,7 @@ components:
             media_player_version: media_player_version
             origin_url: origin_url
             submission_client: submission_client
+            trackNumber: trackNumber
             spotify_id: spotify_id
             spotify_album_id: spotify_album_id
             submission_client_version: submission_client_version
@@ -7262,6 +7344,9 @@ components:
             release_name: release_name
             additional_info:
               date: date
+              artist_names:
+              - artist_names
+              - artist_names
               recording_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               release_artist_name: release_artist_name
               artist_mbids:
@@ -7279,6 +7364,7 @@ components:
               media_player_version: media_player_version
               origin_url: origin_url
               submission_client: submission_client
+              trackNumber: trackNumber
               spotify_id: spotify_id
               spotify_album_id: spotify_album_id
               submission_client_version: submission_client_version
@@ -7544,6 +7630,9 @@ components:
           release_name: release_name
           additional_info:
             date: date
+            artist_names:
+            - artist_names
+            - artist_names
             recording_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
             release_artist_name: release_artist_name
             artist_mbids:
@@ -7561,6 +7650,7 @@ components:
             media_player_version: media_player_version
             origin_url: origin_url
             submission_client: submission_client
+            trackNumber: trackNumber
             spotify_id: spotify_id
             spotify_album_id: spotify_album_id
             submission_client_version: submission_client_version
@@ -7628,6 +7718,9 @@ components:
             release_name: release_name
             additional_info:
               date: date
+              artist_names:
+              - artist_names
+              - artist_names
               recording_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               release_artist_name: release_artist_name
               artist_mbids:
@@ -7645,6 +7738,7 @@ components:
               media_player_version: media_player_version
               origin_url: origin_url
               submission_client: submission_client
+              trackNumber: trackNumber
               spotify_id: spotify_id
               spotify_album_id: spotify_album_id
               submission_client_version: submission_client_version
@@ -7697,6 +7791,9 @@ components:
             release_name: release_name
             additional_info:
               date: date
+              artist_names:
+              - artist_names
+              - artist_names
               recording_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               release_artist_name: release_artist_name
               artist_mbids:
@@ -7714,6 +7811,7 @@ components:
               media_player_version: media_player_version
               origin_url: origin_url
               submission_client: submission_client
+              trackNumber: trackNumber
               spotify_id: spotify_id
               spotify_album_id: spotify_album_id
               submission_client_version: submission_client_version
@@ -7792,6 +7890,9 @@ components:
           release_name: release_name
           additional_info:
             date: date
+            artist_names:
+            - artist_names
+            - artist_names
             recording_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
             release_artist_name: release_artist_name
             artist_mbids:
@@ -7809,6 +7910,7 @@ components:
             media_player_version: media_player_version
             origin_url: origin_url
             submission_client: submission_client
+            trackNumber: trackNumber
             spotify_id: spotify_id
             spotify_album_id: spotify_album_id
             submission_client_version: submission_client_version
@@ -7867,6 +7969,9 @@ components:
             release_name: release_name
             additional_info:
               date: date
+              artist_names:
+              - artist_names
+              - artist_names
               recording_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               release_artist_name: release_artist_name
               artist_mbids:
@@ -7884,6 +7989,7 @@ components:
               media_player_version: media_player_version
               origin_url: origin_url
               submission_client: submission_client
+              trackNumber: trackNumber
               spotify_id: spotify_id
               spotify_album_id: spotify_album_id
               submission_client_version: submission_client_version
@@ -7933,6 +8039,9 @@ components:
             release_name: release_name
             additional_info:
               date: date
+              artist_names:
+              - artist_names
+              - artist_names
               recording_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               release_artist_name: release_artist_name
               artist_mbids:
@@ -7950,6 +8059,7 @@ components:
               media_player_version: media_player_version
               origin_url: origin_url
               submission_client: submission_client
+              trackNumber: trackNumber
               spotify_id: spotify_id
               spotify_album_id: spotify_album_id
               submission_client_version: submission_client_version
@@ -10176,6 +10286,9 @@ components:
           release_name: release_name
           additional_info:
             date: date
+            artist_names:
+            - artist_names
+            - artist_names
             recording_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
             release_artist_name: release_artist_name
             artist_mbids:
@@ -10193,6 +10306,7 @@ components:
             media_player_version: media_player_version
             origin_url: origin_url
             submission_client: submission_client
+            trackNumber: trackNumber
             spotify_id: spotify_id
             spotify_album_id: spotify_album_id
             submission_client_version: submission_client_version
@@ -11079,6 +11193,9 @@ components:
             release_name: release_name
             additional_info:
               date: date
+              artist_names:
+              - artist_names
+              - artist_names
               recording_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               release_artist_name: release_artist_name
               artist_mbids:
@@ -11096,6 +11213,7 @@ components:
               media_player_version: media_player_version
               origin_url: origin_url
               submission_client: submission_client
+              trackNumber: trackNumber
               spotify_id: spotify_id
               spotify_album_id: spotify_album_id
               submission_client_version: submission_client_version
@@ -11181,6 +11299,9 @@ components:
               release_name: release_name
               additional_info:
                 date: date
+                artist_names:
+                - artist_names
+                - artist_names
                 recording_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                 release_artist_name: release_artist_name
                 artist_mbids:
@@ -11198,6 +11319,7 @@ components:
                 media_player_version: media_player_version
                 origin_url: origin_url
                 submission_client: submission_client
+                trackNumber: trackNumber
                 spotify_id: spotify_id
                 spotify_album_id: spotify_album_id
                 submission_client_version: submission_client_version
@@ -11262,6 +11384,9 @@ components:
               release_name: release_name
               additional_info:
                 date: date
+                artist_names:
+                - artist_names
+                - artist_names
                 recording_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                 release_artist_name: release_artist_name
                 artist_mbids:
@@ -11279,6 +11404,7 @@ components:
                 media_player_version: media_player_version
                 origin_url: origin_url
                 submission_client: submission_client
+                trackNumber: trackNumber
                 spotify_id: spotify_id
                 spotify_album_id: spotify_album_id
                 submission_client_version: submission_client_version
@@ -11355,6 +11481,9 @@ components:
             release_name: release_name
             additional_info:
               date: date
+              artist_names:
+              - artist_names
+              - artist_names
               recording_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               release_artist_name: release_artist_name
               artist_mbids:
@@ -11372,6 +11501,7 @@ components:
               media_player_version: media_player_version
               origin_url: origin_url
               submission_client: submission_client
+              trackNumber: trackNumber
               spotify_id: spotify_id
               spotify_album_id: spotify_album_id
               submission_client_version: submission_client_version
@@ -11457,6 +11587,9 @@ components:
               release_name: release_name
               additional_info:
                 date: date
+                artist_names:
+                - artist_names
+                - artist_names
                 recording_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                 release_artist_name: release_artist_name
                 artist_mbids:
@@ -11474,6 +11607,7 @@ components:
                 media_player_version: media_player_version
                 origin_url: origin_url
                 submission_client: submission_client
+                trackNumber: trackNumber
                 spotify_id: spotify_id
                 spotify_album_id: spotify_album_id
                 submission_client_version: submission_client_version
@@ -11538,6 +11672,9 @@ components:
               release_name: release_name
               additional_info:
                 date: date
+                artist_names:
+                - artist_names
+                - artist_names
                 recording_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                 release_artist_name: release_artist_name
                 artist_mbids:
@@ -11555,6 +11692,7 @@ components:
                 media_player_version: media_player_version
                 origin_url: origin_url
                 submission_client: submission_client
+                trackNumber: trackNumber
                 spotify_id: spotify_id
                 spotify_album_id: spotify_album_id
                 submission_client_version: submission_client_version

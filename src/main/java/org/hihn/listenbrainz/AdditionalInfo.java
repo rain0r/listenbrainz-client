@@ -182,6 +182,14 @@ public class AdditionalInfo {
   @SerializedName(SERIALIZED_NAME_GENRE)
   private String genre;
 
+  public static final String SERIALIZED_NAME_ARTIST_NAMES = "artist_names";
+  @SerializedName(SERIALIZED_NAME_ARTIST_NAMES)
+  private List<String> artistNames = new ArrayList<>();
+
+  public static final String SERIALIZED_NAME_TRACK_NUMBER = "trackNumber";
+  @SerializedName(SERIALIZED_NAME_TRACK_NUMBER)
+  private String trackNumber;
+
   public AdditionalInfo() {
   }
 
@@ -841,6 +849,52 @@ public class AdditionalInfo {
   }
 
 
+  public AdditionalInfo artistNames(List<String> artistNames) {
+    this.artistNames = artistNames;
+    return this;
+  }
+
+  public AdditionalInfo addArtistNamesItem(String artistNamesItem) {
+    if (this.artistNames == null) {
+      this.artistNames = new ArrayList<>();
+    }
+    this.artistNames.add(artistNamesItem);
+    return this;
+  }
+
+  /**
+   * Get artistNames
+   * @return artistNames
+   */
+  @javax.annotation.Nullable
+  public List<String> getArtistNames() {
+    return artistNames;
+  }
+
+  public void setArtistNames(List<String> artistNames) {
+    this.artistNames = artistNames;
+  }
+
+
+  public AdditionalInfo trackNumber(String trackNumber) {
+    this.trackNumber = trackNumber;
+    return this;
+  }
+
+  /**
+   * Get trackNumber
+   * @return trackNumber
+   */
+  @javax.annotation.Nullable
+  public String getTrackNumber() {
+    return trackNumber;
+  }
+
+  public void setTrackNumber(String trackNumber) {
+    this.trackNumber = trackNumber;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -882,12 +936,14 @@ public class AdditionalInfo {
         Objects.equals(this.albumartist, additionalInfo.albumartist) &&
         Objects.equals(this.comment, additionalInfo.comment) &&
         Objects.equals(this.date, additionalInfo.date) &&
-        Objects.equals(this.genre, additionalInfo.genre);
+        Objects.equals(this.genre, additionalInfo.genre) &&
+        Objects.equals(this.artistNames, additionalInfo.artistNames) &&
+        Objects.equals(this.trackNumber, additionalInfo.trackNumber);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(mediaPlayer, mediaPlayerVersion, submissionClient, submissionClientVersion, musicService, musicServiceName, originUrl, releaseMbid, artistMbids, recordingMbid, recordingMsid, tags, duration, durationMs, tracknumber, releaseGroupMbid, trackMbid, workMbids, isrc, spotifyId, discnumber, listeningFrom, releaseArtistName, releaseArtistNames, spotifyAlbumArtistIds, spotifyAlbumId, spotifyArtistIds, youtubeId, albumartist, comment, date, genre);
+    return Objects.hash(mediaPlayer, mediaPlayerVersion, submissionClient, submissionClientVersion, musicService, musicServiceName, originUrl, releaseMbid, artistMbids, recordingMbid, recordingMsid, tags, duration, durationMs, tracknumber, releaseGroupMbid, trackMbid, workMbids, isrc, spotifyId, discnumber, listeningFrom, releaseArtistName, releaseArtistNames, spotifyAlbumArtistIds, spotifyAlbumId, spotifyArtistIds, youtubeId, albumartist, comment, date, genre, artistNames, trackNumber);
   }
 
   @Override
@@ -926,6 +982,8 @@ public class AdditionalInfo {
     sb.append("    comment: ").append(toIndentedString(comment)).append("\n");
     sb.append("    date: ").append(toIndentedString(date)).append("\n");
     sb.append("    genre: ").append(toIndentedString(genre)).append("\n");
+    sb.append("    artistNames: ").append(toIndentedString(artistNames)).append("\n");
+    sb.append("    trackNumber: ").append(toIndentedString(trackNumber)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -980,6 +1038,8 @@ public class AdditionalInfo {
     openapiFields.add("comment");
     openapiFields.add("date");
     openapiFields.add("genre");
+    openapiFields.add("artist_names");
+    openapiFields.add("trackNumber");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -1095,6 +1155,13 @@ public class AdditionalInfo {
       }
       if ((jsonObj.get("genre") != null && !jsonObj.get("genre").isJsonNull()) && !jsonObj.get("genre").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `genre` to be a primitive type in the JSON string but got `%s`", jsonObj.get("genre").toString()));
+      }
+      // ensure the optional json data is an array if present
+      if (jsonObj.get("artist_names") != null && !jsonObj.get("artist_names").isJsonNull() && !jsonObj.get("artist_names").isJsonArray()) {
+        throw new IllegalArgumentException(String.format("Expected the field `artist_names` to be an array in the JSON string but got `%s`", jsonObj.get("artist_names").toString()));
+      }
+      if ((jsonObj.get("trackNumber") != null && !jsonObj.get("trackNumber").isJsonNull()) && !jsonObj.get("trackNumber").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `trackNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("trackNumber").toString()));
       }
   }
 
