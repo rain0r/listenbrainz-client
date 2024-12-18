@@ -50,7 +50,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * GetManualMapping
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.10.0")
 public class GetManualMapping {
   public static final String SERIALIZED_NAME_MAPPING = "mapping";
   @SerializedName(SERIALIZED_NAME_MAPPING)

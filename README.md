@@ -14,7 +14,7 @@ This is generated code from the OpenAPI specification at [rain0r/listenbrainz-op
 
 ListenBrainz Swagger - OpenAPI 3.0
 - API version: v-2024-07-17.0
-  - Generator version: 7.8.0
+  - Generator version: 7.10.0
 
 OpenAPI client defintion.
 
@@ -52,7 +52,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>org.hihn</groupId>
   <artifactId>listenbrainz-client</artifactId>
-  <version>1.1.0-SNAPSHOT</version>
+  <version>1.2.0-SNAPSHOT</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -68,7 +68,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "org.hihn:listenbrainz-client:1.1.0-SNAPSHOT"
+     implementation "org.hihn:listenbrainz-client:1.2.0-SNAPSHOT"
   }
 ```
 
@@ -82,7 +82,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/listenbrainz-client-1.1.0-SNAPSHOT.jar`
+* `target/listenbrainz-client-1.2.0-SNAPSHOT.jar`
 * `target/lib/*.jar`
 
 ## Getting Started

@@ -53,7 +53,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * ListenersForReleaseGroupPayload
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.10.0")
 public class ListenersForReleaseGroupPayload {
   public static final String SERIALIZED_NAME_ARTIST_MBIDS = "artist_mbids";
   @SerializedName(SERIALIZED_NAME_ARTIST_MBIDS)

@@ -52,7 +52,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * SitewideArtistMapPayload
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.10.0")
 public class SitewideArtistMapPayload {
   public static final String SERIALIZED_NAME_ARTIST_MAP = "artist_map";
   @SerializedName(SERIALIZED_NAME_ARTIST_MAP)
@@ -66,9 +66,9 @@ public class SitewideArtistMapPayload {
   @SerializedName(SERIALIZED_NAME_LAST_UPDATED)
   private Integer lastUpdated;
 
-  public static final String SERIALIZED_NAME_RANGE = "range";
-  @SerializedName(SERIALIZED_NAME_RANGE)
-  private String range;
+  public static final String SERIALIZED_NAME_STATS_RANGE = "stats_range";
+  @SerializedName(SERIALIZED_NAME_STATS_RANGE)
+  private String statsRange;
 
   public static final String SERIALIZED_NAME_TO_TS = "to_ts";
   @SerializedName(SERIALIZED_NAME_TO_TS)
@@ -142,22 +142,22 @@ public class SitewideArtistMapPayload {
   }
 
 
-  public SitewideArtistMapPayload range(String range) {
-    this.range = range;
+  public SitewideArtistMapPayload statsRange(String statsRange) {
+    this.statsRange = statsRange;
     return this;
   }
 
   /**
-   * Get range
-   * @return range
+   * Get statsRange
+   * @return statsRange
    */
-  @javax.annotation.Nonnull
-  public String getRange() {
-    return range;
+  @javax.annotation.Nullable
+  public String getStatsRange() {
+    return statsRange;
   }
 
-  public void setRange(String range) {
-    this.range = range;
+  public void setStatsRange(String statsRange) {
+    this.statsRange = statsRange;
   }
 
 
@@ -193,13 +193,13 @@ public class SitewideArtistMapPayload {
     return Objects.equals(this.artistMap, sitewideArtistMapPayload.artistMap) &&
         Objects.equals(this.fromTs, sitewideArtistMapPayload.fromTs) &&
         Objects.equals(this.lastUpdated, sitewideArtistMapPayload.lastUpdated) &&
-        Objects.equals(this.range, sitewideArtistMapPayload.range) &&
+        Objects.equals(this.statsRange, sitewideArtistMapPayload.statsRange) &&
         Objects.equals(this.toTs, sitewideArtistMapPayload.toTs);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(artistMap, fromTs, lastUpdated, range, toTs);
+    return Objects.hash(artistMap, fromTs, lastUpdated, statsRange, toTs);
   }
 
   @Override
@@ -209,7 +209,7 @@ public class SitewideArtistMapPayload {
     sb.append("    artistMap: ").append(toIndentedString(artistMap)).append("\n");
     sb.append("    fromTs: ").append(toIndentedString(fromTs)).append("\n");
     sb.append("    lastUpdated: ").append(toIndentedString(lastUpdated)).append("\n");
-    sb.append("    range: ").append(toIndentedString(range)).append("\n");
+    sb.append("    statsRange: ").append(toIndentedString(statsRange)).append("\n");
     sb.append("    toTs: ").append(toIndentedString(toTs)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -236,7 +236,7 @@ public class SitewideArtistMapPayload {
     openapiFields.add("artist_map");
     openapiFields.add("from_ts");
     openapiFields.add("last_updated");
-    openapiFields.add("range");
+    openapiFields.add("stats_range");
     openapiFields.add("to_ts");
 
     // a set of required properties/fields (JSON key names)
@@ -244,7 +244,6 @@ public class SitewideArtistMapPayload {
     openapiRequiredFields.add("artist_map");
     openapiRequiredFields.add("from_ts");
     openapiRequiredFields.add("last_updated");
-    openapiRequiredFields.add("range");
     openapiRequiredFields.add("to_ts");
   }
 
@@ -286,8 +285,8 @@ public class SitewideArtistMapPayload {
       for (int i = 0; i < jsonArrayartistMap.size(); i++) {
         ArtistMapForUserPayloadArtistMapInner.validateJsonElement(jsonArrayartistMap.get(i));
       };
-      if (!jsonObj.get("range").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `range` to be a primitive type in the JSON string but got `%s`", jsonObj.get("range").toString()));
+      if ((jsonObj.get("stats_range") != null && !jsonObj.get("stats_range").isJsonNull()) && !jsonObj.get("stats_range").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `stats_range` to be a primitive type in the JSON string but got `%s`", jsonObj.get("stats_range").toString()));
       }
   }
 

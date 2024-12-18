@@ -52,7 +52,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * CreateCoverArtGrid
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.10.0")
 public class CreateCoverArtGrid {
   /**
    * The background for the cover art.

@@ -49,7 +49,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * SimilarUsersForUserPayloadInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.10.0")
 public class SimilarUsersForUserPayloadInner {
   public static final String SERIALIZED_NAME_SIMILARITY = "similarity";
   @SerializedName(SERIALIZED_NAME_SIMILARITY)

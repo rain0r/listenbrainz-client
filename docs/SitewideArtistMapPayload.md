@@ -10,7 +10,7 @@
 |**artistMap** | [**List&lt;ArtistMapForUserPayloadArtistMapInner&gt;**](ArtistMapForUserPayloadArtistMapInner.md) |  |  |
 |**fromTs** | **Integer** |  |  |
 |**lastUpdated** | **Integer** |  |  |
-|**range** | **String** |  |  |
+|**statsRange** | **String** |  |  [optional] |
 |**toTs** | **Integer** |  |  |
 
 
