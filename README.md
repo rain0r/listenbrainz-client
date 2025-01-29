@@ -52,7 +52,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>org.hihn</groupId>
   <artifactId>listenbrainz-client</artifactId>
-  <version>1.3.0-SNAPSHOT</version>
+  <version>1.3.0</version>
   <scope>compile</scope>
 </dependency>
 ```
