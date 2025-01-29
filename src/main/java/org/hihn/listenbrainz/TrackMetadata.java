@@ -255,10 +255,6 @@ public class TrackMetadata {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      // validate the optional field `additional_info`
-      if (jsonObj.get("additional_info") != null && !jsonObj.get("additional_info").isJsonNull()) {
-        AdditionalInfo.validateJsonElement(jsonObj.get("additional_info"));
-      }
       if ((jsonObj.get("artist_name") != null && !jsonObj.get("artist_name").isJsonNull()) && !jsonObj.get("artist_name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `artist_name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("artist_name").toString()));
       }
