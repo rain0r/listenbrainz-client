@@ -52,7 +52,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * ReleaseGroupMetadataArtist
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ReleaseGroupMetadataArtist {
   public static final String SERIALIZED_NAME_ARTIST_CREDIT_ID = "artist_credit_id";
   @SerializedName(SERIALIZED_NAME_ARTIST_CREDIT_ID)

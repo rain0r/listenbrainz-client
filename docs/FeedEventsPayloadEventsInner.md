@@ -14,6 +14,7 @@
 |**message** | **String** |  |  [optional] |
 |**metadata** | **Metadata** |  |  [optional] |
 |**userName** | **String** |  |  [optional] |
+|**similarity** | **BigDecimal** |  |  [optional] |
 
 
 

@@ -5771,6 +5771,7 @@ components:
             hidden: true
             created: 6
             user_name: user_name
+            similarity: 7.061401241503109
             id: 1
             message: message
           - metadata:
@@ -5856,6 +5857,7 @@ components:
             hidden: true
             created: 6
             user_name: user_name
+            similarity: 7.061401241503109
             id: 1
             message: message
       properties:
@@ -11264,6 +11266,7 @@ components:
         hidden: true
         created: 6
         user_name: user_name
+        similarity: 7.061401241503109
         id: 1
         message: message
       properties:
@@ -11281,6 +11284,8 @@ components:
           $ref: '#/components/schemas/metadata'
         user_name:
           type: string
+        similarity:
+          type: number
       type: object
     feedEvents_payload:
       example:
@@ -11370,6 +11375,7 @@ components:
           hidden: true
           created: 6
           user_name: user_name
+          similarity: 7.061401241503109
           id: 1
           message: message
         - metadata:
@@ -11455,6 +11461,7 @@ components:
           hidden: true
           created: 6
           user_name: user_name
+          similarity: 7.061401241503109
           id: 1
           message: message
       properties:

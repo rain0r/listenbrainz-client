@@ -52,7 +52,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * LbRadioPayload
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class LbRadioPayload {
   public static final String SERIALIZED_NAME_FEEDBACK = "feedback";
   @SerializedName(SERIALIZED_NAME_FEEDBACK)

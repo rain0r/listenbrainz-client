@@ -7,7 +7,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**httpsColonMusicbrainzOrgDocJspfHashTrack** | [**PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrack**](PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrack.md) |  |  |
+|**httpsMusicbrainzOrgDocJspfHashTrack** | [**PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrack**](PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrack.md) |  |  |
 
 
 

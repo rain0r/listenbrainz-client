@@ -7,7 +7,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**httpsColonMusicbrainzOrgDocJspfHashPlaylist** | [**PlaylistExtensionPayload**](PlaylistExtensionPayload.md) |  |  [optional] |
+|**httpsMusicbrainzOrgDocJspfHashPlaylist** | [**PlaylistExtensionPayload**](PlaylistExtensionPayload.md) |  |  [optional] |
 
 
 

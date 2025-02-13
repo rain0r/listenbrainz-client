@@ -50,31 +50,31 @@ import org.hihn.listenbrainz.JSON;
 /**
  * PlaylistTrackInnerExtension
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PlaylistTrackInnerExtension {
-  public static final String SERIALIZED_NAME_HTTPS_COLON_MUSICBRAINZ_ORG_DOC_JSPF_HASH_TRACK = "https://musicbrainz.org/doc/jspf#track";
-  @SerializedName(SERIALIZED_NAME_HTTPS_COLON_MUSICBRAINZ_ORG_DOC_JSPF_HASH_TRACK)
-  private PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrack httpsColonMusicbrainzOrgDocJspfHashTrack;
+  public static final String SERIALIZED_NAME_HTTPS_MUSICBRAINZ_ORG_DOC_JSPF_HASH_TRACK = "https://musicbrainz.org/doc/jspf#track";
+  @SerializedName(SERIALIZED_NAME_HTTPS_MUSICBRAINZ_ORG_DOC_JSPF_HASH_TRACK)
+  private PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrack httpsMusicbrainzOrgDocJspfHashTrack;
 
   public PlaylistTrackInnerExtension() {
   }
 
-  public PlaylistTrackInnerExtension httpsColonMusicbrainzOrgDocJspfHashTrack(PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrack httpsColonMusicbrainzOrgDocJspfHashTrack) {
-    this.httpsColonMusicbrainzOrgDocJspfHashTrack = httpsColonMusicbrainzOrgDocJspfHashTrack;
+  public PlaylistTrackInnerExtension httpsMusicbrainzOrgDocJspfHashTrack(PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrack httpsMusicbrainzOrgDocJspfHashTrack) {
+    this.httpsMusicbrainzOrgDocJspfHashTrack = httpsMusicbrainzOrgDocJspfHashTrack;
     return this;
   }
 
   /**
-   * Get httpsColonMusicbrainzOrgDocJspfHashTrack
-   * @return httpsColonMusicbrainzOrgDocJspfHashTrack
+   * Get httpsMusicbrainzOrgDocJspfHashTrack
+   * @return httpsMusicbrainzOrgDocJspfHashTrack
    */
   @javax.annotation.Nonnull
-  public PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrack getHttpsColonMusicbrainzOrgDocJspfHashTrack() {
-    return httpsColonMusicbrainzOrgDocJspfHashTrack;
+  public PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrack getHttpsMusicbrainzOrgDocJspfHashTrack() {
+    return httpsMusicbrainzOrgDocJspfHashTrack;
   }
 
-  public void setHttpsColonMusicbrainzOrgDocJspfHashTrack(PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrack httpsColonMusicbrainzOrgDocJspfHashTrack) {
-    this.httpsColonMusicbrainzOrgDocJspfHashTrack = httpsColonMusicbrainzOrgDocJspfHashTrack;
+  public void setHttpsMusicbrainzOrgDocJspfHashTrack(PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrack httpsMusicbrainzOrgDocJspfHashTrack) {
+    this.httpsMusicbrainzOrgDocJspfHashTrack = httpsMusicbrainzOrgDocJspfHashTrack;
   }
 
 
@@ -88,19 +88,19 @@ public class PlaylistTrackInnerExtension {
       return false;
     }
     PlaylistTrackInnerExtension playlistTrackInnerExtension = (PlaylistTrackInnerExtension) o;
-    return Objects.equals(this.httpsColonMusicbrainzOrgDocJspfHashTrack, playlistTrackInnerExtension.httpsColonMusicbrainzOrgDocJspfHashTrack);
+    return Objects.equals(this.httpsMusicbrainzOrgDocJspfHashTrack, playlistTrackInnerExtension.httpsMusicbrainzOrgDocJspfHashTrack);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(httpsColonMusicbrainzOrgDocJspfHashTrack);
+    return Objects.hash(httpsMusicbrainzOrgDocJspfHashTrack);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PlaylistTrackInnerExtension {\n");
-    sb.append("    httpsColonMusicbrainzOrgDocJspfHashTrack: ").append(toIndentedString(httpsColonMusicbrainzOrgDocJspfHashTrack)).append("\n");
+    sb.append("    httpsMusicbrainzOrgDocJspfHashTrack: ").append(toIndentedString(httpsMusicbrainzOrgDocJspfHashTrack)).append("\n");
     sb.append("}");
     return sb.toString();
   }

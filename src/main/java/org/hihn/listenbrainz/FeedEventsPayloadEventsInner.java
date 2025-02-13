@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.hihn.listenbrainz.Metadata;
 
@@ -50,7 +51,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * FeedEventsPayloadEventsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class FeedEventsPayloadEventsInner {
   public static final String SERIALIZED_NAME_CREATED = "created";
   @SerializedName(SERIALIZED_NAME_CREATED)
@@ -79,6 +80,10 @@ public class FeedEventsPayloadEventsInner {
   public static final String SERIALIZED_NAME_USER_NAME = "user_name";
   @SerializedName(SERIALIZED_NAME_USER_NAME)
   private String userName;
+
+  public static final String SERIALIZED_NAME_SIMILARITY = "similarity";
+  @SerializedName(SERIALIZED_NAME_SIMILARITY)
+  private BigDecimal similarity;
 
   public FeedEventsPayloadEventsInner() {
   }
@@ -216,6 +221,25 @@ public class FeedEventsPayloadEventsInner {
   }
 
 
+  public FeedEventsPayloadEventsInner similarity(BigDecimal similarity) {
+    this.similarity = similarity;
+    return this;
+  }
+
+  /**
+   * Get similarity
+   * @return similarity
+   */
+  @javax.annotation.Nullable
+  public BigDecimal getSimilarity() {
+    return similarity;
+  }
+
+  public void setSimilarity(BigDecimal similarity) {
+    this.similarity = similarity;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -232,12 +256,13 @@ public class FeedEventsPayloadEventsInner {
         Objects.equals(this.id, feedEventsPayloadEventsInner.id) &&
         Objects.equals(this.message, feedEventsPayloadEventsInner.message) &&
         Objects.equals(this.metadata, feedEventsPayloadEventsInner.metadata) &&
-        Objects.equals(this.userName, feedEventsPayloadEventsInner.userName);
+        Objects.equals(this.userName, feedEventsPayloadEventsInner.userName) &&
+        Objects.equals(this.similarity, feedEventsPayloadEventsInner.similarity);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(created, eventType, hidden, id, message, metadata, userName);
+    return Objects.hash(created, eventType, hidden, id, message, metadata, userName, similarity);
   }
 
   @Override
@@ -251,6 +276,7 @@ public class FeedEventsPayloadEventsInner {
     sb.append("    message: ").append(toIndentedString(message)).append("\n");
     sb.append("    metadata: ").append(toIndentedString(metadata)).append("\n");
     sb.append("    userName: ").append(toIndentedString(userName)).append("\n");
+    sb.append("    similarity: ").append(toIndentedString(similarity)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -280,6 +306,7 @@ public class FeedEventsPayloadEventsInner {
     openapiFields.add("message");
     openapiFields.add("metadata");
     openapiFields.add("user_name");
+    openapiFields.add("similarity");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

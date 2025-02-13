@@ -50,7 +50,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * DeleteFeedbackRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class DeleteFeedbackRequest {
   public static final String SERIALIZED_NAME_RECORDING_MBID = "recording_mbid";
   @SerializedName(SERIALIZED_NAME_RECORDING_MBID)

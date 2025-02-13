@@ -50,31 +50,31 @@ import org.hihn.listenbrainz.JSON;
 /**
  * PlaylistExtension
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PlaylistExtension {
-  public static final String SERIALIZED_NAME_HTTPS_COLON_MUSICBRAINZ_ORG_DOC_JSPF_HASH_PLAYLIST = "https://musicbrainz.org/doc/jspf#playlist";
-  @SerializedName(SERIALIZED_NAME_HTTPS_COLON_MUSICBRAINZ_ORG_DOC_JSPF_HASH_PLAYLIST)
-  private PlaylistExtensionPayload httpsColonMusicbrainzOrgDocJspfHashPlaylist;
+  public static final String SERIALIZED_NAME_HTTPS_MUSICBRAINZ_ORG_DOC_JSPF_HASH_PLAYLIST = "https://musicbrainz.org/doc/jspf#playlist";
+  @SerializedName(SERIALIZED_NAME_HTTPS_MUSICBRAINZ_ORG_DOC_JSPF_HASH_PLAYLIST)
+  private PlaylistExtensionPayload httpsMusicbrainzOrgDocJspfHashPlaylist;
 
   public PlaylistExtension() {
   }
 
-  public PlaylistExtension httpsColonMusicbrainzOrgDocJspfHashPlaylist(PlaylistExtensionPayload httpsColonMusicbrainzOrgDocJspfHashPlaylist) {
-    this.httpsColonMusicbrainzOrgDocJspfHashPlaylist = httpsColonMusicbrainzOrgDocJspfHashPlaylist;
+  public PlaylistExtension httpsMusicbrainzOrgDocJspfHashPlaylist(PlaylistExtensionPayload httpsMusicbrainzOrgDocJspfHashPlaylist) {
+    this.httpsMusicbrainzOrgDocJspfHashPlaylist = httpsMusicbrainzOrgDocJspfHashPlaylist;
     return this;
   }
 
   /**
-   * Get httpsColonMusicbrainzOrgDocJspfHashPlaylist
-   * @return httpsColonMusicbrainzOrgDocJspfHashPlaylist
+   * Get httpsMusicbrainzOrgDocJspfHashPlaylist
+   * @return httpsMusicbrainzOrgDocJspfHashPlaylist
    */
   @javax.annotation.Nullable
-  public PlaylistExtensionPayload getHttpsColonMusicbrainzOrgDocJspfHashPlaylist() {
-    return httpsColonMusicbrainzOrgDocJspfHashPlaylist;
+  public PlaylistExtensionPayload getHttpsMusicbrainzOrgDocJspfHashPlaylist() {
+    return httpsMusicbrainzOrgDocJspfHashPlaylist;
   }
 
-  public void setHttpsColonMusicbrainzOrgDocJspfHashPlaylist(PlaylistExtensionPayload httpsColonMusicbrainzOrgDocJspfHashPlaylist) {
-    this.httpsColonMusicbrainzOrgDocJspfHashPlaylist = httpsColonMusicbrainzOrgDocJspfHashPlaylist;
+  public void setHttpsMusicbrainzOrgDocJspfHashPlaylist(PlaylistExtensionPayload httpsMusicbrainzOrgDocJspfHashPlaylist) {
+    this.httpsMusicbrainzOrgDocJspfHashPlaylist = httpsMusicbrainzOrgDocJspfHashPlaylist;
   }
 
 
@@ -88,19 +88,19 @@ public class PlaylistExtension {
       return false;
     }
     PlaylistExtension playlistExtension = (PlaylistExtension) o;
-    return Objects.equals(this.httpsColonMusicbrainzOrgDocJspfHashPlaylist, playlistExtension.httpsColonMusicbrainzOrgDocJspfHashPlaylist);
+    return Objects.equals(this.httpsMusicbrainzOrgDocJspfHashPlaylist, playlistExtension.httpsMusicbrainzOrgDocJspfHashPlaylist);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(httpsColonMusicbrainzOrgDocJspfHashPlaylist);
+    return Objects.hash(httpsMusicbrainzOrgDocJspfHashPlaylist);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PlaylistExtension {\n");
-    sb.append("    httpsColonMusicbrainzOrgDocJspfHashPlaylist: ").append(toIndentedString(httpsColonMusicbrainzOrgDocJspfHashPlaylist)).append("\n");
+    sb.append("    httpsMusicbrainzOrgDocJspfHashPlaylist: ").append(toIndentedString(httpsMusicbrainzOrgDocJspfHashPlaylist)).append("\n");
     sb.append("}");
     return sb.toString();
   }
