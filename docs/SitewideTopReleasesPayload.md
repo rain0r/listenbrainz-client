@@ -14,6 +14,7 @@
 |**range** | **String** |  |  |
 |**releases** | [**List&lt;SitewideTopReleasesPayloadReleasesInner&gt;**](SitewideTopReleasesPayloadReleasesInner.md) |  |  |
 |**toTs** | **Integer** |  |  |
+|**totalReleaseCount** | **Integer** |  |  |
 
 
 

@@ -13,9 +13,9 @@
 
 package org.hihn.listenbrainz;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.12.0")
 public class Configuration {
-    public static final String VERSION = "1.4.0-SNAPSHOT";
+    public static final String VERSION = "1.5.0-SNAPSHOT";
 
     private static ApiClient defaultApiClient = new ApiClient();
 

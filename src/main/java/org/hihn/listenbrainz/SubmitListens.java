@@ -53,7 +53,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * SubmitListens
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.12.0")
 public class SubmitListens {
   public static final String SERIALIZED_NAME_LISTEN_TYPE = "listen_type";
   @SerializedName(SERIALIZED_NAME_LISTEN_TYPE)

@@ -52,7 +52,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * SitewideTopRecordingsPayload
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.12.0")
 public class SitewideTopRecordingsPayload {
   public static final String SERIALIZED_NAME_COUNT = "count";
   @SerializedName(SERIALIZED_NAME_COUNT)
@@ -81,6 +81,10 @@ public class SitewideTopRecordingsPayload {
   public static final String SERIALIZED_NAME_TO_TS = "to_ts";
   @SerializedName(SERIALIZED_NAME_TO_TS)
   private Integer toTs;
+
+  public static final String SERIALIZED_NAME_TOTAL_RECORDING_COUNT = "total_recording_count";
+  @SerializedName(SERIALIZED_NAME_TOTAL_RECORDING_COUNT)
+  private Integer totalRecordingCount;
 
   public SitewideTopRecordingsPayload() {
   }
@@ -226,6 +230,25 @@ public class SitewideTopRecordingsPayload {
   }
 
 
+  public SitewideTopRecordingsPayload totalRecordingCount(Integer totalRecordingCount) {
+    this.totalRecordingCount = totalRecordingCount;
+    return this;
+  }
+
+  /**
+   * Get totalRecordingCount
+   * @return totalRecordingCount
+   */
+  @javax.annotation.Nonnull
+  public Integer getTotalRecordingCount() {
+    return totalRecordingCount;
+  }
+
+  public void setTotalRecordingCount(Integer totalRecordingCount) {
+    this.totalRecordingCount = totalRecordingCount;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -242,12 +265,13 @@ public class SitewideTopRecordingsPayload {
         Objects.equals(this.offset, sitewideTopRecordingsPayload.offset) &&
         Objects.equals(this.range, sitewideTopRecordingsPayload.range) &&
         Objects.equals(this.recordings, sitewideTopRecordingsPayload.recordings) &&
-        Objects.equals(this.toTs, sitewideTopRecordingsPayload.toTs);
+        Objects.equals(this.toTs, sitewideTopRecordingsPayload.toTs) &&
+        Objects.equals(this.totalRecordingCount, sitewideTopRecordingsPayload.totalRecordingCount);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(count, fromTs, lastUpdated, offset, range, recordings, toTs);
+    return Objects.hash(count, fromTs, lastUpdated, offset, range, recordings, toTs, totalRecordingCount);
   }
 
   @Override
@@ -261,6 +285,7 @@ public class SitewideTopRecordingsPayload {
     sb.append("    range: ").append(toIndentedString(range)).append("\n");
     sb.append("    recordings: ").append(toIndentedString(recordings)).append("\n");
     sb.append("    toTs: ").append(toIndentedString(toTs)).append("\n");
+    sb.append("    totalRecordingCount: ").append(toIndentedString(totalRecordingCount)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -290,6 +315,7 @@ public class SitewideTopRecordingsPayload {
     openapiFields.add("range");
     openapiFields.add("recordings");
     openapiFields.add("to_ts");
+    openapiFields.add("total_recording_count");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -300,6 +326,7 @@ public class SitewideTopRecordingsPayload {
     openapiRequiredFields.add("range");
     openapiRequiredFields.add("recordings");
     openapiRequiredFields.add("to_ts");
+    openapiRequiredFields.add("total_recording_count");
   }
 
   /**

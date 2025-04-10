@@ -14,6 +14,7 @@
 |**range** | **String** |  |  |
 |**recordings** | [**List&lt;SitewideTopRecordingsPayloadRecordingsInner&gt;**](SitewideTopRecordingsPayloadRecordingsInner.md) |  |  |
 |**toTs** | **Integer** |  |  |
+|**totalRecordingCount** | **Integer** |  |  |
 
 
 

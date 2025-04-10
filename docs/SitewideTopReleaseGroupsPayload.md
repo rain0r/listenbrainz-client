@@ -14,6 +14,7 @@
 |**range** | **String** |  |  |
 |**releaseGroups** | [**List&lt;ReleaseGroupsInner&gt;**](ReleaseGroupsInner.md) |  |  |
 |**toTs** | **Integer** |  |  |
+|**totalReleaseGroupCount** | **Integer** |  |  |
 
 
 

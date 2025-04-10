@@ -50,7 +50,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * PlaylistExtensionPayloadAdditionalMetadata
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.12.0")
 public class PlaylistExtensionPayloadAdditionalMetadata {
   public static final String SERIALIZED_NAME_ALGORITHM_METADATA = "algorithm_metadata";
   @SerializedName(SERIALIZED_NAME_ALGORITHM_METADATA)

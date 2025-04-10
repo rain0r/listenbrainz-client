@@ -14,6 +14,7 @@
 |**offset** | **Integer** |  |  |
 |**range** | **String** |  |  |
 |**toTs** | **Integer** |  |  |
+|**totalArtistCount** | **Integer** |  |  |
 
 
 

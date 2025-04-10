@@ -52,7 +52,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * SitewideTopReleasesPayload
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.12.0")
 public class SitewideTopReleasesPayload {
   public static final String SERIALIZED_NAME_COUNT = "count";
   @SerializedName(SERIALIZED_NAME_COUNT)
@@ -81,6 +81,10 @@ public class SitewideTopReleasesPayload {
   public static final String SERIALIZED_NAME_TO_TS = "to_ts";
   @SerializedName(SERIALIZED_NAME_TO_TS)
   private Integer toTs;
+
+  public static final String SERIALIZED_NAME_TOTAL_RELEASE_COUNT = "total_release_count";
+  @SerializedName(SERIALIZED_NAME_TOTAL_RELEASE_COUNT)
+  private Integer totalReleaseCount;
 
   public SitewideTopReleasesPayload() {
   }
@@ -226,6 +230,25 @@ public class SitewideTopReleasesPayload {
   }
 
 
+  public SitewideTopReleasesPayload totalReleaseCount(Integer totalReleaseCount) {
+    this.totalReleaseCount = totalReleaseCount;
+    return this;
+  }
+
+  /**
+   * Get totalReleaseCount
+   * @return totalReleaseCount
+   */
+  @javax.annotation.Nonnull
+  public Integer getTotalReleaseCount() {
+    return totalReleaseCount;
+  }
+
+  public void setTotalReleaseCount(Integer totalReleaseCount) {
+    this.totalReleaseCount = totalReleaseCount;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -242,12 +265,13 @@ public class SitewideTopReleasesPayload {
         Objects.equals(this.offset, sitewideTopReleasesPayload.offset) &&
         Objects.equals(this.range, sitewideTopReleasesPayload.range) &&
         Objects.equals(this.releases, sitewideTopReleasesPayload.releases) &&
-        Objects.equals(this.toTs, sitewideTopReleasesPayload.toTs);
+        Objects.equals(this.toTs, sitewideTopReleasesPayload.toTs) &&
+        Objects.equals(this.totalReleaseCount, sitewideTopReleasesPayload.totalReleaseCount);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(count, fromTs, lastUpdated, offset, range, releases, toTs);
+    return Objects.hash(count, fromTs, lastUpdated, offset, range, releases, toTs, totalReleaseCount);
   }
 
   @Override
@@ -261,6 +285,7 @@ public class SitewideTopReleasesPayload {
     sb.append("    range: ").append(toIndentedString(range)).append("\n");
     sb.append("    releases: ").append(toIndentedString(releases)).append("\n");
     sb.append("    toTs: ").append(toIndentedString(toTs)).append("\n");
+    sb.append("    totalReleaseCount: ").append(toIndentedString(totalReleaseCount)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -290,6 +315,7 @@ public class SitewideTopReleasesPayload {
     openapiFields.add("range");
     openapiFields.add("releases");
     openapiFields.add("to_ts");
+    openapiFields.add("total_release_count");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -300,6 +326,7 @@ public class SitewideTopReleasesPayload {
     openapiRequiredFields.add("range");
     openapiRequiredFields.add("releases");
     openapiRequiredFields.add("to_ts");
+    openapiRequiredFields.add("total_release_count");
   }
 
   /**

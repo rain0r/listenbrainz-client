@@ -52,7 +52,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * SitewideTopReleaseGroupsPayload
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.12.0")
 public class SitewideTopReleaseGroupsPayload {
   public static final String SERIALIZED_NAME_COUNT = "count";
   @SerializedName(SERIALIZED_NAME_COUNT)
@@ -81,6 +81,10 @@ public class SitewideTopReleaseGroupsPayload {
   public static final String SERIALIZED_NAME_TO_TS = "to_ts";
   @SerializedName(SERIALIZED_NAME_TO_TS)
   private Integer toTs;
+
+  public static final String SERIALIZED_NAME_TOTAL_RELEASE_GROUP_COUNT = "total_release_group_count";
+  @SerializedName(SERIALIZED_NAME_TOTAL_RELEASE_GROUP_COUNT)
+  private Integer totalReleaseGroupCount;
 
   public SitewideTopReleaseGroupsPayload() {
   }
@@ -226,6 +230,25 @@ public class SitewideTopReleaseGroupsPayload {
   }
 
 
+  public SitewideTopReleaseGroupsPayload totalReleaseGroupCount(Integer totalReleaseGroupCount) {
+    this.totalReleaseGroupCount = totalReleaseGroupCount;
+    return this;
+  }
+
+  /**
+   * Get totalReleaseGroupCount
+   * @return totalReleaseGroupCount
+   */
+  @javax.annotation.Nonnull
+  public Integer getTotalReleaseGroupCount() {
+    return totalReleaseGroupCount;
+  }
+
+  public void setTotalReleaseGroupCount(Integer totalReleaseGroupCount) {
+    this.totalReleaseGroupCount = totalReleaseGroupCount;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -242,12 +265,13 @@ public class SitewideTopReleaseGroupsPayload {
         Objects.equals(this.offset, sitewideTopReleaseGroupsPayload.offset) &&
         Objects.equals(this.range, sitewideTopReleaseGroupsPayload.range) &&
         Objects.equals(this.releaseGroups, sitewideTopReleaseGroupsPayload.releaseGroups) &&
-        Objects.equals(this.toTs, sitewideTopReleaseGroupsPayload.toTs);
+        Objects.equals(this.toTs, sitewideTopReleaseGroupsPayload.toTs) &&
+        Objects.equals(this.totalReleaseGroupCount, sitewideTopReleaseGroupsPayload.totalReleaseGroupCount);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(count, fromTs, lastUpdated, offset, range, releaseGroups, toTs);
+    return Objects.hash(count, fromTs, lastUpdated, offset, range, releaseGroups, toTs, totalReleaseGroupCount);
   }
 
   @Override
@@ -261,6 +285,7 @@ public class SitewideTopReleaseGroupsPayload {
     sb.append("    range: ").append(toIndentedString(range)).append("\n");
     sb.append("    releaseGroups: ").append(toIndentedString(releaseGroups)).append("\n");
     sb.append("    toTs: ").append(toIndentedString(toTs)).append("\n");
+    sb.append("    totalReleaseGroupCount: ").append(toIndentedString(totalReleaseGroupCount)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -290,6 +315,7 @@ public class SitewideTopReleaseGroupsPayload {
     openapiFields.add("range");
     openapiFields.add("release_groups");
     openapiFields.add("to_ts");
+    openapiFields.add("total_release_group_count");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -300,6 +326,7 @@ public class SitewideTopReleaseGroupsPayload {
     openapiRequiredFields.add("range");
     openapiRequiredFields.add("release_groups");
     openapiRequiredFields.add("to_ts");
+    openapiRequiredFields.add("total_release_group_count");
   }
 
   /**

@@ -50,7 +50,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * SubmitListensPayloadInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.12.0")
 public class SubmitListensPayloadInner {
   public static final String SERIALIZED_NAME_LISTENED_AT = "listened_at";
   @SerializedName(SERIALIZED_NAME_LISTENED_AT)

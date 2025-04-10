@@ -51,7 +51,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * Following
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.12.0")
 public class Following {
   public static final String SERIALIZED_NAME_FOLLOWING = "following";
   @SerializedName(SERIALIZED_NAME_FOLLOWING)

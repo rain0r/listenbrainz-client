@@ -52,7 +52,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * SitewideTopArtistsPayload
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.12.0")
 public class SitewideTopArtistsPayload {
   public static final String SERIALIZED_NAME_ARTISTS = "artists";
   @SerializedName(SERIALIZED_NAME_ARTISTS)
@@ -81,6 +81,10 @@ public class SitewideTopArtistsPayload {
   public static final String SERIALIZED_NAME_TO_TS = "to_ts";
   @SerializedName(SERIALIZED_NAME_TO_TS)
   private Integer toTs;
+
+  public static final String SERIALIZED_NAME_TOTAL_ARTIST_COUNT = "total_artist_count";
+  @SerializedName(SERIALIZED_NAME_TOTAL_ARTIST_COUNT)
+  private Integer totalArtistCount;
 
   public SitewideTopArtistsPayload() {
   }
@@ -226,6 +230,25 @@ public class SitewideTopArtistsPayload {
   }
 
 
+  public SitewideTopArtistsPayload totalArtistCount(Integer totalArtistCount) {
+    this.totalArtistCount = totalArtistCount;
+    return this;
+  }
+
+  /**
+   * Get totalArtistCount
+   * @return totalArtistCount
+   */
+  @javax.annotation.Nonnull
+  public Integer getTotalArtistCount() {
+    return totalArtistCount;
+  }
+
+  public void setTotalArtistCount(Integer totalArtistCount) {
+    this.totalArtistCount = totalArtistCount;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -242,12 +265,13 @@ public class SitewideTopArtistsPayload {
         Objects.equals(this.lastUpdated, sitewideTopArtistsPayload.lastUpdated) &&
         Objects.equals(this.offset, sitewideTopArtistsPayload.offset) &&
         Objects.equals(this.range, sitewideTopArtistsPayload.range) &&
-        Objects.equals(this.toTs, sitewideTopArtistsPayload.toTs);
+        Objects.equals(this.toTs, sitewideTopArtistsPayload.toTs) &&
+        Objects.equals(this.totalArtistCount, sitewideTopArtistsPayload.totalArtistCount);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(artists, count, fromTs, lastUpdated, offset, range, toTs);
+    return Objects.hash(artists, count, fromTs, lastUpdated, offset, range, toTs, totalArtistCount);
   }
 
   @Override
@@ -261,6 +285,7 @@ public class SitewideTopArtistsPayload {
     sb.append("    offset: ").append(toIndentedString(offset)).append("\n");
     sb.append("    range: ").append(toIndentedString(range)).append("\n");
     sb.append("    toTs: ").append(toIndentedString(toTs)).append("\n");
+    sb.append("    totalArtistCount: ").append(toIndentedString(totalArtistCount)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -290,6 +315,7 @@ public class SitewideTopArtistsPayload {
     openapiFields.add("offset");
     openapiFields.add("range");
     openapiFields.add("to_ts");
+    openapiFields.add("total_artist_count");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -300,6 +326,7 @@ public class SitewideTopArtistsPayload {
     openapiRequiredFields.add("offset");
     openapiRequiredFields.add("range");
     openapiRequiredFields.add("to_ts");
+    openapiRequiredFields.add("total_artist_count");
   }
 
   /**

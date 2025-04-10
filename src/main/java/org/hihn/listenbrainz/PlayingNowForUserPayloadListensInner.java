@@ -50,7 +50,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * PlayingNowForUserPayloadListensInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.12.0")
 public class PlayingNowForUserPayloadListensInner {
   public static final String SERIALIZED_NAME_PLAYING_NOW = "playing_now";
   @SerializedName(SERIALIZED_NAME_PLAYING_NOW)

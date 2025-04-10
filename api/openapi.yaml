@@ -4414,6 +4414,7 @@ components:
           from_ts: 6
           count: 0
           range: range
+          total_artist_count: 2
       properties:
         payload:
           $ref: '#/components/schemas/sitewideTopArtists_payload'
@@ -4428,6 +4429,7 @@ components:
           to_ts: 7
           from_ts: 6
           count: 0
+          total_release_count: 9
           range: range
           releases:
           - listen_count: 2
@@ -4459,6 +4461,7 @@ components:
     sitewideTopReleaseGroups:
       example:
         payload:
+          total_release_group_count: 2
           last_updated: 1
           offset: 5
           to_ts: 5
@@ -4550,6 +4553,7 @@ components:
           from_ts: 6
           count: 0
           range: range
+          total_recording_count: 9
       properties:
         payload:
           $ref: '#/components/schemas/sitewideTopRecordings_payload'
@@ -9010,6 +9014,7 @@ components:
         from_ts: 6
         count: 0
         range: range
+        total_artist_count: 2
       properties:
         artists:
           items:
@@ -9027,6 +9032,8 @@ components:
           type: string
         to_ts:
           type: integer
+        total_artist_count:
+          type: integer
       required:
       - artists
       - count
@@ -9035,6 +9042,7 @@ components:
       - offset
       - range
       - to_ts
+      - total_artist_count
       type: object
     sitewideTopReleases_payload_releases_inner:
       example:
@@ -9079,6 +9087,7 @@ components:
         to_ts: 7
         from_ts: 6
         count: 0
+        total_release_count: 9
         range: range
         releases:
         - listen_count: 2
@@ -9118,6 +9127,8 @@ components:
           type: array
         to_ts:
           type: integer
+        total_release_count:
+          type: integer
       required:
       - count
       - from_ts
@@ -9126,9 +9137,11 @@ components:
       - range
       - releases
       - to_ts
+      - total_release_count
       type: object
     sitewideTopReleaseGroups_payload:
       example:
+        total_release_group_count: 2
         last_updated: 1
         offset: 5
         to_ts: 5
@@ -9193,6 +9206,8 @@ components:
           type: array
         to_ts:
           type: integer
+        total_release_group_count:
+          type: integer
       required:
       - count
       - from_ts
@@ -9201,6 +9216,7 @@ components:
       - range
       - release_groups
       - to_ts
+      - total_release_group_count
       type: object
     sitewideTopRecordings_payload_recordings_inner:
       example:
@@ -9285,6 +9301,7 @@ components:
         from_ts: 6
         count: 0
         range: range
+        total_recording_count: 9
       properties:
         count:
           type: integer
@@ -9302,6 +9319,8 @@ components:
           type: array
         to_ts:
           type: integer
+        total_recording_count:
+          type: integer
       required:
       - count
       - from_ts
@@ -9310,6 +9329,7 @@ components:
       - range
       - recordings
       - to_ts
+      - total_recording_count
       type: object
     sitewideListeningActivity_payload:
       example:
