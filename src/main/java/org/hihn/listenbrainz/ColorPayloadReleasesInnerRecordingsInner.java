@@ -50,7 +50,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * ColorPayloadReleasesInnerRecordingsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.12.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.13.0")
 public class ColorPayloadReleasesInnerRecordingsInner {
   public static final String SERIALIZED_NAME_TRACK_METADATA = "track_metadata";
   @SerializedName(SERIALIZED_NAME_TRACK_METADATA)

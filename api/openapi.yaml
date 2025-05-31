@@ -3564,6 +3564,10 @@ components:
                 - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                 - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                 release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+              brainzplayer_metadata:
+                release_name: release_name
+                artist_name: artist_name
+                track_name: track_name
               track_name: track_name
           - recording_msid: recording_msid
             listened_at: 5
@@ -3637,6 +3641,10 @@ components:
                 - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                 - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                 release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+              brainzplayer_metadata:
+                release_name: release_name
+                artist_name: artist_name
+                track_name: track_name
               track_name: track_name
           user_id: user_id
           latest_listen_ts: 6
@@ -3731,6 +3739,10 @@ components:
                 - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                 - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                 release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+              brainzplayer_metadata:
+                release_name: release_name
+                artist_name: artist_name
+                track_name: track_name
               track_name: track_name
           - playing_now: true
             track_metadata:
@@ -3801,6 +3813,10 @@ components:
                 - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                 - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                 release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+              brainzplayer_metadata:
+                release_name: release_name
+                artist_name: artist_name
+                track_name: track_name
               track_name: track_name
           playing_now: true
           user_id: user_id
@@ -3851,6 +3867,9 @@ components:
       example:
         latest_import: latest_import
         musicbrainz_id: musicbrainz_id
+        status:
+          count: 0
+          state: state
       properties:
         musicbrainz_id:
           description: the MusicBrainz ID of the user
@@ -3859,6 +3878,8 @@ components:
           description: the timestamp of the newest listen submitted in previous imports.
             Defaults to 0
           type: string
+        status:
+          $ref: '#/components/schemas/latestImport_status'
       required:
       - latest_import
       - musicbrainz_id
@@ -5109,6 +5130,10 @@ components:
               - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+            brainzplayer_metadata:
+              release_name: release_name
+              artist_name: artist_name
+              track_name: track_name
             track_name: track_name
         - score: 1
           recording_msid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
@@ -5183,6 +5208,10 @@ components:
               - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+            brainzplayer_metadata:
+              release_name: release_name
+              artist_name: artist_name
+              track_name: track_name
             track_name: track_name
         offset: 5
         total_count: 5
@@ -5268,12 +5297,18 @@ components:
           - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
           - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
           release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+        brainzplayer_metadata:
+          release_name: release_name
+          artist_name: artist_name
+          track_name: track_name
         track_name: track_name
       properties:
         additional_info:
           $ref: '#/components/schemas/additionalInfo'
         artist_name:
           type: string
+        brainzplayer_metadata:
+          $ref: '#/components/schemas/trackMetadata_brainzplayer_metadata'
         mbid_mapping:
           $ref: '#/components/schemas/mbidMapping'
         release_name:
@@ -5362,6 +5397,10 @@ components:
               - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+            brainzplayer_metadata:
+              release_name: release_name
+              artist_name: artist_name
+              track_name: track_name
             track_name: track_name
         - recording_msid: recording_msid
           pinned_until: 5
@@ -5437,6 +5476,10 @@ components:
               - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+            brainzplayer_metadata:
+              release_name: release_name
+              artist_name: artist_name
+              track_name: track_name
             track_name: track_name
       properties:
         count:
@@ -5770,6 +5813,10 @@ components:
                   - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                   - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                   release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+                brainzplayer_metadata:
+                  release_name: release_name
+                  artist_name: artist_name
+                  track_name: track_name
                 track_name: track_name
             event_type: event_type
             hidden: true
@@ -5856,6 +5903,10 @@ components:
                   - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                   - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                   release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+                brainzplayer_metadata:
+                  release_name: release_name
+                  artist_name: artist_name
+                  track_name: track_name
                 track_name: track_name
             event_type: event_type
             hidden: true
@@ -5952,6 +6003,10 @@ components:
                   - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                   - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                   release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+                brainzplayer_metadata:
+                  release_name: release_name
+                  artist_name: artist_name
+                  track_name: track_name
                 track_name: track_name
             event_type: event_type
             hidden: true
@@ -6037,6 +6092,10 @@ components:
                   - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                   - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                   release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+                brainzplayer_metadata:
+                  release_name: release_name
+                  artist_name: artist_name
+                  track_name: track_name
                 track_name: track_name
             event_type: event_type
             hidden: true
@@ -6521,6 +6580,10 @@ components:
             - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
             - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
             release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+          brainzplayer_metadata:
+            release_name: release_name
+            artist_name: artist_name
+            track_name: track_name
           track_name: track_name
       properties:
         created:
@@ -6908,6 +6971,10 @@ components:
             - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
             - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
             release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+          brainzplayer_metadata:
+            release_name: release_name
+            artist_name: artist_name
+            track_name: track_name
           track_name: track_name
       properties:
         created:
@@ -7143,6 +7210,10 @@ components:
             - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
             - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
             release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+          brainzplayer_metadata:
+            release_name: release_name
+            artist_name: artist_name
+            track_name: track_name
           track_name: track_name
       properties:
         created:
@@ -7239,6 +7310,10 @@ components:
               - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+            brainzplayer_metadata:
+              release_name: release_name
+              artist_name: artist_name
+              track_name: track_name
             track_name: track_name
       properties:
         pinned_recording:
@@ -7320,6 +7395,10 @@ components:
             - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
             - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
             release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+          brainzplayer_metadata:
+            release_name: release_name
+            artist_name: artist_name
+            track_name: track_name
           track_name: track_name
       properties:
         blurb_content:
@@ -7416,6 +7495,10 @@ components:
               - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+            brainzplayer_metadata:
+              release_name: release_name
+              artist_name: artist_name
+              track_name: track_name
             track_name: track_name
         user_name: user_name
       properties:
@@ -7702,6 +7785,10 @@ components:
             - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
             - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
             release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+          brainzplayer_metadata:
+            release_name: release_name
+            artist_name: artist_name
+            track_name: track_name
           track_name: track_name
       properties:
         inserted_at:
@@ -7790,6 +7877,10 @@ components:
               - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+            brainzplayer_metadata:
+              release_name: release_name
+              artist_name: artist_name
+              track_name: track_name
             track_name: track_name
         - recording_msid: recording_msid
           listened_at: 5
@@ -7863,6 +7954,10 @@ components:
               - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+            brainzplayer_metadata:
+              release_name: release_name
+              artist_name: artist_name
+              track_name: track_name
             track_name: track_name
         user_id: user_id
         latest_listen_ts: 6
@@ -7962,6 +8057,10 @@ components:
             - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
             - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
             release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+          brainzplayer_metadata:
+            release_name: release_name
+            artist_name: artist_name
+            track_name: track_name
           track_name: track_name
       properties:
         playing_now:
@@ -8041,6 +8140,10 @@ components:
               - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+            brainzplayer_metadata:
+              release_name: release_name
+              artist_name: artist_name
+              track_name: track_name
             track_name: track_name
         - playing_now: true
           track_metadata:
@@ -8111,6 +8214,10 @@ components:
               - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+            brainzplayer_metadata:
+              release_name: release_name
+              artist_name: artist_name
+              track_name: track_name
             track_name: track_name
         playing_now: true
         user_id: user_id
@@ -8154,6 +8261,19 @@ components:
       required:
       - similarity
       - user_name
+      type: object
+    latestImport_status:
+      example:
+        count: 0
+        state: state
+      properties:
+        state:
+          description: a short string denoting the state of the import
+          type: string
+        count:
+          description: the number of listens that have been imported for the user
+            by the importer
+          type: integer
       type: object
     lbRadioRecordingsForArtist_value_inner:
       properties:
@@ -10298,6 +10418,19 @@ components:
         title:
           type: string
       type: object
+    trackMetadata_brainzplayer_metadata:
+      example:
+        release_name: release_name
+        artist_name: artist_name
+        track_name: track_name
+      properties:
+        artist_name:
+          type: string
+        release_name:
+          type: string
+        track_name:
+          type: string
+      type: object
     getPins_pinned_recordings_inner:
       example:
         recording_msid: recording_msid
@@ -10374,6 +10507,10 @@ components:
             - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
             - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
             release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+          brainzplayer_metadata:
+            release_name: release_name
+            artist_name: artist_name
+            track_name: track_name
           track_name: track_name
       properties:
         blurb_content:
@@ -11281,6 +11418,10 @@ components:
               - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+            brainzplayer_metadata:
+              release_name: release_name
+              artist_name: artist_name
+              track_name: track_name
             track_name: track_name
         event_type: event_type
         hidden: true
@@ -11390,6 +11531,10 @@ components:
                 - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                 - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                 release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+              brainzplayer_metadata:
+                release_name: release_name
+                artist_name: artist_name
+                track_name: track_name
               track_name: track_name
           event_type: event_type
           hidden: true
@@ -11476,6 +11621,10 @@ components:
                 - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                 - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                 release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+              brainzplayer_metadata:
+                release_name: release_name
+                artist_name: artist_name
+                track_name: track_name
               track_name: track_name
           event_type: event_type
           hidden: true
@@ -11574,6 +11723,10 @@ components:
               - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
               release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+            brainzplayer_metadata:
+              release_name: release_name
+              artist_name: artist_name
+              track_name: track_name
             track_name: track_name
         event_type: event_type
         hidden: true
@@ -11680,6 +11833,10 @@ components:
                 - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                 - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                 release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+              brainzplayer_metadata:
+                release_name: release_name
+                artist_name: artist_name
+                track_name: track_name
               track_name: track_name
           event_type: event_type
           hidden: true
@@ -11765,6 +11922,10 @@ components:
                 - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                 - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
                 release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+              brainzplayer_metadata:
+                release_name: release_name
+                artist_name: artist_name
+                track_name: track_name
               track_name: track_name
           event_type: event_type
           hidden: true

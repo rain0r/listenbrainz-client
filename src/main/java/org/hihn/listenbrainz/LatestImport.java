@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
+import org.hihn.listenbrainz.LatestImportStatus;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -49,7 +50,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * LatestImport
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.12.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.13.0")
 public class LatestImport {
   public static final String SERIALIZED_NAME_MUSICBRAINZ_ID = "musicbrainz_id";
   @SerializedName(SERIALIZED_NAME_MUSICBRAINZ_ID)
@@ -58,6 +59,10 @@ public class LatestImport {
   public static final String SERIALIZED_NAME_LATEST_IMPORT = "latest_import";
   @SerializedName(SERIALIZED_NAME_LATEST_IMPORT)
   private String latestImport;
+
+  public static final String SERIALIZED_NAME_STATUS = "status";
+  @SerializedName(SERIALIZED_NAME_STATUS)
+  private LatestImportStatus status;
 
   public LatestImport() {
   }
@@ -100,6 +105,25 @@ public class LatestImport {
   }
 
 
+  public LatestImport status(LatestImportStatus status) {
+    this.status = status;
+    return this;
+  }
+
+  /**
+   * Get status
+   * @return status
+   */
+  @javax.annotation.Nullable
+  public LatestImportStatus getStatus() {
+    return status;
+  }
+
+  public void setStatus(LatestImportStatus status) {
+    this.status = status;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -111,12 +135,13 @@ public class LatestImport {
     }
     LatestImport latestImport = (LatestImport) o;
     return Objects.equals(this.musicbrainzId, latestImport.musicbrainzId) &&
-        Objects.equals(this.latestImport, latestImport.latestImport);
+        Objects.equals(this.latestImport, latestImport.latestImport) &&
+        Objects.equals(this.status, latestImport.status);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(musicbrainzId, latestImport);
+    return Objects.hash(musicbrainzId, latestImport, status);
   }
 
   @Override
@@ -125,6 +150,7 @@ public class LatestImport {
     sb.append("class LatestImport {\n");
     sb.append("    musicbrainzId: ").append(toIndentedString(musicbrainzId)).append("\n");
     sb.append("    latestImport: ").append(toIndentedString(latestImport)).append("\n");
+    sb.append("    status: ").append(toIndentedString(status)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -149,6 +175,7 @@ public class LatestImport {
     openapiFields = new HashSet<String>();
     openapiFields.add("musicbrainz_id");
     openapiFields.add("latest_import");
+    openapiFields.add("status");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -189,6 +216,10 @@ public class LatestImport {
       }
       if (!jsonObj.get("latest_import").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `latest_import` to be a primitive type in the JSON string but got `%s`", jsonObj.get("latest_import").toString()));
+      }
+      // validate the optional field `status`
+      if (jsonObj.get("status") != null && !jsonObj.get("status").isJsonNull()) {
+        LatestImportStatus.validateJsonElement(jsonObj.get("status"));
       }
   }
 

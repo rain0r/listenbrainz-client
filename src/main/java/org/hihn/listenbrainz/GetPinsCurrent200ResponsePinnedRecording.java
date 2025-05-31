@@ -51,7 +51,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * GetPinsCurrent200ResponsePinnedRecording
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.12.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.13.0")
 public class GetPinsCurrent200ResponsePinnedRecording {
   public static final String SERIALIZED_NAME_BLURB_CONTENT = "blurb_content";
   @SerializedName(SERIALIZED_NAME_BLURB_CONTENT)

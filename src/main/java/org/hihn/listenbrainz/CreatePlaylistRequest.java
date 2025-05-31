@@ -50,7 +50,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * CreatePlaylistRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.12.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.13.0")
 public class CreatePlaylistRequest {
   public static final String SERIALIZED_NAME_PLAYLIST = "playlist";
   @SerializedName(SERIALIZED_NAME_PLAYLIST)

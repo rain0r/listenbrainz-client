@@ -14,7 +14,7 @@ This is generated code from the OpenAPI specification at [rain0r/listenbrainz-op
 
 ListenBrainz Swagger - OpenAPI 3.0
 - API version: v-2024-07-17.0
-  - Generator version: 7.12.0
+  - Generator version: 7.13.0
 
 OpenAPI client defintion.
 
@@ -52,7 +52,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>org.hihn</groupId>
   <artifactId>listenbrainz-client</artifactId>
-  <version>1.5.0</version>
+  <version>1.6.0-SNAPSHOT</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -68,7 +68,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "org.hihn:listenbrainz-client:1.5.0"
+     implementation "org.hihn:listenbrainz-client:1.6.0-SNAPSHOT"
   }
 ```
 
@@ -82,7 +82,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/listenbrainz-client-1.5.0.jar`
+* `target/listenbrainz-client-1.6.0-SNAPSHOT.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
@@ -280,6 +280,7 @@ Class | Method | HTTP request | Description
  - [GetPinsPinnedRecordingsInner](docs/GetPinsPinnedRecordingsInner.md)
  - [ItemDeleteRequest](docs/ItemDeleteRequest.md)
  - [LatestImport](docs/LatestImport.md)
+ - [LatestImportStatus](docs/LatestImportStatus.md)
  - [LbRadio](docs/LbRadio.md)
  - [LbRadioPayload](docs/LbRadioPayload.md)
  - [LbRadioRecordingsForArtistValueInner](docs/LbRadioRecordingsForArtistValueInner.md)
@@ -402,6 +403,7 @@ Class | Method | HTTP request | Description
  - [TopReleasesForUserPayloadReleasesInner](docs/TopReleasesForUserPayloadReleasesInner.md)
  - [TopReleasesForUserPayloadReleasesInnerArtistsInner](docs/TopReleasesForUserPayloadReleasesInnerArtistsInner.md)
  - [TrackMetadata](docs/TrackMetadata.md)
+ - [TrackMetadataBrainzplayerMetadata](docs/TrackMetadataBrainzplayerMetadata.md)
  - [UpdatePinRequest](docs/UpdatePinRequest.md)
  - [ValidateToken](docs/ValidateToken.md)
  - [YearInMusicForUser](docs/YearInMusicForUser.md)

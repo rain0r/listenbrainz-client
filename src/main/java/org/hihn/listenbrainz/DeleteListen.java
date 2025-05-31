@@ -49,7 +49,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * DeleteListen
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.12.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.13.0")
 public class DeleteListen {
   public static final String SERIALIZED_NAME_LISTENED_AT = "listened_at";
   @SerializedName(SERIALIZED_NAME_LISTENED_AT)

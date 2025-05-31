@@ -145,6 +145,7 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new org.hihn.listenbrainz.GetPinsPinnedRecordingsInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.hihn.listenbrainz.ItemDeleteRequest.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.hihn.listenbrainz.LatestImport.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new org.hihn.listenbrainz.LatestImportStatus.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.hihn.listenbrainz.LbRadio.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.hihn.listenbrainz.LbRadioPayload.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.hihn.listenbrainz.LbRadioRecordingsForArtistValueInner.CustomTypeAdapterFactory());
@@ -264,6 +265,7 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new org.hihn.listenbrainz.TopReleasesForUserPayloadReleasesInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.hihn.listenbrainz.TopReleasesForUserPayloadReleasesInnerArtistsInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.hihn.listenbrainz.TrackMetadata.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new org.hihn.listenbrainz.TrackMetadataBrainzplayerMetadata.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.hihn.listenbrainz.UpdatePinRequest.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.hihn.listenbrainz.ValidateToken.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.hihn.listenbrainz.YearInMusicForUser.CustomTypeAdapterFactory());

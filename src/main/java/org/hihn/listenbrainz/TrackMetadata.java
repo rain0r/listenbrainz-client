@@ -23,6 +23,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import org.hihn.listenbrainz.AdditionalInfo;
 import org.hihn.listenbrainz.MbidMapping;
+import org.hihn.listenbrainz.TrackMetadataBrainzplayerMetadata;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -51,7 +52,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * TrackMetadata
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.12.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.13.0")
 public class TrackMetadata {
   public static final String SERIALIZED_NAME_ADDITIONAL_INFO = "additional_info";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_INFO)
@@ -60,6 +61,10 @@ public class TrackMetadata {
   public static final String SERIALIZED_NAME_ARTIST_NAME = "artist_name";
   @SerializedName(SERIALIZED_NAME_ARTIST_NAME)
   private String artistName;
+
+  public static final String SERIALIZED_NAME_BRAINZPLAYER_METADATA = "brainzplayer_metadata";
+  @SerializedName(SERIALIZED_NAME_BRAINZPLAYER_METADATA)
+  private TrackMetadataBrainzplayerMetadata brainzplayerMetadata;
 
   public static final String SERIALIZED_NAME_MBID_MAPPING = "mbid_mapping";
   @SerializedName(SERIALIZED_NAME_MBID_MAPPING)
@@ -111,6 +116,25 @@ public class TrackMetadata {
 
   public void setArtistName(String artistName) {
     this.artistName = artistName;
+  }
+
+
+  public TrackMetadata brainzplayerMetadata(TrackMetadataBrainzplayerMetadata brainzplayerMetadata) {
+    this.brainzplayerMetadata = brainzplayerMetadata;
+    return this;
+  }
+
+  /**
+   * Get brainzplayerMetadata
+   * @return brainzplayerMetadata
+   */
+  @javax.annotation.Nullable
+  public TrackMetadataBrainzplayerMetadata getBrainzplayerMetadata() {
+    return brainzplayerMetadata;
+  }
+
+  public void setBrainzplayerMetadata(TrackMetadataBrainzplayerMetadata brainzplayerMetadata) {
+    this.brainzplayerMetadata = brainzplayerMetadata;
   }
 
 
@@ -183,6 +207,7 @@ public class TrackMetadata {
     TrackMetadata trackMetadata = (TrackMetadata) o;
     return Objects.equals(this.additionalInfo, trackMetadata.additionalInfo) &&
         Objects.equals(this.artistName, trackMetadata.artistName) &&
+        Objects.equals(this.brainzplayerMetadata, trackMetadata.brainzplayerMetadata) &&
         Objects.equals(this.mbidMapping, trackMetadata.mbidMapping) &&
         Objects.equals(this.releaseName, trackMetadata.releaseName) &&
         Objects.equals(this.trackName, trackMetadata.trackName);
@@ -190,7 +215,7 @@ public class TrackMetadata {
 
   @Override
   public int hashCode() {
-    return Objects.hash(additionalInfo, artistName, mbidMapping, releaseName, trackName);
+    return Objects.hash(additionalInfo, artistName, brainzplayerMetadata, mbidMapping, releaseName, trackName);
   }
 
   @Override
@@ -199,6 +224,7 @@ public class TrackMetadata {
     sb.append("class TrackMetadata {\n");
     sb.append("    additionalInfo: ").append(toIndentedString(additionalInfo)).append("\n");
     sb.append("    artistName: ").append(toIndentedString(artistName)).append("\n");
+    sb.append("    brainzplayerMetadata: ").append(toIndentedString(brainzplayerMetadata)).append("\n");
     sb.append("    mbidMapping: ").append(toIndentedString(mbidMapping)).append("\n");
     sb.append("    releaseName: ").append(toIndentedString(releaseName)).append("\n");
     sb.append("    trackName: ").append(toIndentedString(trackName)).append("\n");
@@ -226,6 +252,7 @@ public class TrackMetadata {
     openapiFields = new HashSet<String>();
     openapiFields.add("additional_info");
     openapiFields.add("artist_name");
+    openapiFields.add("brainzplayer_metadata");
     openapiFields.add("mbid_mapping");
     openapiFields.add("release_name");
     openapiFields.add("track_name");
@@ -257,6 +284,10 @@ public class TrackMetadata {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("artist_name") != null && !jsonObj.get("artist_name").isJsonNull()) && !jsonObj.get("artist_name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `artist_name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("artist_name").toString()));
+      }
+      // validate the optional field `brainzplayer_metadata`
+      if (jsonObj.get("brainzplayer_metadata") != null && !jsonObj.get("brainzplayer_metadata").isJsonNull()) {
+        TrackMetadataBrainzplayerMetadata.validateJsonElement(jsonObj.get("brainzplayer_metadata"));
       }
       // validate the optional field `mbid_mapping`
       if (jsonObj.get("mbid_mapping") != null && !jsonObj.get("mbid_mapping").isJsonNull()) {

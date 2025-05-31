@@ -60,6 +60,7 @@ docs/GetPinsCurrent200ResponsePinnedRecording.md
 docs/GetPinsPinnedRecordingsInner.md
 docs/ItemDeleteRequest.md
 docs/LatestImport.md
+docs/LatestImportStatus.md
 docs/LbArtApi.md
 docs/LbCoreApi.md
 docs/LbMetadataApi.md
@@ -192,6 +193,7 @@ docs/TopReleasesForUserPayload.md
 docs/TopReleasesForUserPayloadReleasesInner.md
 docs/TopReleasesForUserPayloadReleasesInnerArtistsInner.md
 docs/TrackMetadata.md
+docs/TrackMetadataBrainzplayerMetadata.md
 docs/UpdatePinRequest.md
 docs/ValidateToken.md
 docs/YearInMusicForUser.md
@@ -272,6 +274,7 @@ src/main/java/org/hihn/listenbrainz/GzipRequestInterceptor.java
 src/main/java/org/hihn/listenbrainz/ItemDeleteRequest.java
 src/main/java/org/hihn/listenbrainz/JSON.java
 src/main/java/org/hihn/listenbrainz/LatestImport.java
+src/main/java/org/hihn/listenbrainz/LatestImportStatus.java
 src/main/java/org/hihn/listenbrainz/LbArtApi.java
 src/main/java/org/hihn/listenbrainz/LbCoreApi.java
 src/main/java/org/hihn/listenbrainz/LbMetadataApi.java
@@ -410,6 +413,7 @@ src/main/java/org/hihn/listenbrainz/TopReleasesForUserPayload.java
 src/main/java/org/hihn/listenbrainz/TopReleasesForUserPayloadReleasesInner.java
 src/main/java/org/hihn/listenbrainz/TopReleasesForUserPayloadReleasesInnerArtistsInner.java
 src/main/java/org/hihn/listenbrainz/TrackMetadata.java
+src/main/java/org/hihn/listenbrainz/TrackMetadataBrainzplayerMetadata.java
 src/main/java/org/hihn/listenbrainz/UpdatePinRequest.java
 src/main/java/org/hihn/listenbrainz/ValidateToken.java
 src/main/java/org/hihn/listenbrainz/YearInMusicForUser.java
@@ -422,3 +426,5 @@ src/main/java/org/hihn/listenbrainz/auth/ApiKeyAuth.java
 src/main/java/org/hihn/listenbrainz/auth/Authentication.java
 src/main/java/org/hihn/listenbrainz/auth/HttpBasicAuth.java
 src/main/java/org/hihn/listenbrainz/auth/HttpBearerAuth.java
+src/test/java/org/hihn/listenbrainz/LatestImportStatusTest.java
+src/test/java/org/hihn/listenbrainz/TrackMetadataBrainzplayerMetadataTest.java
