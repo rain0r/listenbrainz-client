@@ -52,7 +52,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * TopArtistsForUserPayload
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.14.0")
 public class TopArtistsForUserPayload {
   public static final String SERIALIZED_NAME_ARTISTS = "artists";
   @SerializedName(SERIALIZED_NAME_ARTISTS)

@@ -176,6 +176,7 @@ docs/TopArtistsForUserPayload.md
 docs/TopArtistsForUserPayloadArtistsInner.md
 docs/TopRecordingsForArtistInner.md
 docs/TopRecordingsForArtistInnerReleaseColor.md
+docs/TopRecordingsForArtistInnerTagsInner.md
 docs/TopRecordingsForUser.md
 docs/TopRecordingsForUserPayload.md
 docs/TopRecordingsForUserPayloadRecordingsInner.md
@@ -185,7 +186,6 @@ docs/TopReleaseGroupsForArtistInnerRelease.md
 docs/TopReleaseGroupsForArtistInnerReleaseGroup.md
 docs/TopReleaseGroupsForArtistInnerTag.md
 docs/TopReleaseGroupsForArtistInnerTagArtistInner.md
-docs/TopReleaseGroupsForArtistInnerTagReleaseGroupInner.md
 docs/TopReleaseGroupsForUser.md
 docs/TopReleaseGroupsForUserPayload.md
 docs/TopReleasesForUser.md
@@ -396,6 +396,7 @@ src/main/java/org/hihn/listenbrainz/TopArtistsForUserPayload.java
 src/main/java/org/hihn/listenbrainz/TopArtistsForUserPayloadArtistsInner.java
 src/main/java/org/hihn/listenbrainz/TopRecordingsForArtistInner.java
 src/main/java/org/hihn/listenbrainz/TopRecordingsForArtistInnerReleaseColor.java
+src/main/java/org/hihn/listenbrainz/TopRecordingsForArtistInnerTagsInner.java
 src/main/java/org/hihn/listenbrainz/TopRecordingsForUser.java
 src/main/java/org/hihn/listenbrainz/TopRecordingsForUserPayload.java
 src/main/java/org/hihn/listenbrainz/TopRecordingsForUserPayloadRecordingsInner.java
@@ -405,7 +406,6 @@ src/main/java/org/hihn/listenbrainz/TopReleaseGroupsForArtistInnerRelease.java
 src/main/java/org/hihn/listenbrainz/TopReleaseGroupsForArtistInnerReleaseGroup.java
 src/main/java/org/hihn/listenbrainz/TopReleaseGroupsForArtistInnerTag.java
 src/main/java/org/hihn/listenbrainz/TopReleaseGroupsForArtistInnerTagArtistInner.java
-src/main/java/org/hihn/listenbrainz/TopReleaseGroupsForArtistInnerTagReleaseGroupInner.java
 src/main/java/org/hihn/listenbrainz/TopReleaseGroupsForUser.java
 src/main/java/org/hihn/listenbrainz/TopReleaseGroupsForUserPayload.java
 src/main/java/org/hihn/listenbrainz/TopReleasesForUser.java
@@ -426,5 +426,4 @@ src/main/java/org/hihn/listenbrainz/auth/ApiKeyAuth.java
 src/main/java/org/hihn/listenbrainz/auth/Authentication.java
 src/main/java/org/hihn/listenbrainz/auth/HttpBasicAuth.java
 src/main/java/org/hihn/listenbrainz/auth/HttpBearerAuth.java
-src/test/java/org/hihn/listenbrainz/LatestImportStatusTest.java
-src/test/java/org/hihn/listenbrainz/TrackMetadataBrainzplayerMetadataTest.java
+src/test/java/org/hihn/listenbrainz/TopRecordingsForArtistInnerTagsInnerTest.java

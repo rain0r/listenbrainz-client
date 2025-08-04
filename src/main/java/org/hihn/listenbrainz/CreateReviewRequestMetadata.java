@@ -49,7 +49,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * CreateReviewRequestMetadata
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.14.0")
 public class CreateReviewRequestMetadata {
   public static final String SERIALIZED_NAME_ENTITY_NAME = "entity_name";
   @SerializedName(SERIALIZED_NAME_ENTITY_NAME)

@@ -49,7 +49,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * PlaylistExtensionPayloadAdditionalMetadataAlgorithmMetadata
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.14.0")
 public class PlaylistExtensionPayloadAdditionalMetadataAlgorithmMetadata {
   public static final String SERIALIZED_NAME_SOURCE_PATCH = "source_patch";
   @SerializedName(SERIALIZED_NAME_SOURCE_PATCH)

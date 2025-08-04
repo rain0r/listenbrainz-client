@@ -53,7 +53,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrackAdditionalMetadata
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.14.0")
 public class PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrackAdditionalMetadata {
   public static final String SERIALIZED_NAME_CAA_RELEASE_MBID = "caa_release_mbid";
   @SerializedName(SERIALIZED_NAME_CAA_RELEASE_MBID)

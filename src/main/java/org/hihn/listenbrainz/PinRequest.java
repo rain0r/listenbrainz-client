@@ -50,7 +50,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * PinRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.14.0")
 public class PinRequest {
   public static final String SERIALIZED_NAME_RECORDING_MSID = "recording_msid";
   @SerializedName(SERIALIZED_NAME_RECORDING_MSID)

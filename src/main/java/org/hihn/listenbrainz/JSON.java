@@ -248,6 +248,7 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new org.hihn.listenbrainz.TopArtistsForUserPayloadArtistsInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.hihn.listenbrainz.TopRecordingsForArtistInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.hihn.listenbrainz.TopRecordingsForArtistInnerReleaseColor.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new org.hihn.listenbrainz.TopRecordingsForArtistInnerTagsInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.hihn.listenbrainz.TopRecordingsForUser.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.hihn.listenbrainz.TopRecordingsForUserPayload.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.hihn.listenbrainz.TopRecordingsForUserPayloadRecordingsInner.CustomTypeAdapterFactory());
@@ -257,7 +258,6 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new org.hihn.listenbrainz.TopReleaseGroupsForArtistInnerReleaseGroup.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.hihn.listenbrainz.TopReleaseGroupsForArtistInnerTag.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.hihn.listenbrainz.TopReleaseGroupsForArtistInnerTagArtistInner.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.hihn.listenbrainz.TopReleaseGroupsForArtistInnerTagReleaseGroupInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.hihn.listenbrainz.TopReleaseGroupsForUser.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.hihn.listenbrainz.TopReleaseGroupsForUserPayload.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.hihn.listenbrainz.TopReleasesForUser.CustomTypeAdapterFactory());

@@ -49,7 +49,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * Rels1
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.14.0")
 public class Rels1 {
   public static final String SERIALIZED_NAME_FREE_STREAMING = "free streaming";
   @SerializedName(SERIALIZED_NAME_FREE_STREAMING)

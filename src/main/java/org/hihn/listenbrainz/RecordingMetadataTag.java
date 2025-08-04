@@ -23,8 +23,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.hihn.listenbrainz.TopRecordingsForArtistInnerTagsInner;
 import org.hihn.listenbrainz.TopReleaseGroupsForArtistInnerTagArtistInner;
-import org.hihn.listenbrainz.TopReleaseGroupsForArtistInnerTagReleaseGroupInner;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -53,7 +53,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * RecordingMetadataTag
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.14.0")
 public class RecordingMetadataTag {
   public static final String SERIALIZED_NAME_ARTIST = "artist";
   @SerializedName(SERIALIZED_NAME_ARTIST)
@@ -61,11 +61,11 @@ public class RecordingMetadataTag {
 
   public static final String SERIALIZED_NAME_RECORDING = "recording";
   @SerializedName(SERIALIZED_NAME_RECORDING)
-  private List<TopReleaseGroupsForArtistInnerTagReleaseGroupInner> recording = new ArrayList<>();
+  private List<TopRecordingsForArtistInnerTagsInner> recording = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_RELEASE_GROUP = "release_group";
   @SerializedName(SERIALIZED_NAME_RELEASE_GROUP)
-  private List<TopReleaseGroupsForArtistInnerTagReleaseGroupInner> releaseGroup = new ArrayList<>();
+  private List<TopRecordingsForArtistInnerTagsInner> releaseGroup = new ArrayList<>();
 
   public RecordingMetadataTag() {
   }
@@ -97,12 +97,12 @@ public class RecordingMetadataTag {
   }
 
 
-  public RecordingMetadataTag recording(List<TopReleaseGroupsForArtistInnerTagReleaseGroupInner> recording) {
+  public RecordingMetadataTag recording(List<TopRecordingsForArtistInnerTagsInner> recording) {
     this.recording = recording;
     return this;
   }
 
-  public RecordingMetadataTag addRecordingItem(TopReleaseGroupsForArtistInnerTagReleaseGroupInner recordingItem) {
+  public RecordingMetadataTag addRecordingItem(TopRecordingsForArtistInnerTagsInner recordingItem) {
     if (this.recording == null) {
       this.recording = new ArrayList<>();
     }
@@ -115,21 +115,21 @@ public class RecordingMetadataTag {
    * @return recording
    */
   @javax.annotation.Nullable
-  public List<TopReleaseGroupsForArtistInnerTagReleaseGroupInner> getRecording() {
+  public List<TopRecordingsForArtistInnerTagsInner> getRecording() {
     return recording;
   }
 
-  public void setRecording(List<TopReleaseGroupsForArtistInnerTagReleaseGroupInner> recording) {
+  public void setRecording(List<TopRecordingsForArtistInnerTagsInner> recording) {
     this.recording = recording;
   }
 
 
-  public RecordingMetadataTag releaseGroup(List<TopReleaseGroupsForArtistInnerTagReleaseGroupInner> releaseGroup) {
+  public RecordingMetadataTag releaseGroup(List<TopRecordingsForArtistInnerTagsInner> releaseGroup) {
     this.releaseGroup = releaseGroup;
     return this;
   }
 
-  public RecordingMetadataTag addReleaseGroupItem(TopReleaseGroupsForArtistInnerTagReleaseGroupInner releaseGroupItem) {
+  public RecordingMetadataTag addReleaseGroupItem(TopRecordingsForArtistInnerTagsInner releaseGroupItem) {
     if (this.releaseGroup == null) {
       this.releaseGroup = new ArrayList<>();
     }
@@ -142,11 +142,11 @@ public class RecordingMetadataTag {
    * @return releaseGroup
    */
   @javax.annotation.Nullable
-  public List<TopReleaseGroupsForArtistInnerTagReleaseGroupInner> getReleaseGroup() {
+  public List<TopRecordingsForArtistInnerTagsInner> getReleaseGroup() {
     return releaseGroup;
   }
 
-  public void setReleaseGroup(List<TopReleaseGroupsForArtistInnerTagReleaseGroupInner> releaseGroup) {
+  public void setReleaseGroup(List<TopRecordingsForArtistInnerTagsInner> releaseGroup) {
     this.releaseGroup = releaseGroup;
   }
 
@@ -253,7 +253,7 @@ public class RecordingMetadataTag {
 
           // validate the optional field `recording` (array)
           for (int i = 0; i < jsonArrayrecording.size(); i++) {
-            TopReleaseGroupsForArtistInnerTagReleaseGroupInner.validateJsonElement(jsonArrayrecording.get(i));
+            TopRecordingsForArtistInnerTagsInner.validateJsonElement(jsonArrayrecording.get(i));
           };
         }
       }
@@ -267,7 +267,7 @@ public class RecordingMetadataTag {
 
           // validate the optional field `release_group` (array)
           for (int i = 0; i < jsonArrayreleaseGroup.size(); i++) {
-            TopReleaseGroupsForArtistInnerTagReleaseGroupInner.validateJsonElement(jsonArrayreleaseGroup.get(i));
+            TopRecordingsForArtistInnerTagsInner.validateJsonElement(jsonArrayreleaseGroup.get(i));
           };
         }
       }

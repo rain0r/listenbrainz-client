@@ -14,7 +14,7 @@ This is generated code from the OpenAPI specification at [rain0r/listenbrainz-op
 
 ListenBrainz Swagger - OpenAPI 3.0
 - API version: v-2024-07-17.0
-  - Generator version: 7.13.0
+  - Generator version: 7.14.0
 
 OpenAPI client defintion.
 
@@ -52,7 +52,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>org.hihn</groupId>
   <artifactId>listenbrainz-client</artifactId>
-  <version>1.6.0</version>
+  <version>1.8.0-SNAPSHOT</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -68,7 +68,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "org.hihn:listenbrainz-client:1.6.0"
+     implementation "org.hihn:listenbrainz-client:1.8.0-SNAPSHOT"
   }
 ```
 
@@ -82,7 +82,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/listenbrainz-client-1.6.0.jar`
+* `target/listenbrainz-client-1.8.0-SNAPSHOT.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
@@ -386,6 +386,7 @@ Class | Method | HTTP request | Description
  - [TopArtistsForUserPayloadArtistsInner](docs/TopArtistsForUserPayloadArtistsInner.md)
  - [TopRecordingsForArtistInner](docs/TopRecordingsForArtistInner.md)
  - [TopRecordingsForArtistInnerReleaseColor](docs/TopRecordingsForArtistInnerReleaseColor.md)
+ - [TopRecordingsForArtistInnerTagsInner](docs/TopRecordingsForArtistInnerTagsInner.md)
  - [TopRecordingsForUser](docs/TopRecordingsForUser.md)
  - [TopRecordingsForUserPayload](docs/TopRecordingsForUserPayload.md)
  - [TopRecordingsForUserPayloadRecordingsInner](docs/TopRecordingsForUserPayloadRecordingsInner.md)
@@ -395,7 +396,6 @@ Class | Method | HTTP request | Description
  - [TopReleaseGroupsForArtistInnerReleaseGroup](docs/TopReleaseGroupsForArtistInnerReleaseGroup.md)
  - [TopReleaseGroupsForArtistInnerTag](docs/TopReleaseGroupsForArtistInnerTag.md)
  - [TopReleaseGroupsForArtistInnerTagArtistInner](docs/TopReleaseGroupsForArtistInnerTagArtistInner.md)
- - [TopReleaseGroupsForArtistInnerTagReleaseGroupInner](docs/TopReleaseGroupsForArtistInnerTagReleaseGroupInner.md)
  - [TopReleaseGroupsForUser](docs/TopReleaseGroupsForUser.md)
  - [TopReleaseGroupsForUserPayload](docs/TopReleaseGroupsForUserPayload.md)
  - [TopReleasesForUser](docs/TopReleasesForUser.md)

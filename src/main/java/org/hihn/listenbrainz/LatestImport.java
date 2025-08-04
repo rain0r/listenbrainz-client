@@ -50,7 +50,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * LatestImport
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.14.0")
 public class LatestImport {
   public static final String SERIALIZED_NAME_MUSICBRAINZ_ID = "musicbrainz_id";
   @SerializedName(SERIALIZED_NAME_MUSICBRAINZ_ID)

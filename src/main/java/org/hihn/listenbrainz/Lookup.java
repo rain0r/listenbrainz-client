@@ -53,7 +53,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * Lookup
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.14.0")
 public class Lookup {
   public static final String SERIALIZED_NAME_ARTIST_CREDIT_NAME = "artist_credit_name";
   @SerializedName(SERIALIZED_NAME_ARTIST_CREDIT_NAME)

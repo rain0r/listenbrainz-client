@@ -55,7 +55,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/searchUsers'
+                $ref: "#/components/schemas/searchUsers"
           description: Successful operation.
       summary: Search a ListenBrainz-registered user.
       tags:
@@ -69,7 +69,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/submitListens'
+              $ref: "#/components/schemas/submitListens"
         required: true
       responses:
         "200":
@@ -94,7 +94,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/validateToken'
+                $ref: "#/components/schemas/validateToken"
           description: The user token is valid/invalid.
         "400":
           description: No token was sent to the endpoint.
@@ -138,7 +138,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/listensForUser'
+                $ref: "#/components/schemas/listensForUser"
           description: "Yay, you have data!"
         "404":
           description: The requested user was not found.
@@ -161,7 +161,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/listenCountForUser'
+                $ref: "#/components/schemas/listenCountForUser"
           description: "Yay, you have listen counts!"
         "404":
           description: The requested user was not found.
@@ -184,7 +184,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/playingNowForUser'
+                $ref: "#/components/schemas/playingNowForUser"
           description: "Yay, you have data!"
         "404":
           description: The requested user was not found.
@@ -207,7 +207,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/similarUsersForUser'
+                $ref: "#/components/schemas/similarUsersForUser"
           description: "Yay, you have data!"
         "404":
           description: The requested user was not found.
@@ -235,7 +235,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/similarityOfUserForUser'
+                $ref: "#/components/schemas/similarityOfUserForUser"
           description: "Yay, you have data!"
         "404":
           description: The requested user was not found.
@@ -252,7 +252,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/deleteListen'
+              $ref: "#/components/schemas/deleteListen"
         required: true
       responses:
         "200":
@@ -284,7 +284,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/latestImport'
+                $ref: "#/components/schemas/latestImport"
           description: "Yay, you have data!"
       security:
       - ApiKeyAuth: []
@@ -308,7 +308,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/servicesForUser'
+                $ref: "#/components/schemas/servicesForUser"
           description: "Yay, you have data!"
         "401":
           description: Invalid authorization.
@@ -338,7 +338,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/playlists'
+                $ref: "#/components/schemas/playlists"
           description: Success.
         "404":
           description: User not found.
@@ -381,7 +381,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/playlists'
+                $ref: "#/components/schemas/playlists"
           description: "Yay, you have data!"
         "404":
           description: The requested user was not found.
@@ -405,7 +405,7 @@ paths:
         name: mode
         required: true
         schema:
-          $ref: '#/components/schemas/Mode'
+          $ref: "#/components/schemas/Mode"
       - description: The maximum number of similar artists to return recordings for.
         in: query
         name: max_similar_artists
@@ -442,7 +442,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/lbRadioRecordingsForArtist'
+                $ref: "#/components/schemas/lbRadioRecordingsForArtist"
           description: "Yay, you have data!"
         "400":
           description: Invalid or missing param in request.
@@ -472,7 +472,7 @@ paths:
         name: operator
         required: false
         schema:
-          $ref: '#/components/schemas/Operator'
+          $ref: "#/components/schemas/Operator"
       - description: "Popularity range percentage lower bound. A popularity range\
           \ is given to narrow down the recordings into a smaller target group. The\
           \ most popular recording(s) on LB have a pop percent of 100. The least popular\
@@ -502,7 +502,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/lbRadioTags'
+                $ref: "#/components/schemas/lbRadioTags"
           description: "Yay, you have data!"
         "400":
           description: Invalid or missing param in request.
@@ -540,13 +540,13 @@ paths:
         name: range
         required: false
         schema:
-          $ref: '#/components/schemas/AllowedStatisticsRange'
+          $ref: "#/components/schemas/AllowedStatisticsRange"
       responses:
         "200":
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/topArtistsForUser'
+                $ref: "#/components/schemas/topArtistsForUser"
           description: successful operation
         "204":
           description: "Statistics for the user haven't been calculated, empty response\
@@ -588,13 +588,13 @@ paths:
         name: range
         required: false
         schema:
-          $ref: '#/components/schemas/AllowedStatisticsRange'
+          $ref: "#/components/schemas/AllowedStatisticsRange"
       responses:
         "200":
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/topReleasesForUser'
+                $ref: "#/components/schemas/topReleasesForUser"
           description: "Successful query, you have data!"
         "204":
           description: "Statistics for the user haven't been calculated, empty response\
@@ -636,13 +636,13 @@ paths:
         name: range
         required: false
         schema:
-          $ref: '#/components/schemas/AllowedStatisticsRange'
+          $ref: "#/components/schemas/AllowedStatisticsRange"
       responses:
         "200":
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/topReleaseGroupsForUser'
+                $ref: "#/components/schemas/topReleaseGroupsForUser"
           description: successful operation
         "204":
           description: "Statistics for the user haven't been calculated, empty response\
@@ -684,13 +684,13 @@ paths:
         name: range
         required: false
         schema:
-          $ref: '#/components/schemas/AllowedStatisticsRange'
+          $ref: "#/components/schemas/AllowedStatisticsRange"
       responses:
         "200":
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/topRecordingsForUser'
+                $ref: "#/components/schemas/topRecordingsForUser"
           description: successful operation
         "204":
           description: "Statistics for the user haven't been calculated, empty response\
@@ -717,13 +717,13 @@ paths:
         name: range
         required: false
         schema:
-          $ref: '#/components/schemas/AllowedStatisticsRange'
+          $ref: "#/components/schemas/AllowedStatisticsRange"
       responses:
         "200":
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/listeningActivityForUser'
+                $ref: "#/components/schemas/listeningActivityForUser"
           description: successful operation
         "204":
           description: "Statistics for the user haven't been calculated, empty response\
@@ -750,13 +750,13 @@ paths:
         name: range
         required: false
         schema:
-          $ref: '#/components/schemas/AllowedStatisticsRange'
+          $ref: "#/components/schemas/AllowedStatisticsRange"
       responses:
         "200":
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/dailyActivityForUser'
+                $ref: "#/components/schemas/dailyActivityForUser"
           description: successful operation
         "204":
           description: "Statistics for the user haven't been calculated, empty response\
@@ -783,7 +783,7 @@ paths:
         name: range
         required: false
         schema:
-          $ref: '#/components/schemas/AllowedStatisticsRange'
+          $ref: "#/components/schemas/AllowedStatisticsRange"
       - description: "Optional, recalculate the data instead of returning the cached\
           \ result."
         in: query
@@ -797,7 +797,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/artistMapForUser'
+                $ref: "#/components/schemas/artistMapForUser"
           description: successful operation
         "204":
           description: "Statistics for the user haven't been calculated, empty response\
@@ -825,13 +825,13 @@ paths:
         name: range
         required: false
         schema:
-          $ref: '#/components/schemas/AllowedStatisticsRange'
+          $ref: "#/components/schemas/AllowedStatisticsRange"
       responses:
         "200":
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/listenersForArtist'
+                $ref: "#/components/schemas/listenersForArtist"
           description: successful operation
         "204":
           description: "Statistics for the artist haven't been calculated, empty response\
@@ -859,13 +859,13 @@ paths:
         name: range
         required: false
         schema:
-          $ref: '#/components/schemas/AllowedStatisticsRange'
+          $ref: "#/components/schemas/AllowedStatisticsRange"
       responses:
         "200":
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/listenersForReleaseGroup'
+                $ref: "#/components/schemas/listenersForReleaseGroup"
           description: successful operation
         "204":
           description: "Statistics for the artist haven't been calculated, empty response\
@@ -902,13 +902,13 @@ paths:
         name: range
         required: false
         schema:
-          $ref: '#/components/schemas/AllowedStatisticsRange'
+          $ref: "#/components/schemas/AllowedStatisticsRange"
       responses:
         "200":
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/sitewideTopArtists'
+                $ref: "#/components/schemas/sitewideTopArtists"
           description: successful operation
         "204":
           description: "Statistics for the artist haven't been calculated, empty response\
@@ -945,13 +945,13 @@ paths:
         name: range
         required: false
         schema:
-          $ref: '#/components/schemas/AllowedStatisticsRange'
+          $ref: "#/components/schemas/AllowedStatisticsRange"
       responses:
         "200":
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/sitewideTopReleases'
+                $ref: "#/components/schemas/sitewideTopReleases"
           description: successful operation
         "204":
           description: "Statistics for the artist haven't been calculated, empty response\
@@ -988,13 +988,13 @@ paths:
         name: range
         required: false
         schema:
-          $ref: '#/components/schemas/AllowedStatisticsRange'
+          $ref: "#/components/schemas/AllowedStatisticsRange"
       responses:
         "200":
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/sitewideTopReleaseGroups'
+                $ref: "#/components/schemas/sitewideTopReleaseGroups"
           description: successful operation
         "204":
           description: "Statistics haven't been calculated, empty response will be\
@@ -1029,13 +1029,13 @@ paths:
         name: range
         required: false
         schema:
-          $ref: '#/components/schemas/AllowedStatisticsRange'
+          $ref: "#/components/schemas/AllowedStatisticsRange"
       responses:
         "200":
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/sitewideTopRecordings'
+                $ref: "#/components/schemas/sitewideTopRecordings"
           description: successful operation
         "204":
           description: "Statistics haven't been calculated, empty response will be\
@@ -1055,13 +1055,13 @@ paths:
         name: range
         required: false
         schema:
-          $ref: '#/components/schemas/AllowedStatisticsRange'
+          $ref: "#/components/schemas/AllowedStatisticsRange"
       responses:
         "200":
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/sitewideListeningActivity'
+                $ref: "#/components/schemas/sitewideListeningActivity"
           description: successful operation
         "204":
           description: "Statistics haven't been calculated, empty response will be\
@@ -1081,7 +1081,7 @@ paths:
         name: range
         required: false
         schema:
-          $ref: '#/components/schemas/AllowedStatisticsRange'
+          $ref: "#/components/schemas/AllowedStatisticsRange"
       - description: "Optional, recalculate the data instead of returning the cached\
           \ result."
         in: query
@@ -1095,7 +1095,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/sitewideArtistMap'
+                $ref: "#/components/schemas/sitewideArtistMap"
           description: successful operation
         "204":
           description: "Statistics haven't been calculated, empty response will be\
@@ -1126,7 +1126,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/yearInMusicForUser'
+                $ref: "#/components/schemas/yearInMusicForUser"
           description: "Successful query, you have data!"
         "204":
           description: "Statistics haven't been calculated, empty response will be\
@@ -1165,7 +1165,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/playlists'
+                $ref: "#/components/schemas/playlists"
           description: "Yay, you have data!"
         "404":
           description: The requested user was not found.
@@ -1202,7 +1202,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/playlists'
+                $ref: "#/components/schemas/playlists"
           description: "Yay, you have data!"
         "404":
           description: User not found.
@@ -1240,7 +1240,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/playlists'
+                $ref: "#/components/schemas/playlists"
           description: "Yay, you have data!"
         "404":
           description: The requested user was not found.
@@ -1263,14 +1263,14 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/createPlaylist_request'
+              $ref: "#/components/schemas/createPlaylist_request"
         required: true
       responses:
         "200":
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/createPlaylist_200_response'
+                $ref: "#/components/schemas/createPlaylist_200_response"
           description: Playlist accepted.
         "400":
           description: Invalid JSON sent.
@@ -1301,7 +1301,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/playlists'
+                $ref: "#/components/schemas/playlists"
           description: "Yay, you have data!"
         "400":
           description: "Invalid query string, see error message for details."
@@ -1328,7 +1328,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/createPlaylist_request'
+              $ref: "#/components/schemas/createPlaylist_request"
         required: true
       responses:
         "200":
@@ -1375,7 +1375,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/createPlaylist_request'
+                $ref: "#/components/schemas/createPlaylist_request"
           description: "Yay, you have data!"
         "401":
           description: Invalid authorization. See error message for details.
@@ -1407,7 +1407,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/playlist'
+              $ref: "#/components/schemas/playlist"
         required: true
       responses:
         "200":
@@ -1445,7 +1445,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/moveItem_request'
+              $ref: "#/components/schemas/moveItem_request"
         required: true
       responses:
         "200":
@@ -1485,7 +1485,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/itemDelete_request'
+              $ref: "#/components/schemas/itemDelete_request"
         required: true
       responses:
         "200":
@@ -1568,7 +1568,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/recordingFeedback_request'
+              $ref: "#/components/schemas/recordingFeedback_request"
         required: true
       responses:
         "200":
@@ -1632,7 +1632,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/feedbackResponse'
+                $ref: "#/components/schemas/feedbackResponse"
           description: "Yay, you have data!"
       summary: |-
         Get feedback given by user 'user_name'. The format for the JSON returned is defined in our Feedback JSON Documentation.
@@ -1681,7 +1681,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/feedbackResponse'
+                $ref: "#/components/schemas/feedbackResponse"
           description: "Yay, you have data!"
       summary: Get feedback for recording with given recording_mbid.
       tags:
@@ -1726,7 +1726,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/feedbackResponse'
+                $ref: "#/components/schemas/feedbackResponse"
           description: "Yay, you have data!"
       summary: Get feedback for recording with given recording_msid.
       tags:
@@ -1767,7 +1767,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/feedbackResponse'
+                $ref: "#/components/schemas/feedbackResponse"
           description: "Yay, you have data!"
       summary: Get feedback given by user user_name for the list of recordings supplied.
       tags:
@@ -1781,14 +1781,14 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/pin_request'
+              $ref: "#/components/schemas/pin_request"
         required: true
       responses:
         "200":
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/pin_200_response'
+                $ref: "#/components/schemas/pin_200_response"
           description: Feedback accepted.
         "400":
           description: Invalid JSON sent.
@@ -1879,7 +1879,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/getPins'
+                $ref: "#/components/schemas/getPins"
           description: "Yay, you have data!"
         "400":
           description: "Invalid query parameters, see error message for details."
@@ -1922,7 +1922,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/getPins'
+                $ref: "#/components/schemas/getPins"
           description: "Yay, you have data!"
         "400":
           description: "Invalid query parameters, see error message for details."
@@ -1949,7 +1949,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/getPinsCurrent_200_response'
+                $ref: "#/components/schemas/getPinsCurrent_200_response"
           description: "Yay, you have data!"
         "400":
           description: "Invalid query parameters, see error message for details."
@@ -1973,7 +1973,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/updatePin_request'
+              $ref: "#/components/schemas/updatePin_request"
         required: true
       responses:
         "200":
@@ -2008,7 +2008,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/topRecordingsForArtist'
+                $ref: "#/components/schemas/topRecordingsForArtist"
           description: "Yay, you have data!"
         "400":
           description: "Invalid query parameters, see error message for details."
@@ -2035,7 +2035,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/topReleaseGroupsForArtist'
+                $ref: "#/components/schemas/topReleaseGroupsForArtist"
           description: "Yay, you have data!"
         "400":
           description: "Invalid query parameters, see error message for details."
@@ -2053,7 +2053,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/recording_request'
+              $ref: "#/components/schemas/recording_request"
         required: true
       responses:
         "200":
@@ -2061,7 +2061,7 @@ paths:
             application/json:
               schema:
                 items:
-                  $ref: '#/components/schemas/recording_200_response_inner'
+                  $ref: "#/components/schemas/recording_200_response_inner"
                 type: array
           description: Feedback accepted.
         "400":
@@ -2084,7 +2084,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/artist_request'
+              $ref: "#/components/schemas/artist_request"
         required: true
       responses:
         "200":
@@ -2092,7 +2092,7 @@ paths:
             application/json:
               schema:
                 items:
-                  $ref: '#/components/schemas/artist_200_response_inner'
+                  $ref: "#/components/schemas/artist_200_response_inner"
                 type: array
           description: Feedback accepted.
         "400":
@@ -2115,7 +2115,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/release_request'
+              $ref: "#/components/schemas/release_request"
         required: true
       responses:
         "200":
@@ -2123,7 +2123,7 @@ paths:
             application/json:
               schema:
                 items:
-                  $ref: '#/components/schemas/release_200_response_inner'
+                  $ref: "#/components/schemas/release_200_response_inner"
                 type: array
           description: Feedback accepted.
         "400":
@@ -2146,7 +2146,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/releaseGroup_request'
+              $ref: "#/components/schemas/releaseGroup_request"
         required: true
       responses:
         "200":
@@ -2154,7 +2154,7 @@ paths:
             application/json:
               schema:
                 items:
-                  $ref: '#/components/schemas/releaseGroup_200_response_inner'
+                  $ref: "#/components/schemas/releaseGroup_200_response_inner"
                 type: array
           description: Feedback accepted.
         "400":
@@ -2197,7 +2197,7 @@ paths:
             application/json:
               schema:
                 additionalProperties:
-                  $ref: '#/components/schemas/recordingMetadata'
+                  $ref: "#/components/schemas/recordingMetadata"
                 type: object
           description: "Yay, you have data!"
         "400":
@@ -2241,7 +2241,7 @@ paths:
             application/json:
               schema:
                 additionalProperties:
-                  $ref: '#/components/schemas/releaseGroupMetadata'
+                  $ref: "#/components/schemas/releaseGroupMetadata"
                 type: object
           description: "Yay, you have data!"
         "400":
@@ -2297,7 +2297,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/lookup'
+                $ref: "#/components/schemas/lookup"
           description: "Yay, you have data!"
         "400":
           description: Invalid arguments.
@@ -2316,7 +2316,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/submitManualMapping'
+              $ref: "#/components/schemas/submitManualMapping"
         required: true
       responses:
         "200":
@@ -2349,7 +2349,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/getManualMapping'
+                $ref: "#/components/schemas/getManualMapping"
           description: "Yay, you have data!"
         "404":
           description: No such mapping for this user/recording msid.
@@ -2387,7 +2387,7 @@ paths:
             application/json:
               schema:
                 items:
-                  $ref: '#/components/schemas/artistMetadata'
+                  $ref: "#/components/schemas/artistMetadata"
                 type: array
           description: "Yay, you have data!"
         "400":
@@ -2413,7 +2413,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/recommendRecording_request'
+              $ref: "#/components/schemas/recommendRecording_request"
         required: true
       responses:
         "200":
@@ -2448,7 +2448,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/createNotification_request'
+              $ref: "#/components/schemas/createNotification_request"
         required: true
       responses:
         "200":
@@ -2484,7 +2484,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/createReview_request'
+              $ref: "#/components/schemas/createReview_request"
         required: true
       responses:
         "200":
@@ -2539,7 +2539,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/feedEvents'
+                $ref: "#/components/schemas/feedEvents"
           description: "Successful query, you have feed events!"
         "400":
           description: Bad request.
@@ -2592,7 +2592,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/feedEvents'
+                $ref: "#/components/schemas/feedEvents"
           description: "Successful query, you have feed listen-events!"
         "400":
           description: Bad request.
@@ -2644,7 +2644,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/feedEventsListensSimilar'
+                $ref: "#/components/schemas/feedEventsListensSimilar"
           description: "Successful query, you have feed listen-events!"
         "400":
           description: Bad request.
@@ -2675,7 +2675,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/feedEventsDelete_request'
+              $ref: "#/components/schemas/feedEventsDelete_request"
         required: true
       responses:
         "200":
@@ -2714,7 +2714,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/feedEventsDelete_request'
+              $ref: "#/components/schemas/feedEventsDelete_request"
         required: true
       responses:
         "200":
@@ -2753,7 +2753,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/feedEventsDelete_request'
+              $ref: "#/components/schemas/feedEventsDelete_request"
         required: true
       responses:
         "200":
@@ -2789,7 +2789,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/recommendPersonalRecording_request'
+              $ref: "#/components/schemas/recommendPersonalRecording_request"
         required: true
       responses:
         "200":
@@ -2824,7 +2824,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/followers'
+                $ref: "#/components/schemas/followers"
           description: "Yay, you have data!"
         "400":
           description: Bad request.
@@ -2852,7 +2852,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/following'
+                $ref: "#/components/schemas/following"
           description: "Yay, you have data!"
         "400":
           description: Bad request.
@@ -2940,7 +2940,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/recordingRecommendations'
+                $ref: "#/components/schemas/recordingRecommendations"
           description: "Successful query, you have data!"
         "204":
           description: "Recommendations for the user haven't been generated, empty\
@@ -2961,7 +2961,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/submitFeedback_request'
+              $ref: "#/components/schemas/submitFeedback_request"
         required: true
       responses:
         "200":
@@ -2987,7 +2987,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/deleteFeedback_request'
+              $ref: "#/components/schemas/deleteFeedback_request"
         required: true
       responses:
         "200":
@@ -3043,7 +3043,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/feedbackGivenBy'
+                $ref: "#/components/schemas/feedbackGivenBy"
           description: "Yay, you have data!"
         "204":
           description: "Recommendations for the user haven't been generated, empty\
@@ -3082,7 +3082,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/recordingsFeedbackGivenBy'
+                $ref: "#/components/schemas/recordingsFeedbackGivenBy"
           description: "Yay, you have data!"
         "400":
           description: Bad request.
@@ -3140,7 +3140,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/freshReleases'
+                $ref: "#/components/schemas/freshReleases"
           description: "Yay, you have data!"
         "400":
           description: Invalid date or number of days passed.
@@ -3164,7 +3164,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/color'
+                $ref: "#/components/schemas/color"
           description: Success.
       summary: Fetch a list of releases that have cover art that has a predominant
         color that is close to the given color.
@@ -3187,13 +3187,13 @@ paths:
         name: mode
         required: true
         schema:
-          $ref: '#/components/schemas/Mode'
+          $ref: "#/components/schemas/Mode"
       responses:
         "200":
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/lbRadio'
+                $ref: "#/components/schemas/lbRadio"
           description: Success.
       summary: Generate a playlist with LB Radio.
       tags:
@@ -3216,7 +3216,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/getDumpInfo'
+                $ref: "#/components/schemas/getDumpInfo"
           description: Success.
         "400":
           description: You did not provide a valid dump ID. See error message for
@@ -3236,7 +3236,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/createCoverArtGrid'
+              $ref: "#/components/schemas/createCoverArtGrid"
         required: true
       responses:
         "200":
@@ -3270,7 +3270,7 @@ paths:
         name: time_range
         required: true
         schema:
-          $ref: '#/components/schemas/AllowedStatisticsRange'
+          $ref: "#/components/schemas/AllowedStatisticsRange"
       - description: "The dimension to use for this grid. A grid of dimension 3 has\
           \ 3 images across and 3 images down, for a total of 9 images."
         in: path
@@ -3316,7 +3316,7 @@ paths:
         name: custom_name
         required: true
         schema:
-          $ref: '#/components/schemas/CoverTypes'
+          $ref: "#/components/schemas/CoverTypes"
       - description: The name of the user for whom to create the cover art.
         in: path
         name: user_name
@@ -3328,7 +3328,7 @@ paths:
         name: time_range
         required: true
         schema:
-          $ref: '#/components/schemas/AllowedStatisticsRange'
+          $ref: "#/components/schemas/AllowedStatisticsRange"
       - description: The size of the cover art image.
         in: path
         name: image_size
@@ -3369,7 +3369,7 @@ paths:
         name: image
         required: true
         schema:
-          $ref: '#/components/schemas/YearInMusicImage'
+          $ref: "#/components/schemas/YearInMusicImage"
       responses:
         "200":
           content:
@@ -3451,7 +3451,7 @@ components:
       properties:
         users:
           items:
-            $ref: '#/components/schemas/searchUsers_users_inner'
+            $ref: "#/components/schemas/searchUsers_users_inner"
           type: array
       required:
       - users
@@ -3459,10 +3459,10 @@ components:
     submitListens:
       properties:
         listen_type:
-          $ref: '#/components/schemas/ListenType'
+          $ref: "#/components/schemas/ListenType"
         payload:
           items:
-            $ref: '#/components/schemas/submitListens_payload_inner'
+            $ref: "#/components/schemas/submitListens_payload_inner"
           type: array
       required:
       - listen_type
@@ -3652,7 +3652,7 @@ components:
           oldest_listen_ts: 2
       properties:
         payload:
-          $ref: '#/components/schemas/listensForUser_payload'
+          $ref: "#/components/schemas/listensForUser_payload"
       required:
       - payload
       type: object
@@ -3662,7 +3662,7 @@ components:
           count: 0
       properties:
         payload:
-          $ref: '#/components/schemas/listenCountForUser_payload'
+          $ref: "#/components/schemas/listenCountForUser_payload"
       required:
       - payload
       type: object
@@ -3823,7 +3823,7 @@ components:
           count: 0
       properties:
         payload:
-          $ref: '#/components/schemas/playingNowForUser_payload'
+          $ref: "#/components/schemas/playingNowForUser_payload"
       required:
       - payload
       type: object
@@ -3837,7 +3837,7 @@ components:
       properties:
         payload:
           items:
-            $ref: '#/components/schemas/similarUsersForUser_payload_inner'
+            $ref: "#/components/schemas/similarUsersForUser_payload_inner"
           type: array
       required:
       - payload
@@ -3849,7 +3849,7 @@ components:
           user_name: user_name
       properties:
         payload:
-          $ref: '#/components/schemas/similarityOfUserForUser_payload'
+          $ref: "#/components/schemas/similarityOfUserForUser_payload"
       required:
       - payload
       type: object
@@ -3879,7 +3879,7 @@ components:
             Defaults to 0
           type: string
         status:
-          $ref: '#/components/schemas/latestImport_status'
+          $ref: "#/components/schemas/latestImport_status"
       required:
       - latest_import
       - musicbrainz_id
@@ -4062,18 +4062,18 @@ components:
           type: integer
         playlists:
           items:
-            $ref: '#/components/schemas/createPlaylist_request'
+            $ref: "#/components/schemas/createPlaylist_request"
           type: array
       type: object
     lbRadioRecordingsForArtist:
       additionalProperties:
         items:
-          $ref: '#/components/schemas/lbRadioRecordingsForArtist_value_inner'
+          $ref: "#/components/schemas/lbRadioRecordingsForArtist_value_inner"
         type: array
       type: object
     lbRadioTags:
       items:
-        $ref: '#/components/schemas/lbRadioTags_inner'
+        $ref: "#/components/schemas/lbRadioTags_inner"
       type: array
     topArtistsForUser:
       example:
@@ -4095,7 +4095,7 @@ components:
           total_artist_count: 7
       properties:
         payload:
-          $ref: '#/components/schemas/topArtistsForUser_payload'
+          $ref: "#/components/schemas/topArtistsForUser_payload"
       required:
       - payload
       type: object
@@ -4145,7 +4145,7 @@ components:
             release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
       properties:
         payload:
-          $ref: '#/components/schemas/topReleasesForUser_payload'
+          $ref: "#/components/schemas/topReleasesForUser_payload"
       required:
       - payload
       type: object
@@ -4203,7 +4203,7 @@ components:
             - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
       properties:
         payload:
-          $ref: '#/components/schemas/topReleaseGroupsForUser_payload'
+          $ref: "#/components/schemas/topReleaseGroupsForUser_payload"
       required:
       - payload
       type: object
@@ -4257,7 +4257,7 @@ components:
           total_recording_count: 9
       properties:
         payload:
-          $ref: '#/components/schemas/topRecordingsForUser_payload'
+          $ref: "#/components/schemas/topRecordingsForUser_payload"
       required:
       - payload
       type: object
@@ -4280,7 +4280,7 @@ components:
           range: range
       properties:
         payload:
-          $ref: '#/components/schemas/listeningActivityForUser_payload'
+          $ref: "#/components/schemas/listeningActivityForUser_payload"
       required:
       - payload
       type: object
@@ -4330,7 +4330,7 @@ components:
               hour: 0
       properties:
         payload:
-          $ref: '#/components/schemas/dailyActivityForUser_payload'
+          $ref: "#/components/schemas/dailyActivityForUser_payload"
       required:
       - payload
       type: object
@@ -4365,7 +4365,7 @@ components:
           range: range
       properties:
         payload:
-          $ref: '#/components/schemas/artistMapForUser_payload'
+          $ref: "#/components/schemas/artistMapForUser_payload"
       required:
       - payload
       type: object
@@ -4387,7 +4387,7 @@ components:
           artist_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
       properties:
         payload:
-          $ref: '#/components/schemas/listenersForArtist_payload'
+          $ref: "#/components/schemas/listenersForArtist_payload"
       required:
       - payload
       type: object
@@ -4415,7 +4415,7 @@ components:
           release_group_name: release_group_name
       properties:
         payload:
-          $ref: '#/components/schemas/listenersForReleaseGroup_payload'
+          $ref: "#/components/schemas/listenersForReleaseGroup_payload"
       required:
       - payload
       type: object
@@ -4438,7 +4438,7 @@ components:
           total_artist_count: 2
       properties:
         payload:
-          $ref: '#/components/schemas/sitewideTopArtists_payload'
+          $ref: "#/components/schemas/sitewideTopArtists_payload"
       required:
       - payload
       type: object
@@ -4475,7 +4475,7 @@ components:
             release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
       properties:
         payload:
-          $ref: '#/components/schemas/sitewideTopReleases_payload'
+          $ref: "#/components/schemas/sitewideTopReleases_payload"
       required:
       - payload
       type: object
@@ -4532,7 +4532,7 @@ components:
             - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
       properties:
         payload:
-          $ref: '#/components/schemas/sitewideTopReleaseGroups_payload'
+          $ref: "#/components/schemas/sitewideTopReleaseGroups_payload"
       required:
       - payload
       type: object
@@ -4577,7 +4577,7 @@ components:
           total_recording_count: 9
       properties:
         payload:
-          $ref: '#/components/schemas/sitewideTopRecordings_payload'
+          $ref: "#/components/schemas/sitewideTopRecordings_payload"
       required:
       - payload
       type: object
@@ -4599,7 +4599,7 @@ components:
           range: range
       properties:
         payload:
-          $ref: '#/components/schemas/sitewideListeningActivity_payload'
+          $ref: "#/components/schemas/sitewideListeningActivity_payload"
       required:
       - payload
       type: object
@@ -4633,7 +4633,7 @@ components:
           stats_range: stats_range
       properties:
         payload:
-          $ref: '#/components/schemas/sitewideArtistMap_payload'
+          $ref: "#/components/schemas/sitewideArtistMap_payload"
       required:
       - payload
       type: object
@@ -4954,7 +4954,7 @@ components:
           user_name: user_name
       properties:
         payload:
-          $ref: '#/components/schemas/yearInMusicForUser_payload'
+          $ref: "#/components/schemas/yearInMusicForUser_payload"
       required:
       - payload
       type: object
@@ -5044,14 +5044,14 @@ components:
         duration:
           type: integer
         extension:
-          $ref: '#/components/schemas/playlist-extension'
+          $ref: "#/components/schemas/playlist-extension"
         identifier:
           type: string
         title:
           type: string
         track:
           items:
-            $ref: '#/components/schemas/playlist_track_inner'
+            $ref: "#/components/schemas/playlist_track_inner"
           type: array
       type: object
     feedbackResponse:
@@ -5221,7 +5221,7 @@ components:
           type: integer
         feedback:
           items:
-            $ref: '#/components/schemas/feedback'
+            $ref: "#/components/schemas/feedback"
           type: array
         offset:
           type: integer
@@ -5304,13 +5304,13 @@ components:
         track_name: track_name
       properties:
         additional_info:
-          $ref: '#/components/schemas/additionalInfo'
+          $ref: "#/components/schemas/additionalInfo"
         artist_name:
           type: string
         brainzplayer_metadata:
-          $ref: '#/components/schemas/trackMetadata_brainzplayer_metadata'
+          $ref: "#/components/schemas/trackMetadata_brainzplayer_metadata"
         mbid_mapping:
-          $ref: '#/components/schemas/mbidMapping'
+          $ref: "#/components/schemas/mbidMapping"
         release_name:
           type: string
         track_name:
@@ -5488,7 +5488,7 @@ components:
           type: integer
         pinned_recordings:
           items:
-            $ref: '#/components/schemas/getPins_pinned_recordings_inner'
+            $ref: "#/components/schemas/getPins_pinned_recordings_inner"
           type: array
         total_count:
           type: integer
@@ -5502,31 +5502,31 @@ components:
       type: object
     topRecordingsForArtist:
       items:
-        $ref: '#/components/schemas/topRecordingsForArtist_inner'
+        $ref: "#/components/schemas/topRecordingsForArtist_inner"
       type: array
     topReleaseGroupsForArtist:
       items:
-        $ref: '#/components/schemas/topReleaseGroupsForArtist_inner'
+        $ref: "#/components/schemas/topReleaseGroupsForArtist_inner"
       type: array
     recordingMetadata:
       properties:
         artist:
-          $ref: '#/components/schemas/recordingMetadata_artist'
+          $ref: "#/components/schemas/recordingMetadata_artist"
         recording:
-          $ref: '#/components/schemas/recordingMetadata_recording'
+          $ref: "#/components/schemas/recordingMetadata_recording"
         tag:
-          $ref: '#/components/schemas/recordingMetadata_tag'
+          $ref: "#/components/schemas/recordingMetadata_tag"
       type: object
     releaseGroupMetadata:
       properties:
         release_group:
-          $ref: '#/components/schemas/releaseGroupMetadata_release_group'
+          $ref: "#/components/schemas/releaseGroupMetadata_release_group"
         tag:
-          $ref: '#/components/schemas/topReleaseGroupsForArtist_inner_tag'
+          $ref: "#/components/schemas/topReleaseGroupsForArtist_inner_tag"
         artist:
-          $ref: '#/components/schemas/releaseGroupMetadata_artist'
+          $ref: "#/components/schemas/releaseGroupMetadata_artist"
         release:
-          $ref: '#/components/schemas/releaseGroupMetadata_release_group'
+          $ref: "#/components/schemas/releaseGroupMetadata_release_group"
       type: object
     lookup:
       example:
@@ -5613,10 +5613,10 @@ components:
               tag: tag
             release_group:
             - genre_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
-              count: 7
+              count: 9
               tag: tag
             - genre_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
-              count: 7
+              count: 9
               tag: tag
         recording_name: recording_name
         release_name: release_name
@@ -5634,7 +5634,7 @@ components:
             type: string
           type: array
         metadata:
-          $ref: '#/components/schemas/lookup_metadata'
+          $ref: "#/components/schemas/lookup_metadata"
         recording_mbid:
           format: uuid
           type: string
@@ -5668,7 +5668,7 @@ components:
         status: status
       properties:
         mapping:
-          $ref: '#/components/schemas/getManualMapping_mapping'
+          $ref: "#/components/schemas/getManualMapping_mapping"
         status:
           type: string
       required:
@@ -5723,9 +5723,9 @@ components:
         name:
           type: string
         rels:
-          $ref: '#/components/schemas/rels_1'
+          $ref: "#/components/schemas/rels_1"
         tag:
-          $ref: '#/components/schemas/artistMetadata_tag'
+          $ref: "#/components/schemas/artistMetadata_tag"
         type:
           type: string
       type: object
@@ -5917,7 +5917,7 @@ components:
             message: message
       properties:
         payload:
-          $ref: '#/components/schemas/feedEvents_payload'
+          $ref: "#/components/schemas/feedEvents_payload"
       type: object
     feedEventsListensSimilar:
       example:
@@ -6105,7 +6105,7 @@ components:
             id: id
       properties:
         payload:
-          $ref: '#/components/schemas/feedEventsListensSimilar_payload'
+          $ref: "#/components/schemas/feedEventsListensSimilar_payload"
       required:
       - payload
       type: object
@@ -6163,7 +6163,7 @@ components:
           entity: entity
       properties:
         payload:
-          $ref: '#/components/schemas/recordingRecommendations_payload'
+          $ref: "#/components/schemas/recordingRecommendations_payload"
       required:
       - payload
       type: object
@@ -6185,7 +6185,7 @@ components:
           type: integer
         feedback:
           items:
-            $ref: '#/components/schemas/feedbackGivenBy_feedback_inner'
+            $ref: "#/components/schemas/feedbackGivenBy_feedback_inner"
           type: array
         offset:
           type: integer
@@ -6213,7 +6213,7 @@ components:
       properties:
         feedback:
           items:
-            $ref: '#/components/schemas/feedbackGivenBy_feedback_inner'
+            $ref: "#/components/schemas/feedbackGivenBy_feedback_inner"
           type: array
         user_name:
           type: string
@@ -6254,7 +6254,7 @@ components:
             release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
       properties:
         payload:
-          $ref: '#/components/schemas/freshReleases_payload'
+          $ref: "#/components/schemas/freshReleases_payload"
       required:
       - payload
       type: object
@@ -6322,7 +6322,7 @@ components:
             release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
       properties:
         payload:
-          $ref: '#/components/schemas/color_payload'
+          $ref: "#/components/schemas/color_payload"
       required:
       - payload
       type: object
@@ -6408,7 +6408,7 @@ components:
                 title: title
       properties:
         payload:
-          $ref: '#/components/schemas/lbRadio_payload'
+          $ref: "#/components/schemas/lbRadio_payload"
       required:
       - payload
       type: object
@@ -6484,7 +6484,7 @@ components:
       type: object
     releaseGroups:
       items:
-        $ref: '#/components/schemas/releaseGroups_inner'
+        $ref: "#/components/schemas/releaseGroups_inner"
       type: array
     playlist-extension:
       example:
@@ -6503,7 +6503,7 @@ components:
               source_patch: source_patch
       properties:
         https://musicbrainz.org/doc/jspf#playlist:
-          $ref: '#/components/schemas/playlistExtensionPayload'
+          $ref: "#/components/schemas/playlistExtensionPayload"
       type: object
     feedback:
       example:
@@ -6597,7 +6597,7 @@ components:
         score:
           type: integer
         track_metadata:
-          $ref: '#/components/schemas/trackMetadata'
+          $ref: "#/components/schemas/trackMetadata"
         user_id:
           type: string
       type: object
@@ -6769,7 +6769,7 @@ components:
           type: array
         artists:
           items:
-            $ref: '#/components/schemas/topReleasesForUser_payload_releases_inner_artists_inner'
+            $ref: "#/components/schemas/topReleasesForUser_payload_releases_inner_artists_inner"
           type: array
         caa_id:
           type: integer
@@ -6826,7 +6826,7 @@ components:
         name:
           type: string
         rels:
-          $ref: '#/components/schemas/rels_1'
+          $ref: "#/components/schemas/rels_1"
         type:
           type: string
       type: object
@@ -6994,7 +6994,7 @@ components:
         playing_now:
           type: boolean
         track_metadata:
-          $ref: '#/components/schemas/trackMetadata'
+          $ref: "#/components/schemas/trackMetadata"
         user_name:
           type: string
       type: object
@@ -7075,7 +7075,7 @@ components:
             title: title
       properties:
         playlist:
-          $ref: '#/components/schemas/playlist'
+          $ref: "#/components/schemas/playlist"
       type: object
     createPlaylist_200_response:
       example:
@@ -7231,7 +7231,7 @@ components:
         blurb_content:
           type: string
         track_metadata:
-          $ref: '#/components/schemas/trackMetadata'
+          $ref: "#/components/schemas/trackMetadata"
       type: object
     pin_200_response:
       example:
@@ -7317,7 +7317,7 @@ components:
             track_name: track_name
       properties:
         pinned_recording:
-          $ref: '#/components/schemas/pin_200_response_pinned_recording'
+          $ref: "#/components/schemas/pin_200_response_pinned_recording"
       type: object
     getPinsCurrent_200_response_pinned_recording:
       example:
@@ -7416,7 +7416,7 @@ components:
         row_id:
           type: integer
         track_metadata:
-          $ref: '#/components/schemas/trackMetadata'
+          $ref: "#/components/schemas/trackMetadata"
       type: object
     getPinsCurrent_200_response:
       example:
@@ -7503,7 +7503,7 @@ components:
         user_name: user_name
       properties:
         pinned_recording:
-          $ref: '#/components/schemas/getPinsCurrent_200_response_pinned_recording'
+          $ref: "#/components/schemas/getPinsCurrent_200_response_pinned_recording"
         user_name:
           type: string
       type: object
@@ -7624,7 +7624,7 @@ components:
     recommendRecording_request:
       properties:
         metadata:
-          $ref: '#/components/schemas/recommendRecording_request_metadata'
+          $ref: "#/components/schemas/recommendRecording_request_metadata"
       type: object
     createNotification_request_metadata:
       properties:
@@ -7634,7 +7634,7 @@ components:
     createNotification_request:
       properties:
         metadata:
-          $ref: '#/components/schemas/createNotification_request_metadata'
+          $ref: "#/components/schemas/createNotification_request_metadata"
       type: object
     createReview_request_metadata:
       properties:
@@ -7654,7 +7654,7 @@ components:
     createReview_request:
       properties:
         metadata:
-          $ref: '#/components/schemas/createReview_request_metadata'
+          $ref: "#/components/schemas/createReview_request_metadata"
       type: object
     feedEventsDelete_request:
       properties:
@@ -7679,7 +7679,7 @@ components:
     recommendPersonalRecording_request:
       properties:
         metadata:
-          $ref: '#/components/schemas/recommendPersonalRecording_request_metadata'
+          $ref: "#/components/schemas/recommendPersonalRecording_request_metadata"
       type: object
     submitFeedback_request:
       properties:
@@ -7687,7 +7687,7 @@ components:
           format: uuid
           type: string
         rating:
-          $ref: '#/components/schemas/AllowedRatings'
+          $ref: "#/components/schemas/AllowedRatings"
       type: object
     deleteFeedback_request:
       properties:
@@ -7709,7 +7709,7 @@ components:
           minimum: 0
           type: integer
         track_metadata:
-          $ref: '#/components/schemas/trackMetadata'
+          $ref: "#/components/schemas/trackMetadata"
       type: object
     listensForUser_payload_listens_inner:
       example:
@@ -7798,7 +7798,7 @@ components:
         recording_msid:
           type: string
         track_metadata:
-          $ref: '#/components/schemas/trackMetadata'
+          $ref: "#/components/schemas/trackMetadata"
         user_name:
           type: string
       type: object
@@ -7970,7 +7970,7 @@ components:
           type: integer
         listens:
           items:
-            $ref: '#/components/schemas/listensForUser_payload_listens_inner'
+            $ref: "#/components/schemas/listensForUser_payload_listens_inner"
           type: array
         oldest_listen_ts:
           type: integer
@@ -8066,7 +8066,7 @@ components:
         playing_now:
           type: boolean
         track_metadata:
-          $ref: '#/components/schemas/trackMetadata'
+          $ref: "#/components/schemas/trackMetadata"
       type: object
     playingNowForUser_payload:
       example:
@@ -8227,7 +8227,7 @@ components:
           type: integer
         listens:
           items:
-            $ref: '#/components/schemas/playingNowForUser_payload_listens_inner'
+            $ref: "#/components/schemas/playingNowForUser_payload_listens_inner"
           type: array
         playing_now:
           type: boolean
@@ -8339,7 +8339,7 @@ components:
       properties:
         artists:
           items:
-            $ref: '#/components/schemas/topArtistsForUser_payload_artists_inner'
+            $ref: "#/components/schemas/topArtistsForUser_payload_artists_inner"
           type: array
         count:
           type: integer
@@ -8410,7 +8410,7 @@ components:
           type: string
         artists:
           items:
-            $ref: '#/components/schemas/topReleasesForUser_payload_releases_inner_artists_inner'
+            $ref: "#/components/schemas/topReleasesForUser_payload_releases_inner_artists_inner"
           type: array
         caa_id:
           type: integer
@@ -8481,7 +8481,7 @@ components:
           type: string
         releases:
           items:
-            $ref: '#/components/schemas/topReleasesForUser_payload_releases_inner'
+            $ref: "#/components/schemas/topReleasesForUser_payload_releases_inner"
           type: array
         to_ts:
           type: integer
@@ -8564,7 +8564,7 @@ components:
           type: string
         release_groups:
           items:
-            $ref: '#/components/schemas/releaseGroups_inner'
+            $ref: "#/components/schemas/releaseGroups_inner"
           type: array
         to_ts:
           type: integer
@@ -8613,7 +8613,7 @@ components:
           type: string
         artists:
           items:
-            $ref: '#/components/schemas/topReleasesForUser_payload_releases_inner_artists_inner'
+            $ref: "#/components/schemas/topReleasesForUser_payload_releases_inner_artists_inner"
           type: array
         caa_id:
           type: integer
@@ -8693,7 +8693,7 @@ components:
           type: string
         recordings:
           items:
-            $ref: '#/components/schemas/topRecordingsForUser_payload_recordings_inner'
+            $ref: "#/components/schemas/topRecordingsForUser_payload_recordings_inner"
           type: array
         to_ts:
           type: integer
@@ -8751,7 +8751,7 @@ components:
           type: integer
         listening_activity:
           items:
-            $ref: '#/components/schemas/listeningActivityForUser_payload_listening_activity_inner'
+            $ref: "#/components/schemas/listeningActivityForUser_payload_listening_activity_inner"
           type: array
         range:
           type: string
@@ -8817,31 +8817,31 @@ components:
       properties:
         Friday:
           items:
-            $ref: '#/components/schemas/dailyActivityForUser_payload_daily_activity_Friday_inner'
+            $ref: "#/components/schemas/dailyActivityForUser_payload_daily_activity_Friday_inner"
           type: array
         Monday:
           items:
-            $ref: '#/components/schemas/dailyActivityForUser_payload_daily_activity_Friday_inner'
+            $ref: "#/components/schemas/dailyActivityForUser_payload_daily_activity_Friday_inner"
           type: array
         Saturday:
           items:
-            $ref: '#/components/schemas/dailyActivityForUser_payload_daily_activity_Friday_inner'
+            $ref: "#/components/schemas/dailyActivityForUser_payload_daily_activity_Friday_inner"
           type: array
         Sunday:
           items:
-            $ref: '#/components/schemas/dailyActivityForUser_payload_daily_activity_Friday_inner'
+            $ref: "#/components/schemas/dailyActivityForUser_payload_daily_activity_Friday_inner"
           type: array
         Thursday:
           items:
-            $ref: '#/components/schemas/dailyActivityForUser_payload_daily_activity_Friday_inner'
+            $ref: "#/components/schemas/dailyActivityForUser_payload_daily_activity_Friday_inner"
           type: array
         Tuesday:
           items:
-            $ref: '#/components/schemas/dailyActivityForUser_payload_daily_activity_Friday_inner'
+            $ref: "#/components/schemas/dailyActivityForUser_payload_daily_activity_Friday_inner"
           type: array
         Wednesday:
           items:
-            $ref: '#/components/schemas/dailyActivityForUser_payload_daily_activity_Friday_inner'
+            $ref: "#/components/schemas/dailyActivityForUser_payload_daily_activity_Friday_inner"
           type: array
       required:
       - Friday
@@ -8897,7 +8897,7 @@ components:
             hour: 0
       properties:
         daily_activity:
-          $ref: '#/components/schemas/dailyActivityForUser_payload_daily_activity'
+          $ref: "#/components/schemas/dailyActivityForUser_payload_daily_activity"
         from_ts:
           type: integer
         last_updated:
@@ -8933,7 +8933,7 @@ components:
           type: integer
         artists:
           items:
-            $ref: '#/components/schemas/topArtistsForUser_payload_artists_inner'
+            $ref: "#/components/schemas/topArtistsForUser_payload_artists_inner"
           type: array
         country:
           type: string
@@ -8971,7 +8971,7 @@ components:
       properties:
         artist_map:
           items:
-            $ref: '#/components/schemas/artistMapForUser_payload_artist_map_inner'
+            $ref: "#/components/schemas/artistMapForUser_payload_artist_map_inner"
           type: array
         from_ts:
           type: integer
@@ -9028,7 +9028,7 @@ components:
           type: integer
         listeners:
           items:
-            $ref: '#/components/schemas/listenersForArtist_payload_listeners_inner'
+            $ref: "#/components/schemas/listenersForArtist_payload_listeners_inner"
           type: array
         stats_range:
           type: string
@@ -9089,7 +9089,7 @@ components:
           type: integer
         listeners:
           items:
-            $ref: '#/components/schemas/listenersForArtist_payload_listeners_inner'
+            $ref: "#/components/schemas/listenersForArtist_payload_listeners_inner"
           type: array
         release_group_mbid:
           format: uuid
@@ -9138,7 +9138,7 @@ components:
       properties:
         artists:
           items:
-            $ref: '#/components/schemas/topArtistsForUser_payload_artists_inner'
+            $ref: "#/components/schemas/topArtistsForUser_payload_artists_inner"
           type: array
         count:
           type: integer
@@ -9243,7 +9243,7 @@ components:
           type: string
         releases:
           items:
-            $ref: '#/components/schemas/sitewideTopReleases_payload_releases_inner'
+            $ref: "#/components/schemas/sitewideTopReleases_payload_releases_inner"
           type: array
         to_ts:
           type: integer
@@ -9322,7 +9322,7 @@ components:
           type: string
         release_groups:
           items:
-            $ref: '#/components/schemas/releaseGroups_inner'
+            $ref: "#/components/schemas/releaseGroups_inner"
           type: array
         to_ts:
           type: integer
@@ -9435,7 +9435,7 @@ components:
           type: string
         recordings:
           items:
-            $ref: '#/components/schemas/sitewideTopRecordings_payload_recordings_inner'
+            $ref: "#/components/schemas/sitewideTopRecordings_payload_recordings_inner"
           type: array
         to_ts:
           type: integer
@@ -9473,7 +9473,7 @@ components:
           type: integer
         listening_activity:
           items:
-            $ref: '#/components/schemas/listeningActivityForUser_payload_listening_activity_inner'
+            $ref: "#/components/schemas/listeningActivityForUser_payload_listening_activity_inner"
           type: array
         range:
           type: string
@@ -9516,7 +9516,7 @@ components:
       properties:
         artist_map:
           items:
-            $ref: '#/components/schemas/artistMapForUser_payload_artist_map_inner'
+            $ref: "#/components/schemas/artistMapForUser_payload_artist_map_inner"
           type: array
         from_ts:
           type: integer
@@ -9560,7 +9560,7 @@ components:
           type: string
         artists:
           items:
-            $ref: '#/components/schemas/topReleasesForUser_payload_releases_inner_artists_inner'
+            $ref: "#/components/schemas/topReleasesForUser_payload_releases_inner_artists_inner"
           type: array
         caa_id:
           type: integer
@@ -9901,13 +9901,13 @@ components:
       properties:
         artist_map:
           items:
-            $ref: '#/components/schemas/artistMapForUser_payload_artist_map_inner'
+            $ref: "#/components/schemas/artistMapForUser_payload_artist_map_inner"
           type: array
         day_of_week:
           type: string
         listens_per_day:
           items:
-            $ref: '#/components/schemas/listeningActivityForUser_payload_listening_activity_inner'
+            $ref: "#/components/schemas/listeningActivityForUser_payload_listening_activity_inner"
           type: array
         most_listened_year:
           additionalProperties:
@@ -9915,31 +9915,31 @@ components:
           type: object
         new_releases_of_top_artists:
           items:
-            $ref: '#/components/schemas/yearInMusicForUser_payload_data_new_releases_of_top_artists_inner'
+            $ref: "#/components/schemas/yearInMusicForUser_payload_data_new_releases_of_top_artists_inner"
           type: array
         playlist-top-discoveries-for-year:
-          $ref: '#/components/schemas/playlist'
+          $ref: "#/components/schemas/playlist"
         playlist-top-missed-recordings-for-year:
-          $ref: '#/components/schemas/playlist'
+          $ref: "#/components/schemas/playlist"
         similar_users:
           additionalProperties:
             type: integer
           type: object
         top_artists:
           items:
-            $ref: '#/components/schemas/topArtistsForUser_payload_artists_inner'
+            $ref: "#/components/schemas/topArtistsForUser_payload_artists_inner"
           type: array
         top_genres:
           items:
-            $ref: '#/components/schemas/yearInMusicForUser_payload_data_top_genres_inner'
+            $ref: "#/components/schemas/yearInMusicForUser_payload_data_top_genres_inner"
           type: array
         top_recordings:
           items:
-            $ref: '#/components/schemas/topRecordingsForUser_payload_recordings_inner'
+            $ref: "#/components/schemas/topRecordingsForUser_payload_recordings_inner"
           type: array
         top_release_groups:
           items:
-            $ref: '#/components/schemas/releaseGroups_inner'
+            $ref: "#/components/schemas/releaseGroups_inner"
           type: array
         total_artists_count:
           type: integer
@@ -10289,7 +10289,7 @@ components:
         user_name: user_name
       properties:
         data:
-          $ref: '#/components/schemas/yearInMusicForUser_payload_data'
+          $ref: "#/components/schemas/yearInMusicForUser_payload_data"
         user_name:
           type: string
       required:
@@ -10315,7 +10315,7 @@ components:
           type: integer
         artists:
           items:
-            $ref: '#/components/schemas/topReleasesForUser_payload_releases_inner_artists_inner'
+            $ref: "#/components/schemas/topReleasesForUser_payload_releases_inner_artists_inner"
           type: array
       type: object
     playlist_track_inner_extension_https___musicbrainz_org_doc_jspf_track:
@@ -10348,7 +10348,7 @@ components:
         added_by:
           type: string
         additional_metadata:
-          $ref: '#/components/schemas/playlist_track_inner_extension_https___musicbrainz_org_doc_jspf_track_additional_metadata'
+          $ref: "#/components/schemas/playlist_track_inner_extension_https___musicbrainz_org_doc_jspf_track_additional_metadata"
       type: object
     playlist_track_inner_extension:
       example:
@@ -10371,7 +10371,7 @@ components:
             caa_release_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
       properties:
         https://musicbrainz.org/doc/jspf#track:
-          $ref: '#/components/schemas/playlist_track_inner_extension_https___musicbrainz_org_doc_jspf_track'
+          $ref: "#/components/schemas/playlist_track_inner_extension_https___musicbrainz_org_doc_jspf_track"
       required:
       - https://musicbrainz.org/doc/jspf#track
       type: object
@@ -10410,7 +10410,7 @@ components:
         duration:
           type: integer
         extension:
-          $ref: '#/components/schemas/playlist_track_inner_extension'
+          $ref: "#/components/schemas/playlist_track_inner_extension"
         identifier:
           items:
             type: string
@@ -10528,7 +10528,7 @@ components:
           format: uuid
           type: integer
         track_metadata:
-          $ref: '#/components/schemas/trackMetadata'
+          $ref: "#/components/schemas/trackMetadata"
       type: object
     topRecordingsForArtist_inner_release_color:
       example:
@@ -10543,6 +10543,20 @@ components:
         red:
           type: integer
       type: object
+    topRecordingsForArtist_inner_tags_inner:
+      example:
+        genre_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+        count: 9
+        tag: tag
+      properties:
+        count:
+          type: integer
+        genre_mbid:
+          format: uuid
+          type: string
+        tag:
+          type: string
+      type: object
     topRecordingsForArtist_inner:
       example:
         recording_name: recording_name
@@ -10556,6 +10570,13 @@ components:
         artist_mbids:
         - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
         - 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+        tags:
+        - genre_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+          count: 9
+          tag: tag
+        - genre_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+          count: 9
+          tag: tag
         release_name: release_name
         artists:
         - artist_credit_name: artist_credit_name
@@ -10579,7 +10600,7 @@ components:
           type: string
         artists:
           items:
-            $ref: '#/components/schemas/topReleasesForUser_payload_releases_inner_artists_inner'
+            $ref: "#/components/schemas/topReleasesForUser_payload_releases_inner_artists_inner"
           type: array
         caa_id:
           type: integer
@@ -10594,7 +10615,7 @@ components:
         recording_name:
           type: string
         release_color:
-          $ref: '#/components/schemas/topRecordingsForArtist_inner_release_color'
+          $ref: "#/components/schemas/topRecordingsForArtist_inner_release_color"
         release_mbid:
           format: uuid
           type: string
@@ -10604,6 +10625,10 @@ components:
           type: integer
         total_user_count:
           type: integer
+        tags:
+          items:
+            $ref: "#/components/schemas/topRecordingsForArtist_inner_tags_inner"
+          type: array
       type: object
     topReleaseGroupsForArtist_inner_artist:
       example:
@@ -10659,7 +10684,7 @@ components:
           type: integer
         artists:
           items:
-            $ref: '#/components/schemas/musicBrainzArtist'
+            $ref: "#/components/schemas/musicBrainzArtist"
           type: array
         name:
           type: string
@@ -10688,7 +10713,7 @@ components:
           type: string
         rels:
           items:
-            $ref: '#/components/schemas/rels'
+            $ref: "#/components/schemas/rels"
           type: array
         date:
           type: string
@@ -10727,7 +10752,7 @@ components:
           type: string
         rels:
           items:
-            $ref: '#/components/schemas/rels'
+            $ref: "#/components/schemas/rels"
           type: array
       type: object
     topReleaseGroupsForArtist_inner_tag_artist_inner:
@@ -10740,20 +10765,6 @@ components:
         artist_mbid:
           format: uuid
           type: string
-        count:
-          type: integer
-        genre_mbid:
-          format: uuid
-          type: string
-        tag:
-          type: string
-      type: object
-    topReleaseGroupsForArtist_inner_tag_release_group_inner:
-      example:
-        genre_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
-        count: 7
-        tag: tag
-      properties:
         count:
           type: integer
         genre_mbid:
@@ -10775,19 +10786,19 @@ components:
           artist_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
         release_group:
         - genre_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
-          count: 7
+          count: 9
           tag: tag
         - genre_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
-          count: 7
+          count: 9
           tag: tag
       properties:
         artist:
           items:
-            $ref: '#/components/schemas/topReleaseGroupsForArtist_inner_tag_artist_inner'
+            $ref: "#/components/schemas/topReleaseGroupsForArtist_inner_tag_artist_inner"
           type: array
         release_group:
           items:
-            $ref: '#/components/schemas/topReleaseGroupsForArtist_inner_tag_release_group_inner'
+            $ref: "#/components/schemas/topRecordingsForArtist_inner_tags_inner"
           type: array
       type: object
     topReleaseGroupsForArtist_inner:
@@ -10856,12 +10867,12 @@ components:
             instrument: instrument
             type: type
             artist_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
-        total_listen_count: 9
+        total_listen_count: 7
         release_color:
           red: 5
           green: 5
           blue: 1
-        total_user_count: 3
+        total_user_count: 9
         release_group:
           date: date
           caa_id: 5
@@ -10889,25 +10900,25 @@ components:
             artist_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
           release_group:
           - genre_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
-            count: 7
+            count: 9
             tag: tag
           - genre_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
-            count: 7
+            count: 9
             tag: tag
       properties:
         artist:
-          $ref: '#/components/schemas/topReleaseGroupsForArtist_inner_artist'
+          $ref: "#/components/schemas/topReleaseGroupsForArtist_inner_artist"
         release:
-          $ref: '#/components/schemas/topReleaseGroupsForArtist_inner_release'
+          $ref: "#/components/schemas/topReleaseGroupsForArtist_inner_release"
         release_color:
-          $ref: '#/components/schemas/topRecordingsForArtist_inner_release_color'
+          $ref: "#/components/schemas/topRecordingsForArtist_inner_release_color"
         release_group:
-          $ref: '#/components/schemas/topReleaseGroupsForArtist_inner_release_group'
+          $ref: "#/components/schemas/topReleaseGroupsForArtist_inner_release_group"
         release_group_mbid:
           format: uuid
           type: string
         tag:
-          $ref: '#/components/schemas/topReleaseGroupsForArtist_inner_tag'
+          $ref: "#/components/schemas/topReleaseGroupsForArtist_inner_tag"
         total_listen_count:
           type: integer
         total_user_count:
@@ -10948,7 +10959,7 @@ components:
         name:
           type: string
         rels:
-          $ref: '#/components/schemas/rels_1'
+          $ref: "#/components/schemas/rels_1"
         type:
           type: string
       type: object
@@ -11002,7 +11013,7 @@ components:
           type: integer
         artists:
           items:
-            $ref: '#/components/schemas/recordingMetadata_artist_artists_inner'
+            $ref: "#/components/schemas/recordingMetadata_artist_artists_inner"
           type: array
         name:
           type: string
@@ -11015,22 +11026,22 @@ components:
           type: string
         rels:
           items:
-            $ref: '#/components/schemas/rels'
+            $ref: "#/components/schemas/rels"
           type: array
       type: object
     recordingMetadata_tag:
       properties:
         artist:
           items:
-            $ref: '#/components/schemas/topReleaseGroupsForArtist_inner_tag_artist_inner'
+            $ref: "#/components/schemas/topReleaseGroupsForArtist_inner_tag_artist_inner"
           type: array
         recording:
           items:
-            $ref: '#/components/schemas/topReleaseGroupsForArtist_inner_tag_release_group_inner'
+            $ref: "#/components/schemas/topRecordingsForArtist_inner_tags_inner"
           type: array
         release_group:
           items:
-            $ref: '#/components/schemas/topReleaseGroupsForArtist_inner_tag_release_group_inner'
+            $ref: "#/components/schemas/topRecordingsForArtist_inner_tags_inner"
           type: array
       type: object
     releaseGroupMetadata_release_group:
@@ -11069,7 +11080,7 @@ components:
         name:
           type: string
         rels:
-          $ref: '#/components/schemas/rels_1'
+          $ref: "#/components/schemas/rels_1"
         type:
           type: string
       type: object
@@ -11079,7 +11090,7 @@ components:
           type: integer
         artists:
           items:
-            $ref: '#/components/schemas/releaseGroupMetadata_artist_artists_inner'
+            $ref: "#/components/schemas/releaseGroupMetadata_artist_artists_inner"
           type: array
         name:
           type: string
@@ -11121,7 +11132,7 @@ components:
           type: string
         rels:
           items:
-            $ref: '#/components/schemas/lookup_metadata_recording_rels_inner'
+            $ref: "#/components/schemas/lookup_metadata_recording_rels_inner"
           type: array
       type: object
     lookup_metadata_release:
@@ -11179,23 +11190,23 @@ components:
           tag: tag
         release_group:
         - genre_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
-          count: 7
+          count: 9
           tag: tag
         - genre_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
-          count: 7
+          count: 9
           tag: tag
       properties:
         artist:
           items:
-            $ref: '#/components/schemas/topReleaseGroupsForArtist_inner_tag_artist_inner'
+            $ref: "#/components/schemas/topReleaseGroupsForArtist_inner_tag_artist_inner"
           type: array
         recording:
           items:
-            $ref: '#/components/schemas/lookup_metadata_tag_recording_inner'
+            $ref: "#/components/schemas/lookup_metadata_tag_recording_inner"
           type: array
         release_group:
           items:
-            $ref: '#/components/schemas/topReleaseGroupsForArtist_inner_tag_release_group_inner'
+            $ref: "#/components/schemas/topRecordingsForArtist_inner_tags_inner"
           type: array
       type: object
     lookup_metadata:
@@ -11281,20 +11292,20 @@ components:
             tag: tag
           release_group:
           - genre_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
-            count: 7
+            count: 9
             tag: tag
           - genre_mbid: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
-            count: 7
+            count: 9
             tag: tag
       properties:
         artist:
-          $ref: '#/components/schemas/recordingMetadata_artist'
+          $ref: "#/components/schemas/recordingMetadata_artist"
         recording:
-          $ref: '#/components/schemas/lookup_metadata_recording'
+          $ref: "#/components/schemas/lookup_metadata_recording"
         release:
-          $ref: '#/components/schemas/lookup_metadata_release'
+          $ref: "#/components/schemas/lookup_metadata_release"
         tag:
-          $ref: '#/components/schemas/lookup_metadata_tag'
+          $ref: "#/components/schemas/lookup_metadata_tag"
       type: object
     getManualMapping_mapping:
       example:
@@ -11333,7 +11344,7 @@ components:
       properties:
         artist:
           items:
-            $ref: '#/components/schemas/topReleaseGroupsForArtist_inner_tag_artist_inner'
+            $ref: "#/components/schemas/topReleaseGroupsForArtist_inner_tag_artist_inner"
           type: array
       required:
       - artist
@@ -11442,7 +11453,7 @@ components:
         message:
           type: string
         metadata:
-          $ref: '#/components/schemas/metadata'
+          $ref: "#/components/schemas/metadata"
         user_name:
           type: string
         similarity:
@@ -11638,7 +11649,7 @@ components:
           type: integer
         events:
           items:
-            $ref: '#/components/schemas/feedEvents_payload_events_inner'
+            $ref: "#/components/schemas/feedEvents_payload_events_inner"
           type: array
         user_id:
           type: string
@@ -11744,7 +11755,7 @@ components:
         hidden:
           type: boolean
         metadata:
-          $ref: '#/components/schemas/metadata'
+          $ref: "#/components/schemas/metadata"
         similarity:
           type: integer
         user_name:
@@ -11938,7 +11949,7 @@ components:
           type: integer
         events:
           items:
-            $ref: '#/components/schemas/feedEventsListensSimilar_payload_events_inner'
+            $ref: "#/components/schemas/feedEventsListensSimilar_payload_events_inner"
           type: array
         user_id:
           type: string
@@ -11987,7 +11998,7 @@ components:
           type: integer
         mbids:
           items:
-            $ref: '#/components/schemas/recordingRecommendations_payload_mbids_inner'
+            $ref: "#/components/schemas/recordingRecommendations_payload_mbids_inner"
           type: array
         model_id:
           type: string
@@ -12101,7 +12112,7 @@ components:
       properties:
         releases:
           items:
-            $ref: '#/components/schemas/freshReleases_payload_releases_inner'
+            $ref: "#/components/schemas/freshReleases_payload_releases_inner"
           type: array
         total_count:
           type: integer
@@ -12146,7 +12157,7 @@ components:
         track_name: track_name
       properties:
         additional_info:
-          $ref: '#/components/schemas/color_payload_releases_inner_recordings_inner_track_metadata_additional_info'
+          $ref: "#/components/schemas/color_payload_releases_inner_recordings_inner_track_metadata_additional_info"
         artist_name:
           type: string
         release_name:
@@ -12173,7 +12184,7 @@ components:
           track_name: track_name
       properties:
         track_metadata:
-          $ref: '#/components/schemas/color_payload_releases_inner_recordings_inner_track_metadata'
+          $ref: "#/components/schemas/color_payload_releases_inner_recordings_inner_track_metadata"
       type: object
     color_payload_releases_inner:
       example:
@@ -12219,7 +12230,7 @@ components:
           type: integer
         recordings:
           items:
-            $ref: '#/components/schemas/color_payload_releases_inner_recordings_inner'
+            $ref: "#/components/schemas/color_payload_releases_inner_recordings_inner"
           type: array
         release_mbid:
           format: uuid
@@ -12291,7 +12302,7 @@ components:
       properties:
         releases:
           items:
-            $ref: '#/components/schemas/color_payload_releases_inner'
+            $ref: "#/components/schemas/color_payload_releases_inner"
           type: array
       required:
       - releases
@@ -12381,7 +12392,7 @@ components:
             type: string
           type: array
         jspf:
-          $ref: '#/components/schemas/createPlaylist_request'
+          $ref: "#/components/schemas/createPlaylist_request"
       required:
       - feedback
       - jspf
@@ -12431,7 +12442,7 @@ components:
       properties:
         artists:
           items:
-            $ref: '#/components/schemas/releaseGroups_inner_artists_inner'
+            $ref: "#/components/schemas/releaseGroups_inner_artists_inner"
           type: array
         artist_mbids:
           items:
@@ -12468,7 +12479,7 @@ components:
           source_patch: source_patch
       properties:
         algorithm_metadata:
-          $ref: '#/components/schemas/playlistExtensionPayload_additional_metadata_algorithm_metadata'
+          $ref: "#/components/schemas/playlistExtensionPayload_additional_metadata_algorithm_metadata"
       type: object
     playlistExtensionPayload:
       example:
@@ -12502,7 +12513,7 @@ components:
         last_modified_at:
           type: string
         additional_metadata:
-          $ref: '#/components/schemas/playlistExtensionPayload_additional_metadata'
+          $ref: "#/components/schemas/playlistExtensionPayload_additional_metadata"
       title: playlistExtensionPayload
       type: object
   securitySchemes:

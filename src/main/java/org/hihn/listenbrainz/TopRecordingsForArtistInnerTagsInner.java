@@ -48,14 +48,10 @@ import java.util.Set;
 import org.hihn.listenbrainz.JSON;
 
 /**
- * TopReleaseGroupsForArtistInnerTagArtistInner
+ * TopRecordingsForArtistInnerTagsInner
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.14.0")
-public class TopReleaseGroupsForArtistInnerTagArtistInner {
-  public static final String SERIALIZED_NAME_ARTIST_MBID = "artist_mbid";
-  @SerializedName(SERIALIZED_NAME_ARTIST_MBID)
-  private UUID artistMbid;
-
+public class TopRecordingsForArtistInnerTagsInner {
   public static final String SERIALIZED_NAME_COUNT = "count";
   @SerializedName(SERIALIZED_NAME_COUNT)
   private Integer count;
@@ -68,29 +64,10 @@ public class TopReleaseGroupsForArtistInnerTagArtistInner {
   @SerializedName(SERIALIZED_NAME_TAG)
   private String tag;
 
-  public TopReleaseGroupsForArtistInnerTagArtistInner() {
+  public TopRecordingsForArtistInnerTagsInner() {
   }
 
-  public TopReleaseGroupsForArtistInnerTagArtistInner artistMbid(UUID artistMbid) {
-    this.artistMbid = artistMbid;
-    return this;
-  }
-
-  /**
-   * Get artistMbid
-   * @return artistMbid
-   */
-  @javax.annotation.Nullable
-  public UUID getArtistMbid() {
-    return artistMbid;
-  }
-
-  public void setArtistMbid(UUID artistMbid) {
-    this.artistMbid = artistMbid;
-  }
-
-
-  public TopReleaseGroupsForArtistInnerTagArtistInner count(Integer count) {
+  public TopRecordingsForArtistInnerTagsInner count(Integer count) {
     this.count = count;
     return this;
   }
@@ -109,7 +86,7 @@ public class TopReleaseGroupsForArtistInnerTagArtistInner {
   }
 
 
-  public TopReleaseGroupsForArtistInnerTagArtistInner genreMbid(UUID genreMbid) {
+  public TopRecordingsForArtistInnerTagsInner genreMbid(UUID genreMbid) {
     this.genreMbid = genreMbid;
     return this;
   }
@@ -128,7 +105,7 @@ public class TopReleaseGroupsForArtistInnerTagArtistInner {
   }
 
 
-  public TopReleaseGroupsForArtistInnerTagArtistInner tag(String tag) {
+  public TopRecordingsForArtistInnerTagsInner tag(String tag) {
     this.tag = tag;
     return this;
   }
@@ -156,23 +133,21 @@ public class TopReleaseGroupsForArtistInnerTagArtistInner {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    TopReleaseGroupsForArtistInnerTagArtistInner topReleaseGroupsForArtistInnerTagArtistInner = (TopReleaseGroupsForArtistInnerTagArtistInner) o;
-    return Objects.equals(this.artistMbid, topReleaseGroupsForArtistInnerTagArtistInner.artistMbid) &&
-        Objects.equals(this.count, topReleaseGroupsForArtistInnerTagArtistInner.count) &&
-        Objects.equals(this.genreMbid, topReleaseGroupsForArtistInnerTagArtistInner.genreMbid) &&
-        Objects.equals(this.tag, topReleaseGroupsForArtistInnerTagArtistInner.tag);
+    TopRecordingsForArtistInnerTagsInner topRecordingsForArtistInnerTagsInner = (TopRecordingsForArtistInnerTagsInner) o;
+    return Objects.equals(this.count, topRecordingsForArtistInnerTagsInner.count) &&
+        Objects.equals(this.genreMbid, topRecordingsForArtistInnerTagsInner.genreMbid) &&
+        Objects.equals(this.tag, topRecordingsForArtistInnerTagsInner.tag);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(artistMbid, count, genreMbid, tag);
+    return Objects.hash(count, genreMbid, tag);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class TopReleaseGroupsForArtistInnerTagArtistInner {\n");
-    sb.append("    artistMbid: ").append(toIndentedString(artistMbid)).append("\n");
+    sb.append("class TopRecordingsForArtistInnerTagsInner {\n");
     sb.append("    count: ").append(toIndentedString(count)).append("\n");
     sb.append("    genreMbid: ").append(toIndentedString(genreMbid)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
@@ -198,7 +173,6 @@ public class TopReleaseGroupsForArtistInnerTagArtistInner {
   static {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
-    openapiFields.add("artist_mbid");
     openapiFields.add("count");
     openapiFields.add("genre_mbid");
     openapiFields.add("tag");
@@ -211,26 +185,23 @@ public class TopReleaseGroupsForArtistInnerTagArtistInner {
    * Validates the JSON Element and throws an exception if issues found
    *
    * @param jsonElement JSON Element
-   * @throws IOException if the JSON Element is invalid with respect to TopReleaseGroupsForArtistInnerTagArtistInner
+   * @throws IOException if the JSON Element is invalid with respect to TopRecordingsForArtistInnerTagsInner
    */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
-        if (!TopReleaseGroupsForArtistInnerTagArtistInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in TopReleaseGroupsForArtistInnerTagArtistInner is not found in the empty JSON string", TopReleaseGroupsForArtistInnerTagArtistInner.openapiRequiredFields.toString()));
+        if (!TopRecordingsForArtistInnerTagsInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
+          throw new IllegalArgumentException(String.format("The required field(s) %s in TopRecordingsForArtistInnerTagsInner is not found in the empty JSON string", TopRecordingsForArtistInnerTagsInner.openapiRequiredFields.toString()));
         }
       }
 
       Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!TopReleaseGroupsForArtistInnerTagArtistInner.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `TopReleaseGroupsForArtistInnerTagArtistInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+        if (!TopRecordingsForArtistInnerTagsInner.openapiFields.contains(entry.getKey())) {
+          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `TopRecordingsForArtistInnerTagsInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("artist_mbid") != null && !jsonObj.get("artist_mbid").isJsonNull()) && !jsonObj.get("artist_mbid").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `artist_mbid` to be a primitive type in the JSON string but got `%s`", jsonObj.get("artist_mbid").toString()));
-      }
       if ((jsonObj.get("genre_mbid") != null && !jsonObj.get("genre_mbid").isJsonNull()) && !jsonObj.get("genre_mbid").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `genre_mbid` to be a primitive type in the JSON string but got `%s`", jsonObj.get("genre_mbid").toString()));
       }
@@ -243,22 +214,22 @@ public class TopReleaseGroupsForArtistInnerTagArtistInner {
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!TopReleaseGroupsForArtistInnerTagArtistInner.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'TopReleaseGroupsForArtistInnerTagArtistInner' and its subtypes
+       if (!TopRecordingsForArtistInnerTagsInner.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'TopRecordingsForArtistInnerTagsInner' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<TopReleaseGroupsForArtistInnerTagArtistInner> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(TopReleaseGroupsForArtistInnerTagArtistInner.class));
+       final TypeAdapter<TopRecordingsForArtistInnerTagsInner> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(TopRecordingsForArtistInnerTagsInner.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<TopReleaseGroupsForArtistInnerTagArtistInner>() {
+       return (TypeAdapter<T>) new TypeAdapter<TopRecordingsForArtistInnerTagsInner>() {
            @Override
-           public void write(JsonWriter out, TopReleaseGroupsForArtistInnerTagArtistInner value) throws IOException {
+           public void write(JsonWriter out, TopRecordingsForArtistInnerTagsInner value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              elementAdapter.write(out, obj);
            }
 
            @Override
-           public TopReleaseGroupsForArtistInnerTagArtistInner read(JsonReader in) throws IOException {
+           public TopRecordingsForArtistInnerTagsInner read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
              return thisAdapter.fromJsonTree(jsonElement);
@@ -269,18 +240,18 @@ public class TopReleaseGroupsForArtistInnerTagArtistInner {
   }
 
   /**
-   * Create an instance of TopReleaseGroupsForArtistInnerTagArtistInner given an JSON string
+   * Create an instance of TopRecordingsForArtistInnerTagsInner given an JSON string
    *
    * @param jsonString JSON string
-   * @return An instance of TopReleaseGroupsForArtistInnerTagArtistInner
-   * @throws IOException if the JSON string is invalid with respect to TopReleaseGroupsForArtistInnerTagArtistInner
+   * @return An instance of TopRecordingsForArtistInnerTagsInner
+   * @throws IOException if the JSON string is invalid with respect to TopRecordingsForArtistInnerTagsInner
    */
-  public static TopReleaseGroupsForArtistInnerTagArtistInner fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, TopReleaseGroupsForArtistInnerTagArtistInner.class);
+  public static TopRecordingsForArtistInnerTagsInner fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, TopRecordingsForArtistInnerTagsInner.class);
   }
 
   /**
-   * Convert an instance of TopReleaseGroupsForArtistInnerTagArtistInner to an JSON string
+   * Convert an instance of TopRecordingsForArtistInnerTagsInner to an JSON string
    *
    * @return JSON string
    */

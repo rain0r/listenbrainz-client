@@ -20,6 +20,7 @@
 |**releaseName** | **String** |  |  [optional] |
 |**totalListenCount** | **Integer** |  |  [optional] |
 |**totalUserCount** | **Integer** |  |  [optional] |
+|**tags** | [**List&lt;TopRecordingsForArtistInnerTagsInner&gt;**](TopRecordingsForArtistInnerTagsInner.md) |  |  [optional] |
 
 
 

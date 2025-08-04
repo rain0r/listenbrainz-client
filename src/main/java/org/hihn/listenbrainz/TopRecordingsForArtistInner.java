@@ -25,6 +25,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
 import org.hihn.listenbrainz.TopRecordingsForArtistInnerReleaseColor;
+import org.hihn.listenbrainz.TopRecordingsForArtistInnerTagsInner;
 import org.hihn.listenbrainz.TopReleasesForUserPayloadReleasesInnerArtistsInner;
 
 import com.google.gson.Gson;
@@ -54,7 +55,7 @@ import org.hihn.listenbrainz.JSON;
 /**
  * TopRecordingsForArtistInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.14.0")
 public class TopRecordingsForArtistInner {
   public static final String SERIALIZED_NAME_ARTIST_MBIDS = "artist_mbids";
   @SerializedName(SERIALIZED_NAME_ARTIST_MBIDS)
@@ -107,6 +108,10 @@ public class TopRecordingsForArtistInner {
   public static final String SERIALIZED_NAME_TOTAL_USER_COUNT = "total_user_count";
   @SerializedName(SERIALIZED_NAME_TOTAL_USER_COUNT)
   private Integer totalUserCount;
+
+  public static final String SERIALIZED_NAME_TAGS = "tags";
+  @SerializedName(SERIALIZED_NAME_TAGS)
+  private List<TopRecordingsForArtistInnerTagsInner> tags = new ArrayList<>();
 
   public TopRecordingsForArtistInner() {
   }
@@ -374,6 +379,33 @@ public class TopRecordingsForArtistInner {
   }
 
 
+  public TopRecordingsForArtistInner tags(List<TopRecordingsForArtistInnerTagsInner> tags) {
+    this.tags = tags;
+    return this;
+  }
+
+  public TopRecordingsForArtistInner addTagsItem(TopRecordingsForArtistInnerTagsInner tagsItem) {
+    if (this.tags == null) {
+      this.tags = new ArrayList<>();
+    }
+    this.tags.add(tagsItem);
+    return this;
+  }
+
+  /**
+   * Get tags
+   * @return tags
+   */
+  @javax.annotation.Nullable
+  public List<TopRecordingsForArtistInnerTagsInner> getTags() {
+    return tags;
+  }
+
+  public void setTags(List<TopRecordingsForArtistInnerTagsInner> tags) {
+    this.tags = tags;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -396,12 +428,13 @@ public class TopRecordingsForArtistInner {
         Objects.equals(this.releaseMbid, topRecordingsForArtistInner.releaseMbid) &&
         Objects.equals(this.releaseName, topRecordingsForArtistInner.releaseName) &&
         Objects.equals(this.totalListenCount, topRecordingsForArtistInner.totalListenCount) &&
-        Objects.equals(this.totalUserCount, topRecordingsForArtistInner.totalUserCount);
+        Objects.equals(this.totalUserCount, topRecordingsForArtistInner.totalUserCount) &&
+        Objects.equals(this.tags, topRecordingsForArtistInner.tags);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(artistMbids, artistName, artists, caaId, caaReleaseMbid, length, recordingMbid, recordingName, releaseColor, releaseMbid, releaseName, totalListenCount, totalUserCount);
+    return Objects.hash(artistMbids, artistName, artists, caaId, caaReleaseMbid, length, recordingMbid, recordingName, releaseColor, releaseMbid, releaseName, totalListenCount, totalUserCount, tags);
   }
 
   @Override
@@ -421,6 +454,7 @@ public class TopRecordingsForArtistInner {
     sb.append("    releaseName: ").append(toIndentedString(releaseName)).append("\n");
     sb.append("    totalListenCount: ").append(toIndentedString(totalListenCount)).append("\n");
     sb.append("    totalUserCount: ").append(toIndentedString(totalUserCount)).append("\n");
+    sb.append("    tags: ").append(toIndentedString(tags)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -456,6 +490,7 @@ public class TopRecordingsForArtistInner {
     openapiFields.add("release_name");
     openapiFields.add("total_listen_count");
     openapiFields.add("total_user_count");
+    openapiFields.add("tags");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -521,6 +556,20 @@ public class TopRecordingsForArtistInner {
       }
       if ((jsonObj.get("release_name") != null && !jsonObj.get("release_name").isJsonNull()) && !jsonObj.get("release_name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `release_name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("release_name").toString()));
+      }
+      if (jsonObj.get("tags") != null && !jsonObj.get("tags").isJsonNull()) {
+        JsonArray jsonArraytags = jsonObj.getAsJsonArray("tags");
+        if (jsonArraytags != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("tags").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `tags` to be an array in the JSON string but got `%s`", jsonObj.get("tags").toString()));
+          }
+
+          // validate the optional field `tags` (array)
+          for (int i = 0; i < jsonArraytags.size(); i++) {
+            TopRecordingsForArtistInnerTagsInner.validateJsonElement(jsonArraytags.get(i));
+          };
+        }
       }
   }
 
